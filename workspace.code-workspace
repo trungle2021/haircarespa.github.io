@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "..\\eProject-main"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "eproject",
+		"git.ignoreLimitWarning": true
+	}
+}
