@@ -157,10 +157,10 @@ display: none;
   padding: 0px;
 }
 .text1-carousel.owl-carousel p{
-  background-color: brown;
+  
   margin: 0px 0px;
   border-color: none;
-  color: azure; border: none;
+  color: rgb(0, 0, 0); border: none;
   padding: 5px 0px;
   
 
