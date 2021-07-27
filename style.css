@@ -216,7 +216,18 @@ display: none;
 
 
 /* BEST SELLER */
+.text1-carousel.owl-carousel{
+  margin: 0px;
+  padding: 0px;
+}
+.text1-carousel.owl-carousel p{
+  background-color: brown;
+  margin: 0px 0px;
+  border-color: none;
+  font-size: 16px; color: azure; border: none;
+  padding: 5px 0px;
 
+}
 .best-seller.owl-carousel {
   margin-top: 40px;
 }
@@ -227,11 +238,11 @@ display: none;
   font-size: 60px;
 }
 .best-seller.owl-carousel .owl-nav .owl-prev span{
-  top:200px;
+  top:150px;
   left:-60px;
 }
 .best-seller.owl-carousel .owl-nav .owl-next span{
-  top:200px;
+  top:150px;
   right:-60px;
 }
 .best-seller.owl-carousel .owl-nav .owl-prev span:hover,

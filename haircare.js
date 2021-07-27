@@ -20,7 +20,7 @@ $(document).ready(function(){
                 nav:true
             },
             1000:{
-                items:3,
+                items:4,
                 nav:true,
                 loop:true
                 
@@ -57,13 +57,13 @@ $(document).ready(function(){
             center: true,
                 items:3,
                 loop:true,
-                margin:30,
+                // margin:30,
                 nav:false,
                 dots:false,
                 autoplay: true,
                 slideTransition: 'linear',
-                autoplayTimeout: 5000,
-                autoplaySpeed: 5000,
+                autoplayTimeout:5000,
+                autoplaySpeed:5000,
                 autoplayHoverPause:false,
                 mouseDrag: false,
                 responsive:{
