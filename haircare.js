@@ -57,15 +57,15 @@ $(document).ready(function(){
             center: true,
                 items:3,
                 loop:true,
-                // margin:30,
+                margin:1,
                 nav:false,
                 dots:false,
                 autoplay: true,
                 slideTransition: 'linear',
                 autoplayTimeout:5000,
                 autoplaySpeed:5000,
-                autoplayHoverPause:false,
-                mouseDrag: false,
+                autoplayHoverPause:true,
+                mouseDrag: true,
                 responsive:{
                     0:{
                         items:1
@@ -74,13 +74,11 @@ $(document).ready(function(){
                         items:1
                     },
                     1000:{
-                        items:2
+                        items:3
                     }
                 }
             })
-//CLICK MOVE HAIR PROBLEMS PAGE 
-           $('#hairproblems-click').click(function(){
-            window.location.href = "https://trungle2021.github.io/master/hair-problems.html";
-           })
 
+           
+        
 });

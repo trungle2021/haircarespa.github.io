@@ -26,7 +26,123 @@
 
 
 </head>
+ <style>
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  z-index: 22;
+}
+.logo img {
+ width: 50%;
+  
+}
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: middle;
+  margin-left: 600px;
+}
 
+.navbar .navbar-collapse {
+  text-align: center;
+
+ margin-left: 30px;
+ margin-right: 30px;
+}
+
+.navbar {
+  position: relative;
+  margin: 2px auto;
+  z-index: 999;
+}
+
+.navbar {
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  z-index: 999;
+  border: none;
+  border-radius: 0px;
+  background-color: transparent;
+}
+.my-nav .navbar-nav > li{
+  margin: 0px 40px;
+}
+.my-nav .navbar-nav > li > a{
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+}
+
+@media (max-width: 768px){
+
+  
+  .navbar .navbar-brand{
+    display: block;
+    color: rgb(255, 255, 255);
+  }
+  .logo{
+    display: none;
+  }
+  .navbar{
+    background-color: rgb(189, 190, 100);
+    position: inherit;
+  }
+
+  .navbar .navbar-nav {
+    display: inline-block;
+    float: left;
+    margin-left: 0px;
+    vertical-align: top;
+    text-align: left;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.my-nav .navbar-nav > li > a{
+  color: rgb(255, 250, 250);
+  font-size: 15px;
+}
+
+.best-seller.owl-carousel .owl-nav .owl-prev span,
+.best-seller.owl-carousel .owl-nav .owl-next span{
+display: none;
+}
+.owl-item p{ width : 10px !important; }
+}
+
+.text-on-bg{
+    position: absolute;
+    top: 300px;
+    right: 200px;
+    
+
+}
+.text-on-bg h3{
+    font-size: 8rem;
+    line-height: 8.9rem;
+    margin: 0;
+}
+.text-on-bg p{
+    margin-top:30px;
+}
+.text-on-bg .seemore{
+  padding: 10px 40px;
+  border: solid 1px black;
+  border-radius: 25px;
+  text-decoration: none;
+  color: black;
+}
+.text-on-bg .seemore:hover{
+  background-color: rgb(26, 26, 36);
+  transition-duration: 300ms;
+  color:white;
+}
+ </style>
 <body>
 
   <header>
@@ -34,7 +150,7 @@
         <div class="row">
             <div class="col-md-12">
                 <!-- navbar -->
-                <!-- <a class="logo" href="../eproject/homepage1.html"><img src="../eproject/images/homepage/Logo.png" alt="" ></a> -->
+              
                 <nav class="navbar navbar-default my-nav " role="navigation">
 
                     <!-- Brand and toggle get grouped for better mobile display -->
@@ -46,8 +162,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <!-- <a class="logo" href="../eproject/homepage1.html"><img src="../eproject/images/homepage/Logo.png" alt="" ></a> -->
-
+                        
                         <a class="navbar-brand" href="#">HAIR CARE SPA</a>
 
                     </div>
@@ -77,39 +192,30 @@
                 <!-- end navbar -->
 
                 <!-- picture slide show -->
-                <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#myCarousel" data-slide-to="1"></li>
-
-                    </ol>
-
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner" role="listbox">
                         <div class="item active">
-                            <img src="images/homepage/HeaderSlideShow/Header_slide_img1.jpg" alt="New York"
+                            <img src="images/homepage/unuse/d-custom-care.23df3019.jpg" alt="New York"
                                 width="900" height="700">
                         </div>
-
-                        <div class="item">
-                            <img src="images/homepage/HeaderSlideShow/Header_slide_img2.jpg" alt="Chicago"
-                                width="1200" height="700">
-
-                        </div>
-
                     </div>
 
-                    <!-- Left and right controls -->
-                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
+                    <div class="text-on-bg">
+                        <h3>
+                            hi, we're <br>
+                            Hair Care Spa.</h3>
+                        <p>the world leader in customizable beauty – hair, skin, and body care products made for you (and only you).</p>
+                        
+                        <div style="margin-top:50px">
+                            <a href="product.html" class="seemore"> GO TO SHOP</a>
+                        </div>
+                    </div>
+
+
+
+
+
+
 
 
 
@@ -154,96 +260,34 @@
 </header>
   <!-- END HEADER -->
 
-  <div class="container-fluid">
+<!-- TEAM MEMBER -->
+<div class="container text-center">
+    <h2>THE FOUNDER</h2>
+    <p><em>We love hair care!</em></p>
+    <p></p>
+    <br>
     <div class="row">
-      <div class="col-md-12 col-xs-12 nopadding" style="background-color: rgb(251,246,242);">
-        <div class="text1st col-xs-12">
-          <h3>A new standard in beauty</h3><br>
+        <div class="col-sm-4">
 
-          <svg xmlns="http://www.w3.org/2000/svg" width="8" height="100" viewBox="0 0 8 100">
-            <path class="path" fill="none" fill-rule="evenodd" stroke="#000"
-              d="M1 100c0-3.845 6-3.845 6-7.69s-6-3.845-6-7.691c0-3.845 6-3.845 6-7.69 0-3.847-6-3.847-6-7.693 0-3.843 6-3.843 6-7.687 0-3.845-6-3.845-6-7.691 0-3.845 6-3.845 6-7.69 0-3.846-6-3.846-6-7.69 0-3.847 6-3.847 6-7.694s-6-3.847-6-7.695c0-3.846 6-3.846 6-7.693 0-3.849-6-3.849-6-7.698S7 3.849 7 0">
-            </path>
-          </svg>
-
-          <p><strong>Mass haircare is designed for “the masses”</strong> with a few narrow products intended for as many
-            people as possible. Your results may vary, but your options stay the same. </p>
-
-          <p><strong>Custom haircare is designed for the individual</strong> with products that are literally made
-            different for everyone, continually improving and evolving with you over time. </p>
-
-          <p><strong>We believe everyone deserves extraordinary care</strong> and that making things custom is the only
-            way to give everyone their best individual results. </p>
-
-
-
-
+            <img class="img-circle person" src="images/homepage/TeamMember/phat_img.jpg" alt="Phat" width="255"
+                height="255">
+            <p><strong>Phat Huynh</strong></p><br>
         </div>
-      </div>
+        <div class="col-sm-4">
+
+            <img class="img-circle person" src="images/homepage/TeamMember/trung_img.jpg" alt="Trung"
+                width="255" height="255">
+            <p><strong>Trung Le</strong></p><br>
+        </div>
+        <div class="col-sm-4">
+
+            <img class="img-circle person" src="images/homepage/TeamMember/khoa_img.jpg" alt="Khoa" width="255"
+                height="255">
+            <p><strong>Anh Khoa</strong></p><br>
+        </div>
     </div>
-  </div>
-
-
-
-  <article>
-    <div class="container text-center">
-
-      <div class="row">
-        <div class="col-md-6 nopadding  ">
-          <img src="images/HairProblems/growth-related.jpg" class="img-responsive" style="width:100%"
-            alt="Image">
-        </div>
-        <div class="col-md-6 nopadding">
-          <div class="text1st col-xs-12  ">
-            <h3>What Are the Four Stages of Hair Growth?</h3>
-            <p>The growth and loss of hair may seem like a simple process, but the hair growth cycle is actually composed of four distinct phases. These stages of hair growth have been studied in great depth to better understand how hair grows and what might be done to prevent or treat premature hair loss.
-
-              </p>
-
-            <p>Each phase has its own timeline, which can be affected by age, nutrition, and overall health. That means there are steps you can take along the way to help ensure that your hair follows a healthy growth cycle. Read on to learn more.</p> <br>
-              <div>
-                <a href="https://www.healthline.com/health/stages-of-hair-growth" class="seemore">READ MORE</a>
-              </div>
-          </div>
-        </div>
-      </div>
-    
-
-
-
-      </div>
-
-      <div class="row">
-        <div class="col-md-6 nopadding  ">
-          <img src="images/HairProblems/baldness.jpg" class="img-responsive" style="width:100%"
-            alt="Image">
-        </div>
-        <div class="col-md-6 nopadding">
-          <div class="text1st col-xs-12  ">
-            <h3>Going Bald Too Young?</h3>
-            <p>It’s normal to lose about 100 strands of hair from your head a day. But losing more could mean that your hair is beginning to thin, and it's time to consult a dermatologist.
-
-              Typically, we think of balding as a condition that plagues older men, but there are many types and causes of hair loss that can happen to anyone, regardless of your age or gender, anytime.</p>
-             
-              <p>Just how close are we to finding a magic bullet for baldness? Hair Care Spa take a look at the evidence.</p>
-              <div>
-                <a href="https://wexnermedical.osu.edu/blog/premature-baldness" class="seemore">READ MORE</a>
-              </div>
-          </div>
-        </div>
-      </div>
-
-
-
-
-        
-
-
-
-      </div>
-    </div><br>
-  </article>
-  <br><br><br>
+</div>
+<br><br><br>
 
   <br><br><br>
   <footer>
@@ -282,7 +326,29 @@
     </div>
 </footer>
 
-
+<button onclick="topFunction()" id="myBtn" title="Go to top">&#8673;</button>
 </body>
+<script>
+    //stop pause carousel when hover
 
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
 </html>
