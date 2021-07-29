@@ -60,7 +60,7 @@
 .navbar {
   position: absolute;
   top: 10px;
-  width: 100%;
+  right:10px;
   z-index: 999;
   border: none;
   border-radius: 0px;
@@ -74,29 +74,56 @@
   font-size: 15px;
 }
 
-@media (max-width: 768px){
+.text-on-bg{
+    position: absolute;
+    top: 280px;
+    left: 1070px;
 
-  
-  .navbar .navbar-brand{
-    display: block;
-    color: rgb(255, 255, 255);
-  }
-  .logo{
-    display: none;
-  }
+}
+.text-on-bg h3{
+    font-size: 8rem;
+    line-height: 8.5rem;
+    margin: 0;
+}
+.text-on-bg p{
+    margin-top:20px;
+    font-size: 20px;
+    width: 80%;
+}
+.text-on-bg .seemore{
+  padding: 10px 20px;
+  border: solid 1px black;
+  border-radius: 25px;
+  text-decoration: none;
+  color: black;
+}
+.text-on-bg  a{
+    font-size: 18px !important;
+}
+.goShop{
+    margin-top:50px
+}
+
+
+
+
+@media  (max-width: 1440px){
+
   .navbar{
-    background-color: rgb(189, 190, 100);
-    position: inherit;
+       position: absolute;
+       right: 0px;
   }
-
-  .navbar .navbar-nav {
+  
+.my-nav.navbar .navbar-nav {
     display: inline-block;
-    float: left;
+    float: right;
     margin-left: 0px;
     vertical-align: top;
     text-align: left;
 }
-
+.my-nav .navbar-nav > li{
+  margin: 0px 25px;
+}
 .navbar .navbar-collapse {
     text-align: center;
     margin-left: 0px;
@@ -104,21 +131,15 @@
 }
 
 .my-nav .navbar-nav > li > a{
-  color: rgb(255, 250, 250);
+  color: black;
   font-size: 15px;
-}
-
-.best-seller.owl-carousel .owl-nav .owl-prev span,
-.best-seller.owl-carousel .owl-nav .owl-next span{
-display: none;
-}
-.owl-item p{ width : 10px !important; }
+ 
 }
 
 .text-on-bg{
     position: absolute;
-    top: 300px;
-    right: 200px;
+    top: 200px;
+    left: 750px;
     
 
 }
@@ -141,6 +162,137 @@ display: none;
   background-color: rgb(26, 26, 36);
   transition-duration: 300ms;
   color:white;
+}
+
+}
+@media  (max-width: 1024px){
+
+.navbar{
+     position: absolute;
+     right: 0px;
+}
+
+.my-nav.navbar .navbar-nav {
+  display: inline-block;
+  float: right;
+  margin-left: 0px;
+  vertical-align: top;
+  text-align: left;
+}
+.my-nav .navbar-nav > li{
+margin: 0px 3px;
+}
+.navbar .navbar-collapse {
+  text-align: center;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.my-nav .navbar-nav > li > a{
+color: black;
+font-size: 15px;
+
+}
+
+.text-on-bg{
+  position: absolute;
+  top: 140px;
+  left: 550px;
+  
+
+}
+.text-on-bg h3{
+  font-size: 5.5rem;
+  line-height: 6rem;
+  margin: 0;
+}
+.text-on-bg p{
+  margin-top:20px;
+  font-size: 15px;
+}
+.text-on-bg .seemore{
+padding: 10px 40px;
+border: solid 1px black;
+border-radius: 25px;
+text-decoration: none;
+color: black;
+}
+.text-on-bg .seemore:hover{
+background-color: rgb(26, 26, 36);
+transition-duration: 300ms;
+color:white;
+}
+.text-on-bg  a{
+    font-size: 15px !important;
+}
+.goShop{
+    margin-top:30px
+}
+}
+@media (max-width: 768px){
+
+  
+.navbar .navbar-brand{
+  display: block;
+  color: rgb(255, 255, 255);
+}
+.logo{
+  display: none;
+}
+.navbar{
+  background-color: rgb(189, 190, 100);
+  position: relative;
+  left:0;
+}
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  margin-left: 0px;
+  vertical-align: top;
+  text-align: left;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+  
+  
+}
+
+.my-nav .navbar-nav > li > a{
+color: rgb(255, 250, 250);
+font-size: 15px;
+}
+
+.text-on-bg{
+  position: absolute;
+  top: 80px;
+  left: 190px;
+
+}
+.text-on-bg h3{
+  font-size: 20px;
+  line-height: 2.5rem;
+  margin: 0;
+}
+.text-on-bg p{
+  margin-top:10px;
+  font-size: 8px;
+  width: 80%;
+}
+.text-on-bg .seemore{
+padding: 5px 20px;
+border: solid 1px black;
+border-radius: 25px;
+text-decoration: none;
+color: black;
+}
+.text-on-bg  a{
+  font-size: 8px !important;
+}
+.goShop{
+  margin-top:5px
+}
 }
  </style>
 <body>
@@ -206,7 +358,7 @@ display: none;
                             Hair Care Spa.</h3>
                         <p>the world leader in customizable beauty – hair, skin, and body care products made for you (and only you).</p>
                         
-                        <div style="margin-top:50px">
+                        <div class="goShop">
                             <a href="product.html" class="seemore"> GO TO SHOP</a>
                         </div>
                     </div>
