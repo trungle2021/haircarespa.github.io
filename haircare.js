@@ -64,8 +64,8 @@ $(document).ready(function(){
                 slideTransition: 'linear',
                 autoplayTimeout:5000,
                 autoplaySpeed:5000,
-                autoplayHoverPause:true,
-                mouseDrag: true,
+                autoplayHoverPause:false,
+                mouseDrag: false,
                 responsive:{
                     0:{
                         items:1
@@ -79,6 +79,39 @@ $(document).ready(function(){
                 }
             })
         
+            $('.trends12').owlCarousel({
+                loop:true,
+                margin:20,
+                responsiveClass:true,
+                nav: false,
+                navigation:true,
+                dots: false,
+                autoplay: true,
+                autoHeight:true,
+                responsive:{
+                    0:{
+                        items:3,
+                        nav:true,
+                        loop:true
+                    },
+                    425:{
+                        items:3,
+                        nav:true,
+                        loop:true
+                    },
+                    768:{
+                        items:2,
+                        nav:true,
+                        
+                    },
+                    1000:{
+                        items:5,
+                        nav:true,
+                        loop:true
+                        
+                    }
+                }
+            });
         
            
         

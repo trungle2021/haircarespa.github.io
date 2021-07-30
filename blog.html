@@ -5,14 +5,15 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hair-Problems</title>
+  <title>index</title>
   <!-- CSS Bootstrap -->
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="style.css">
 
 
   <!-- Jquery -->
@@ -24,265 +25,464 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <script src="haircare.js"></script>
 
-
+  <style>
+  
+.trends12.owl-carousel {
+  margin-top: 40px;
+}
+.trends12.owl-carousel .owl-nav .owl-prev span,
+.trends12.owl-carousel .owl-nav .owl-next span{
+  position: absolute;
+  color: gray;
+  font-size: 60px;
+}
+.trends12.owl-carousel .owl-nav .owl-prev span{
+  top:80px;
+  left:-60px;
+}
+.trends12.owl-carousel .owl-nav .owl-next span{
+  top:80px;
+  right:-60px;
+}
+.trends12.owl-carousel .owl-nav .owl-prev span:hover,
+.trends12.owl-carousel .owl-nav .owl-next span:hover{
+  color: black;
+}
+ 
+@media (max-width:1024px){
+  .trends12.owl-carousel .owl-nav .owl-prev span,
+.trends12.owl-carousel .owl-nav .owl-next span{
+  display: none;
+}
+}
+   
+  </style>
 </head>
 
 <body>
 
   <header>
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12">
-                <!-- navbar -->
-                <!-- <a class="logo" href="../eproject/homepage1.html"><img src="../eproject/images/homepage/Logo.png" alt="" ></a> -->
-                <nav class="navbar navbar-default my-nav " role="navigation">
+      <div class="row">
+        <div class="col-md-12">
+          <!-- navbar -->
+          <!-- <a class="logo" href="../eproject/homepage1.html"><img src="../eproject/images/homepage/Logo.png" alt="" ></a> -->
+          <nav class="navbar navbar-default my-nav " role="navigation">
 
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse"
-                            data-target=".navbar-ex1-collapse">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <!-- <a class="logo" href="../eproject/homepage1.html"><img src="../eproject/images/homepage/Logo.png" alt="" ></a> -->
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <!-- <a class="logo" href="../eproject/homepage1.html"><img src="../eproject/images/homepage/Logo.png" alt="" ></a> -->
 
-                        <a class="navbar-brand" href="#">HAIR CARE SPA</a>
+              <a class="navbar-brand" href="#">HAIR CARE SPA</a>
 
-                    </div>
-
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse navbar-ex1-collapse ">
-                        <ul class="nav navbar-nav">
-
-                            <li><a href="index.html">Home</a></li>
-
-                            <li><a href="product.html">Product</a></li>
-
-                           
-                            <li><a href="hair-problems.html">Hair-Problems</a></li>
-                            
-
-                            <li><a href="about-us.html">About Us</a></li>
-
-                            <li><a href="blog.html">Blog</a></li>
-
-
-                            <li><a href="contact-us">Contact Us</a></li>
-                            <li><a href="#" data-target="#login" data-toggle="modal">Login</a></li>
-                        </ul>
-                    </div>
-                </nav>
-                <!-- end navbar -->
-
-                <!-- picture slide show -->
-                <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#myCarousel" data-slide-to="1"></li>
-
-                    </ol>
-
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner" role="listbox">
-                        <div class="item active">
-                            <img src="images/homepage/HeaderSlideShow/Header_slide_img1.jpg" alt="New York"
-                                width="900" height="700">
-                        </div>
-
-                        <div class="item">
-                            <img src="images/homepage/HeaderSlideShow/Header_slide_img2.jpg" alt="Chicago"
-                                width="1200" height="700">
-
-                        </div>
-
-                    </div>
-
-                    <!-- Left and right controls -->
-                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-
-
-
-
-                <!-- LOGIN -->
-                <div id="login" class="modal fade" role="dialog">
-                    <div class="modal-dialog">
-
-                        <div class="modal-content">
-                            <div class="modal-body">
-                                <button data-dismiss="modal" class="close">&times;</button>
-                                <h4>Login</h4>
-                                <form method="post" name="loginform">
-                                    <input type="text" Name="Username" placeholder="Username" id="username"
-                                        required>
-                                    <input type="password" id="password" Name="Password" placeholder="Password"
-                                        required>
-                                    <br>
-                                    <button type="button" id="btn_login" class="btn btn-success btn-sm"
-                                        value="LOGIN" onclick="Wefunction()">Login</button>
-                                    <br>
-
-                                    <!-- <input type="checkbox" id="brand1" value="">
-                                                <label><span></span>Remember me</label> -->
-                                    <br>
-                                    <a href="mailto:info@haircarespa.com?subject=Forgot Password
-                                                &body=Please send me new Password!">Forgot password?</a>
-
-
-                                    <div class="aitssendbuttonw3ls"></div>
-                                    <p> <a class="w3_play_icon1" href="register.html">
-                                            Register new account</a></p>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- END LOGIN -->
             </div>
-        </div>
-    </div>
-</header>
-  <!-- END HEADER -->
 
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-12 col-xs-12 nopadding" style="background-color: rgb(251,246,242);">
-        <div class="text1st col-xs-12">
-          <h3>A new standard in beauty</h3><br>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse ">
+              <ul class="nav navbar-nav">
 
-          <svg xmlns="http://www.w3.org/2000/svg" width="8" height="100" viewBox="0 0 8 100">
-            <path class="path" fill="none" fill-rule="evenodd" stroke="#000"
-              d="M1 100c0-3.845 6-3.845 6-7.69s-6-3.845-6-7.691c0-3.845 6-3.845 6-7.69 0-3.847-6-3.847-6-7.693 0-3.843 6-3.843 6-7.687 0-3.845-6-3.845-6-7.691 0-3.845 6-3.845 6-7.69 0-3.846-6-3.846-6-7.69 0-3.847 6-3.847 6-7.694s-6-3.847-6-7.695c0-3.846 6-3.846 6-7.693 0-3.849-6-3.849-6-7.698S7 3.849 7 0">
-            </path>
-          </svg>
+                <li><a href="index.html">Home</a></li>
 
-          <p><strong>Mass haircare is designed for “the masses”</strong> with a few narrow products intended for as many
-            people as possible. Your results may vary, but your options stay the same. </p>
-
-          <p><strong>Custom haircare is designed for the individual</strong> with products that are literally made
-            different for everyone, continually improving and evolving with you over time. </p>
-
-          <p><strong>We believe everyone deserves extraordinary care</strong> and that making things custom is the only
-            way to give everyone their best individual results. </p>
+                <li><a href="product.html">Product</a></li>
 
 
+                <li><a href="hair-problems.html">Hair-Problems</a></li>
 
 
+                <li><a href="about-us.html">About Us</a></li>
+
+                <li><a href="blog.html">Blog</a></li>
+
+
+                <li><a href="contact-us">Contact Us</a></li>
+                <li><a href="#" data-target="#login" data-toggle="modal"
+                    onclick="document.getElementById('id01').style.display='block'">Login</a></li>
+              </ul>
+            </div>
+          </nav>
+          <!-- end navbar -->
+
+          <!-- picture slide show -->
+          <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <img src="images/homepage/HeaderSlideShow/Header_slide_img1.jpg" alt="New York" width="900"
+                  height="700">
+              </div>
+
+              <div class="item">
+                <img src="images/homepage/HeaderSlideShow/Header_slide_img2.jpg" alt="Chicago" width="1200"
+                  height="700">
+
+              </div>
+
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+
+
+
+
+          <!-- LOGIN -->
+          <div class="modal fade" id="login">
+            <div class="modal-dialog">
+              <div class="modal-content">
+
+                <div class="modal-body">
+                  <span data-dismiss="modal" class="close" title="Close Modal">&times;</span>
+                  <br><br>
+
+                  <form action="#" method="GET" role="form" id="formlogin">
+                    <legend>Form title</legend>
+
+                    <div class="form-group">
+                      <label for="">Username</label>
+                      <input type="text" class="form-control" id="username" placeholder="Enter Username" required>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="">Password</label>
+                      <input type="password" class="form-control" id="password" placeholder="Enter Password" required>
+                    </div>
+
+
+
+                    <button id="loginbtn" type="submit" class="btn btn-primary btn-lg btn-block"
+                      onsubmit="alertSuccess()">Login</button>
+                  </form>
+
+
+
+
+                  </form>
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-success" style="float: left;">Create New Account</button>
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END LOGIN -->
         </div>
       </div>
     </div>
-  </div>
+    <br><br>
+    <section>
 
+      <div class="container">
+        <h1 class="text-center" style="margin-bottom: 30px;background-color: cadetblue;">TIPS</h1>
+        <div class="row tips">
+          <div class="col-md-5 content-tips">
+            <a href="https://www.luxyhair.com/blogs/hair-blog/what-are-halo-hair-extensions"><img
+                src="images/BLOG/tips1.jpg" alt=""></a>
+          </div>
 
+          <div class=" col-md-7 information-tips ">
+            <span>
+              <a href="https://www.luxyhair.com/blogs/hair-blog/what-are-halo-hair-extensions">What are Halo® Hair
+                Extensions? All your questions answered.</a>
+            </span>
+            <p>
+              Luxy Hair Halo® hair extensions are a simple, one-step method to achieve longer, fuller hair. They’re
+              perfect for first-time users and simple enough to apply for everyday wear in just a few minutes. Instead
+              of clipping or sewing in wefts, Halo hair extensions sit gently on top of your head, secured with a
+              thin, invisible wire...
+            </p>
+          </div>
 
-  <article>
-    <div class="container text-center">
+          <div class="text-center">
+            <a href="https://www.luxyhair.com/blogs/hair-blog/what-are-halo-hair-extensions" class="seemore-tips ">READ
+              MORE</a>
+          </div>
 
-      <div class="row">
-        <div class="col-md-6 nopadding  ">
-          <img src="images/HairProblems/growth-related.jpg" class="img-responsive" style="width:100%"
-            alt="Image">
         </div>
-        <div class="col-md-6 nopadding">
-          <div class="text1st col-xs-12  ">
-            <h3>What Are the Four Stages of Hair Growth?</h3>
-            <p>The growth and loss of hair may seem like a simple process, but the hair growth cycle is actually composed of four distinct phases. These stages of hair growth have been studied in great depth to better understand how hair grows and what might be done to prevent or treat premature hair loss.
 
-              </p>
+        <div class="row tips">
+          <div class="col-md-5 content-tips ">
+            <a href="https://www.luxyhair.com/blogs/hair-blog/balayage-hair"><img src="images/BLOG/tips2.jpg"
+                alt=""></a>
+          </div>
 
-            <p>Each phase has its own timeline, which can be affected by age, nutrition, and overall health. That means there are steps you can take along the way to help ensure that your hair follows a healthy growth cycle. Read on to learn more.</p> <br>
-              <div>
-                <a href="https://www.healthline.com/health/stages-of-hair-growth" class="seemore">READ MORE</a>
-              </div>
+          <div class=" col-md-7 information-tips ">
+            <span>
+              <a href="https://www.luxyhair.com/blogs/hair-blog/balayage-hair">Balayage Hair: Everything You Need To
+                Know</a>
+            </span>
+            <p>
+              Balayage has become one of the most coveted requests in hair salons worldwide. While balayage may have
+              exploded in popularity in the past few years, the dyeing technique has been around for quite some time,
+              only recently sneaking its way into modern hair salons. Over the years, hairstylists have perfected the
+              art of balayage, even going on to make a name for themselves based on their balayage technique and
+              expertise...
+            </p>
+          </div>
+          <div class="text-center">
+            <a href="https://www.luxyhair.com/blogs/hair-blog/balayage-hair" class="seemore-tips ">READ MORE</a>
+          </div>
+
+        </div>
+
+        <div class="row tips">
+          <div class="col-md-5 content-tips">
+            <a href="https://www.luxyhair.com/blogs/hair-blog/heatless-hair-tools"><img src="images/BLOG/tips3.jpg"
+                alt=""></a>
+          </div>
+
+          <div class=" col-md-7 information-tips">
+            <span>
+              <a href="https://www.luxyhair.com/blogs/hair-blog/heatless-hair-tools">Best Heatless Hair Tools for
+                Volume</a>
+            </span>
+            <p>
+              Your blow dryer might be your best friend when it comes to creating salon-worthy hairstyles, but did you
+              know that it can also cause some serious damage? Many of us rely on our heat styling tools in the morning,
+              whether it’s for a volume boost or adding curl. However, heat can dry out the hair cuticle and harm the
+              structure of hair proteins over time. And once your hair has suffered heat damage, cutting it off is the
+              only way to fix it...
+            </p>
+          </div>
+
+          <div class="text-center">
+            <a href="https://www.luxyhair.com/blogs/hair-blog/heatless-hair-tools" class="seemore-tips ">READ MORE</a>
+          </div>
+
+        </div>
+
+        <div class="row tips">
+          <div class="col-md-5 content-tips">
+            <a href="https://www.luxyhair.com/blogs/hair-blog/hair-rollers-guide"><img src="images/BLOG/tips4.jpg"
+                alt=""></a>
+          </div>
+
+          <div class=" col-md-7 information-tips">
+            <span>
+              <a href="https://www.luxyhair.com/blogs/hair-blog/hair-rollers-guide">Hair Rollers 101: The Ultimate Guide
+                to Hair Rollers</a>
+            </span>
+            <p>
+              When it comes to curls, waves, and volume, hair rollers can take the heat off your regular hair care
+              tools.
+              Hair rollers come in a variety of sizes and materials that can help create tight spirals, to beachy waves
+              and red-carpet voluminous curls, all without having to use your curling wand or blow dryer...
+            </p>
+
+
+
+          </div>
+
+          <div class="text-center">
+            <a href="https://www.luxyhair.com/blogs/hair-blog/hair-rollers-guide" class="seemore-tips ">READ MORE</a>
+          </div>
+        </div>
+
+        <div class="row tips">
+          <div class="col-md-5 content-tips">
+            <a href="https://www.luxyhair.com/blogs/hair-blog/black-to-blonde-hair"><img src="images/BLOG/tips5.jpg"
+                alt=""></a>
+          </div>
+
+          <div class=" col-md-7 information-tips">
+            <span>
+              <a href="https://www.luxyhair.com/blogs/hair-blog/black-to-blonde-hair">How Do I Go From Black to Blonde
+                Hair?</a>
+            </span>
+            <p>
+              Feeling inspired by Billie Eilish’s new blonde bombshell transformation? — Us too.
+              . If you’re anything like us, you’ve experimented with hair colors, box
+              dyes and at-home haircuts in the last year — which can add another layer of difficulty to the overall
+              transformation. Not to worry, if there’s a will, there’s a way! And we’ve got you covered (with lots of
+              bleach and conditioner) to get there!..
+            </p>
+          </div>
+
+          <div class="text-center">
+            <a href="https://www.luxyhair.com/blogs/hair-blog/black-to-blonde-hair" class="seemore-tips ">READ MORE</a>
           </div>
         </div>
       </div>
-    
 
+      <div class="container-fluid">
 
+        <div class="row trends text-center">
+          <h1>TRENDS</h1>
+          <div class="container text-center">
+            <div class="row">
+              <div class="col-sm-12">
+                
+                  <div class="trends12 owl-carousel owl-theme owl-nav">
+                    <div class="info-items"><img src="images/BLOG/DuaLipa'sExposedRoots.jpg" alt="">
+                      <p>Dua Lipa's Exposed Roots</p>
+                    </div>
+                    
+                    <div class="info-items"><img src="images/BLOG/RainbowHighlightonShortHair.jpg" alt="">
+                      <p>Rainbow Highlights on Short Hair</p>
+                    </div>
+                    
+                    <div class="info-items"><img src="images/BLOG/ShortWavyBobwithHighlights.jpg" alt="">
+                      <p>Short Wavy Bob with Highlights</p>  
+                    </div>
+                   
+                    <div class="info-items"><img src="images/BLOG/TheseGoldenHightlight.jpg" alt="">
+                      <p>Golden Hightlights</p>   
+                    </div>
+                    
+                    <div class="info-items"><img src="images/BLOG/ThisLavenderHairColorforWinter.jpg" alt="">
+                      <p>Lavender Hair Color for Winter</p>  
+                    </div>
+                    
+                    <div class="info-items"><img src="images/BLOG/VeryShortHairwithHighlights.jpg" alt="">
+                      <p>Very Short Hair with Highlights</p>
+                    </div>
+                    
+                    <div class="info-items"><img src="images/BLOG/WarmBrownHairColorforWinter.jpg" alt="">
+                      <p>Warm Brown Hair Color for Winter</p>  
+                    </div>
+                    
+                    <div class="info-items"><img src="images/BLOG/90sHighlight.jpg" alt="">
+                      <p>90's Highlights</p>
+                    </div>
+                    
+                    <div class="info-items"><img src="images/BLOG/BlueHairColorforWinter.jpg" alt="">
+                      <p>Blue Hair Color for Winter</p>
+                    </div>
+                    
+                    <div class="info-items"><img src="images/BLOG/ContrastingBlondeHighlightsforShortHair.jpg" alt="">
+                      <p>Contrasting Blonde Highlights</p>
+                    </div>
 
-      </div>
-
-      <div class="row">
-        <div class="col-md-6 nopadding  ">
-          <img src="images/HairProblems/baldness.jpg" class="img-responsive" style="width:100%"
-            alt="Image">
-        </div>
-        <div class="col-md-6 nopadding">
-          <div class="text1st col-xs-12  ">
-            <h3>Going Bald Too Young?</h3>
-            <p>It’s normal to lose about 100 strands of hair from your head a day. But losing more could mean that your hair is beginning to thin, and it's time to consult a dermatologist.
-
-              Typically, we think of balding as a condition that plagues older men, but there are many types and causes of hair loss that can happen to anyone, regardless of your age or gender, anytime.</p>
-             
-              <p>Just how close are we to finding a magic bullet for baldness? Hair Care Spa take a look at the evidence.</p>
-              <div>
-                <a href="https://wexnermedical.osu.edu/blog/premature-baldness" class="seemore">READ MORE</a>
+                  </div>
               </div>
+            </div>
           </div>
+
         </div>
       </div>
+    </section>
 
 
 
 
-        
 
 
 
-      </div>
-    </div><br>
-  </article>
-  <br><br><br>
 
-  <br><br><br>
-  <footer>
-    <div class="container-fluid text-center">
-        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+      <div class="container-fluid text-center">
+
         <div class="row footer-area">
-            <div class="col-md-3">
-                <div class="footer-left">
-                    <p><a href="product.html">Product</a></p>
-                    <p><a href="hair-problems.html">Hair Problems</a></p>
-                    <p><a href="aboutus.html">About Us</a></p>
-                </div>
+          <div class="col-md-3 col-xs-12">
+            <div class="footer-left">
+              <p><a href="product.html">Product</a></p>
+              <p><a href="hair-problems.html">Hair Problems</a></p>
+              <p><a href="aboutus.html">About Us</a></p>
             </div>
-            <div class="col-md-3" >
-                <div class="footer-center">
-                    <p><a href="blog.html">Blog</a></p>
-                    <p><a href="tips.html">Tips</a></p>
-                    <p><a href="lastest-development.html">Latest Development</a></p>
-                </div>
+          </div>
+          <div class="col-md-3 col-xs-12">
+            <div class="footer-center">
+              <p><a href="blog.html">Blog</a></p>
+              <p><a href="tips.html">Tips</a></p>
+              <p><a href="lastest-development.html">Latest Development</a></p>
             </div>
-            <div class="col-md-3" style="border-right: rgb(211, 211, 211) solid 1px;">
-                <div class="footer-right">
-                    <p><span class="glyphicon glyphicon-map-marker"></span> Ho Chi Minh, Vietnam</p>
-                <p><span class="glyphicon glyphicon-phone"></span> Phone: +84 37340 5298</p>
-                <p><span class="glyphicon glyphicon-envelope"></span> Email: leanhtrung97@mail.com</p>
-                </div>
+          </div>
+          <div class="col-md-3 col-xs-12" style="border-right: rgb(211, 211, 211) solid 1px;">
+            <div class="footer-right">
+              <p><span class="glyphicon glyphicon-map-marker"></span> Ho Chi Minh, Vietnam</p>
+              <p><span class="glyphicon glyphicon-phone"></span> Phone: +84 37340 5298</p>
+              <p><span class="glyphicon glyphicon-envelope"></span> Email: leanhtrung97@mail.com</p>
             </div>
-            <div class="col-md-3" >
-            
-               <div class="footer-logo">
-                   <br>
-                <p> HAIR CARE SPA </p>
-               </div>
-            </div>
-        </div>
-    </div>
-</footer>
+          </div>
+          <div class="col-md-3 col-xs-12">
 
+            <div class="footer-logo">
+              <br>
+              <p> HAIR CARE SPA </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">&#8673;</button>
 
 </body>
+
+<script>
+
+  var mybutton = document.getElementById("myBtn");
+  window.onscroll = function () { scrollFunction() };
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+
+  // Get the modal
+  var modal = document.getElementById('login');
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+
+
+
+  document.getElementById('formlogin')
+  function alertSuccess() {
+    alert("LOGIN SUCCESS!");
+    //close modal after login success
+    window.location.reload();
+
+  }
+</script>
 
 </html>

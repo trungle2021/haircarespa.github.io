@@ -115,40 +115,42 @@
 
 
 
-                <!-- LOGIN -->
-                <div id="login" class="modal fade" role="dialog">
-                    <div class="modal-dialog">
+                 <!-- LOGIN -->
+                 <div class="modal fade" id="login">
+                  <div class="modal-dialog">
+                      <div class="modal-content">
+                         
+                          <div class="modal-body">
+                              
+                              <span data-dismiss="modal" class="close" title="Close Modal">&times;</span>
+                                <br><br>
+                                  <div class="form-group">
+                                      <label for="">Username</label>
+                                      <input type="text" class="form-control" id="username" placeholder="Enter Username" required>
+                                  </div>
 
-                        <div class="modal-content">
-                            <div class="modal-body">
-                                <button data-dismiss="modal" class="close">&times;</button>
-                                <h4>Login</h4>
-                                <form method="post" name="loginform">
-                                    <input type="text" Name="Username" placeholder="Username" id="username"
-                                        required>
-                                    <input type="password" id="password" Name="Password" placeholder="Password"
-                                        required>
-                                    <br>
-                                    <button type="button" id="btn_login" class="btn btn-success btn-sm"
-                                        value="LOGIN" onclick="Wefunction()">Login</button>
-                                    <br>
+                                  <div class="form-group">
+                                      <label for="">Password</label>
+                                      <input type="password" class="form-control" id="password" placeholder="Enter Password" required>
+                                  </div>
+                              
+                                  
+                              
+                                  <button id="loginbtn" type="submit" class="btn btn-primary" onclick="alertSuccess()">Login</button>
+                              </form>
+                              
+                          </div>
+                          <div class="modal-footer">
+                              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                              
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!-- END LOGIN -->
 
-                                    <!-- <input type="checkbox" id="brand1" value="">
-                                                <label><span></span>Remember me</label> -->
-                                    <br>
-                                    <a href="mailto:info@haircarespa.com?subject=Forgot Password
-                                                &body=Please send me new Password!">Forgot password?</a>
 
 
-                                    <div class="aitssendbuttonw3ls"></div>
-                                    <p> <a class="w3_play_icon1" href="register.html">
-                                            Register new account</a></p>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- END LOGIN -->
             </div>
         </div>
     </div>
@@ -332,7 +334,7 @@
 
 </body>
 <script>
-  //Get the button
+//Get the button
   var mybutton = document.getElementById("myBtn");
 
 // When the user scrolls down 20px from the top of the document, show the button
@@ -345,11 +347,31 @@ function scrollFunction() {
         mybutton.style.display = "none";
     }
 }
-
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+
+
+// LOGIN
+
+ // Get the modal
+ var modal = document.getElementById('login');
+
+// When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+            if (event.target == modal) {
+                     modal.style.display = "none";
+             }
+    }
+
+
+    function alertSuccess(){
+        var username = document.getElementById("username");
+        var password = document.getElementById("password");
+
+        
+    }
 </script>
 </html>
