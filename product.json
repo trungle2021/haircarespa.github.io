@@ -1,0 +1,43 @@
+[
+    {
+        "pic" : "1.jpg",
+        "id"  : "p1", 
+        "type": "Shampoo",
+        "name": "Be Gentle, Be Kind",
+        "brand": "Briogeo",
+        "hairtype": "Dry hair",
+        "price": "60$", 
+        "size": "369ml"
+    },
+    {
+        "pic" : "2.jpg",
+        "id"  : "p2", 
+        "type": "Conditioner",
+        "name": "Be Gentle, Be Kind",
+        "brand": "Briogeo",
+        "hairtype": "Dry hair",
+        "price": "60$", 
+        "size": "369ml"
+    },
+    {
+        "pic" : "3.jpg",
+        "id"  : "p3", 
+        "type": "Mask",
+        "name": "Super Food",
+        "brand": "Briogeo",
+        "hairtype": "Dry hair",
+        "price": "60$", 
+        "size": "369ml"
+    },
+    {
+        "pic" : "4.jpg",
+        "id"  : "p4", 
+        "type": "Shampoo",
+        "name": "Youth To The People",
+        "brand": "Briogeo",
+        "hairtype": "Dry hair",
+        "price": "60$", 
+        "size": "369ml"
+    }
+]
+
