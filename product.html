@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="product.css">
+  <title>Product</title>
+</head>
+
+<style>
+  .productImage {
+    width: 85%;
+  }
+</style>
+
+<body>
+  <div class="container">
+    <h1>Products</h1>
+    <hr>
+    <div class="row">
+      <div class="col-sm-2">
+
+        <p class="bg-primary">Filter</p>
+        <div class="table-responsive">
+          <table class="table table-borderless table-hover table-sm " id="table_filter">
+            <thead class="thead-light">
+              <tr>
+                <th><label class=" control-label" for="">Hair Care Products</label></th>
+              </tr>
+            </thead>
+            <tbody>
+
+              <tr>
+                <td><input type="checkbox" id="check-product" name="" value="Shampoo"> Shampoo</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" id="check-product" name="" value="Conditioner"> Conditioner</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" id="check-product" name="" value="Mask"> Mask</td>
+              </tr>
+
+              <thead class="thead-light">
+                <tr>
+                  <th><label class="control-label" for="">Equipment</label></th>
+                </tr>
+              </thead>
+            <tbody>
+              <tr>
+                <td><input type="checkbox" id="check-product" name="" value=""> H</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" id="check-product" name="" value=""> F</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" id="check-product" name="" value=""> S</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" id="check-product" name="" value=""> B</td>
+              </tr>
+
+          </table>
+        </div>
+      </div>
+
+      <form class="navbar-form navbar-left" id="formSearch">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search" id="search" name="search">
+          <div class="input-group-btn">
+            <button class="btn btn-default" type="submit">
+              <i class="glyphicon glyphicon-search"></i>
+            </button>
+          </div>
+        </div>
+      </form>
+
+      <div class="col-md-10">
+        <div class="row" id="products">
+          <div class="col-sm-6 col-md-4 divImage">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--preview panel-->
+    <div class="panel-body  w3-center">
+      <div class="row w3-card-4 w3-light-grey w3-round-large w3-border comparePanle w3-margin-top">
+        <div class="row">
+          <div class="col-lg-9 col-md-8 col-sm-6 w3-margin-top">
+            <h4>Added for comparison</h4>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 w3-margin-top">
+            <button class="btn btn-danger cmprBtn" disabled>Compare</button>
+          </div>
+        </div>
+        <div class="row titleMargin comparePan">
+        </div>
+      </div>
+    </div>
+    <!--end of preview panel-->
+
+
+    <!-- comparision popup-->
+    <div id="id01" class="w3-animate-zoom w3-white w3-modal modPos">
+      <div class="container">
+        <a onclick="document.getElementById('id01').style.display='none'" class="w3-closebtn closeBtn">×</a>
+      </div>
+      <div class="row contentPop w3-margin-top">
+      </div>
+
+    </div>
+    <!--end of comparision popup-->
+
+
+    <!--  warning model  -->
+    <div id="WarningModal" class="modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header" style="background-color: cadetblue;">
+            <h4 class="modal-title"><span> ⚠ </span> Error</h4>
+          </div>
+          <div class="modal-body">
+            <h3>Maximum of Three products are allowed for comparision</h3>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    $(document).ready(function () {
+      var data = [];
+      $.getJSON("product.json", function (items) {
+        data = items;
+        displayImages(data);
+      });
+
+
+      //sự kiện search
+      $("#formSearch").submit(function (e) {
+        e.preventDefault();
+
+        let search = $("#search").val();
+        let re = new RegExp(search, "ig");
+        let subdata = data.filter(item => item.name.search(re) >= 0);
+        displayImages(subdata);
+      });
+
+
+      //sự kiện click chọn loại sản phẩm
+      $("input[type=checkbox]").click(function () {
+        let cats = $("#check-product:checked").map(function () { return $(this).val() }).toArray().toString();
+        let subdata = (cats.length == 0) ? data : data.filter(item => cats.search(item.type) >= 0);
+        displayImages(subdata);
+      });
+    });
+
+    function displayImages(items) {
+      let s = ``;
+      $.each(items, function (k, v) {
+        s += `<div class="col-lg-3 col-md-6 w3-center">
+                <div class="selectProduct" data-title="${v.name}" data-id="${v.id}" data-id="${v.id}">
+                  <a class="w3-btn-floating w3-light-grey addButtonCircular addToCompare"> + </a>
+                  <img src="PRODUCT/Shampoos/Be Gentle, Be Kind/1/${v.pic}" alt="" class="productImage">
+                  <p>
+                    ${v.name} <br>
+                    ${v.price}
+                  </p> 
+                </div> 
+              </div>`;
+      });
+      $("#products").html(s);
+    };
+
+    var list = []; //mảng chứa các sản phẩm cần được so sánh
+
+    /* function to be executed when product is selected for comparision*/
+    $(document).on('click', '.addToCompare', function () {
+      $(".comparePanle").show();
+      $(this).toggleClass("rotateBtn");
+      $(this).parents(".selectProduct").toggleClass("selected");
+      var productID = $(this).parents('.selectProduct').attr('data-id');
+
+      var inArray = $.inArray(productID, list);
+      if (inArray < 0) {
+        if (list.length < 3) {
+          list.push(productID);
+
+          var displayTitle = $(this).parents('.selectProduct').attr('data-title');
+
+          var image = $(this).siblings(".productImage").attr('src');
+
+          $(".comparePan").append('<div id="' + productID + '" class="relPos titleMargin w3-margin-bottom  col-lg-3 col-md-4 col-sm-4"><div class="w3-white titleMargin"><a class="selectedItemCloseBtn w3-closebtn cursor">&times</a><img src="' + image + '" alt="image" style="height:100px;"/><p id="' + productID + '" class="titleMargin1">' + displayTitle + '</p></div></div>');
+        }
+        else {
+
+          $("#WarningModal").modal();
+
+          $(this).toggleClass("rotateBtn");
+          $(this).parents(".selectProduct").toggleClass("selected");
+          return;
+        }
+
+
+      } else {
+        list.splice($.inArray(productID, list), 1);
+        $('#' + productID).remove();
+        hideComparePanel();
+      }
+
+
+      if (list.length > 1) {
+        $(".cmprBtn").addClass("active");
+        $(".cmprBtn").removeAttr('disabled');
+      } else {
+        $(".cmprBtn").removeClass("active");
+        $(".cmprBtn").attr('disabled', '');
+      }
+
+    });
+
+
+    /*function to be executed when compare button is clicked*/
+    $(document).on('click', '.cmprBtn', function () {
+      if ($(".cmprBtn").hasClass("active")) {
+
+        /* this is to print the  features list statically*/
+        $(".contentPop").append('<div class="col-sm-3 compareItemParent relPos">' + '<ul class="product">' + '<li class="relPos compHeader"><p class="w3-display-middle">Features</p></li>' + '<li>Title</li>' + '<li>Size</li>' + '<li>Brand</li>' + '<li class="cpu">Good for</li>' + '<li>Price</li></ul>' + '</div>');
+
+        for (var i = 0; i < list.length; i++) {
+          /* this is to add the items to popup which are selected for comparision */
+          product = $('.selectProduct[data-id="' + list[i] + '"]');
+          var image = $('[data-id=' + list[i] + ']').find(".productImage").attr('src');
+          var title = $('[data-id=' + list[i] + ']').attr('data-title');
+          /*appending to div*/
+          $(".contentPop").append('<div class="col-sm-3 compareItemParent relPos">' + '<ul class="product">' + '<li class="compHeader"><img src="' + image + '" class="compareThumb"></li>' + '<li>' + title + '</li>' + '<li>' + $(product).data('size') + '</li>' + '<li>' + $(product).data('weight') + '<li class="cpu">' + $(product).data('processor') + '</li>' + '<li>' + $(product).data('battery') + '</ul>' + '</div>');
+        }
+      }
+      $(".modPos").show();
+    });
+
+
+    /* function to close the comparision popup */
+    $(document).on('click', '.closeBtn', function () {
+      $(".contentPop").empty();
+      $(".comparePan").empty();
+      $(".comparePanle").hide();
+      $(".modPos").hide();
+      $(".selectProduct").removeClass("selected");
+      $(".cmprBtn").attr('disabled', '');
+      list.length = 0;
+      $(".rotateBtn").toggleClass("rotateBtn");
+    });
+
+    /*function to remove item from preview panel*/
+    $(document).on('click', '.selectedItemCloseBtn', function () {
+
+      var test = $(this).siblings("p").attr('id');
+      $('[data-id=' + test + ']').find(".addToCompare").click();
+      hideComparePanel();
+    });
+
+    function hideComparePanel() {
+      if (!list.length) {
+        $(".comparePan").empty();
+        $(".comparePanle").hide();
+      }
+    }
+  </script>
+</body>
+
+</html>
