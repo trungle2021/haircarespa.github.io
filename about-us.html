@@ -165,8 +165,7 @@
 }
 
 }
-@media  (max-width: 1024px){
-
+@media screen and (max-width:1240px){
 .navbar{
      position: absolute;
      right: 0px;
@@ -196,8 +195,71 @@ font-size: 15px;
 
 .text-on-bg{
   position: absolute;
-  top: 140px;
-  left: 550px;
+  top: 200px;
+  left: 650px;
+  
+
+}
+.text-on-bg h3{
+  font-size: 6.5rem;
+  line-height: 6rem;
+  margin: 0;
+}
+.text-on-bg p{
+  margin-top:20px;
+  font-size: 15px;
+}
+.text-on-bg .seemore{
+padding: 10px 40px;
+border: solid 1px black;
+border-radius: 25px;
+text-decoration: none;
+color: black;
+}
+.text-on-bg .seemore:hover{
+background-color: rgb(26, 26, 36);
+transition-duration: 300ms;
+color:white;
+}
+.text-on-bg  a{
+    font-size: 15px !important;
+}
+.goShop{
+    margin-top:30px
+}
+}
+@media screen and (max-width:1024px){
+.navbar{
+     position: absolute;
+     right: 0px;
+}
+
+.my-nav.navbar .navbar-nav {
+  display: inline-block;
+  float: right;
+  margin-left: 0px;
+  vertical-align: top;
+  text-align: left;
+}
+.my-nav .navbar-nav > li{
+margin: 0px 3px;
+}
+.navbar .navbar-collapse {
+  text-align: center;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.my-nav .navbar-nav > li > a{
+color: black;
+font-size: 15px;
+
+}
+
+.text-on-bg{
+  position: absolute;
+  top: 150px;
+  left: 520px;
   
 
 }
@@ -322,7 +384,6 @@ color: black;
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse navbar-ex1-collapse ">
                         <ul class="nav navbar-nav">
-
                             <li><a href="index.html">Home</a></li>
 
                             <li><a href="product.html">Product</a></li>
