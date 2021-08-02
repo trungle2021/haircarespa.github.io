@@ -3,6 +3,10 @@
   padding: 0;
   scroll-behavior: smooth;
 }
+@font-face {
+  src: url(fonts//FreightSans-Pro-Medium.otf);
+  font-family: FreightSans-Pro;
+}
 
 /* MENU NAVBAR*/
 .navbar .navbar-brand{
@@ -261,24 +265,30 @@
 /* END Carousel CSS */
 
 
-
-/* BEST SELLER */
+/* TEXT SLIDER */
 .text1-carousel.owl-carousel{
-  margin: 0px;
+  margin-bottom: 0px;
   padding: 0px;
 }
 .text1-carousel.owl-carousel p{
-  
-  margin: 0px 0px;
   border-color: none;
   color: rgb(0, 0, 0); border: none;
-  padding: 5px 0px;
-  display: inline-block;
-  
+  letter-spacing: 5px;
+}
+/* BEST SELLER */
 
+.info-items-best-seller{
+  background-color: rgb(240, 240, 240);
+}
+.info-items-best-seller p{
+  
 }
 .best-seller.owl-carousel {
   margin-top: 40px;
+}
+
+.modal-body-content img{
+  width: 30%;
 }
 
 /* END BEST-SELLER */
@@ -351,9 +361,7 @@
   transition-duration: 300ms;
   color:white;
 }
-div.owl-stage{
-  width:5000px !important;
-}
+
   #myBtn {
     display: none;
     position: fixed;
@@ -448,4 +456,56 @@ div.owl-stage{
     font-size: 15px;
     font-family:Verdana, Geneva, Tahoma, sans-serif
     
+  }
+
+  /* LATEST DEV */
+
+  .divLatestDev{
+    margin-bottom: 50px;
+  }
+  .divItem{
+    background-color: rgb(229,237,234);
+    width: 360px;
+    height: 650px;
+    text-align: center;
+    
+    
+  }
+  .divItem p{
+    padding: 0px 10px 10px 10px;
+  }
+  .divItem .link-post {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight:bold;
+    color: rgb(46, 46, 46);
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 0px 10px 10px 10px;
+    display: inline-block;
+    
+    
+  }
+  .divItem img{
+    width: 100%;
+    padding-bottom: 20px;
+  }
+
+  .divItem .seemore-dev{
+    
+    padding: 10px 30px;
+    border: solid 1px black;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    background-color: rgb(41, 41, 41);
+    bottom: 30px;
+    left: 120px;
+    
+    position: absolute;
+  }
+  .divItem .seemore-dev:hover{
+    background-color: rgb(83, 123, 161);
+    transition-duration: 300ms;
+    color:white;
   }
