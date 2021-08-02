@@ -16,7 +16,7 @@ $(document).ready(function(){
                 nav:true
             },
             600:{
-                items:3,
+                items:1,
                 nav:true
             },
             1000:{
@@ -55,7 +55,7 @@ $(document).ready(function(){
 
         $('.text1-carousel').owlCarousel({
             center: true,
-                items:3,
+                items:1,
                 loop:true,
                 margin:1,
                 nav:false,
@@ -74,7 +74,7 @@ $(document).ready(function(){
                         items:1
                     },
                     1000:{
-                        items:3
+                        items:2
                     }
                 }
             })
