@@ -163,8 +163,8 @@ a:active,a:hover{outline:0; text-decoration:none;}
     position: relative;
 }
 
-.cpu{
-    min-height: 115px ;
+.des{
+    min-height: 121px ;
 }
 
 .rotateBtn{

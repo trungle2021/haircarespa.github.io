@@ -44,6 +44,18 @@
               <tr>
                 <td><input type="checkbox" id="check-product" name="" value="Mask"> Mask</td>
               </tr>
+              <tr>
+                <td><input type="checkbox" id="check-product" name="" value="Oil"> Oil</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" id="check-product" name="" value="Spray"> Spray</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" id="check-product" name="" value="Set"> Set</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" id="check-product" name="" value="Accessories"> Accessories</td>
+              </tr>
 
               <thead class="thead-light">
                 <tr>
@@ -52,16 +64,16 @@
               </thead>
             <tbody>
               <tr>
-                <td><input type="checkbox" id="check-product" name="" value=""> H</td>
+                <td><input type="checkbox" id="check-product" name="" value="Hair Dryer"> Hair Dryer</td>
               </tr>
               <tr>
-                <td><input type="checkbox" id="check-product" name="" value=""> F</td>
+                <td><input type="checkbox" id="check-product" name="" value="Straightener"> Straightener</td>
               </tr>
               <tr>
-                <td><input type="checkbox" id="check-product" name="" value=""> S</td>
+                <td><input type="checkbox" id="check-product" name="" value="Spa Steamer"> Spa Steamer</td>
               </tr>
               <tr>
-                <td><input type="checkbox" id="check-product" name="" value=""> B</td>
+                <td><input type="checkbox" id="check-product" name="" value="Spa Cap"> Spa Cap</td>
               </tr>
 
           </table>
@@ -79,12 +91,37 @@
         </div>
       </form>
 
+      <!-- display items -->
       <div class="col-md-10">
         <div class="row" id="products">
-          <div class="col-sm-6 col-md-4 divImage">
-          </div>
         </div>
       </div>
+      <!-- end display items -->
+      <!-- Modal -->
+      <div class="modal fade" id="showModal" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <!-- div.modal-body include json data -->
+            <div class="modal-body">
+              <div class="row">
+
+
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="filter" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!-- end modal -->
+
     </div>
 
     <!--preview panel-->
@@ -136,6 +173,22 @@
     </div>
   </div>
 
+  <!-- <table>
+    <tr>
+      <td>
+        <p class="line_product">${v.line_product}</p>
+      </td>
+      <td>
+        <p class="product_price" style="text-align: right">${v.price}</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="product_name" style="height: 3rem; vertical-align: middle">${v.name}</div>
+      </td>
+    </tr>
+  </table> -->
+
   <script>
     $(document).ready(function () {
       var data = [];
@@ -162,19 +215,36 @@
         let subdata = (cats.length == 0) ? data : data.filter(item => cats.search(item.type) >= 0);
         displayImages(subdata);
       });
+          // modal click
+    $(document).on("click",".productImage",function(){
+            let pid = $(this).data("id");
+            
+            let product = data.filter(ele => ele.id == pid);
+           
+            showModal(product[0]);
+            $("#showModal").modal("show");
+        });
     });
 
     function displayImages(items) {
       let s = ``;
       $.each(items, function (k, v) {
         s += `<div class="col-lg-3 col-md-6 w3-center">
-                <div class="selectProduct" data-title="${v.name}" data-id="${v.id}" data-id="${v.id}">
+                <div class="selectProduct" data-title="${v.name}" data-id="${v.id}" data-price="${v.price}" data-des="${v.des}" data-brand="${v.brand}" data-size="${v.size}">
                   <a class="w3-btn-floating w3-light-grey addButtonCircular addToCompare"> + </a>
-                  <img src="PRODUCT/Shampoos/Be Gentle, Be Kind/1/${v.pic}" alt="" class="productImage">
-                  <p>
-                    ${v.name} <br>
-                    ${v.price}
-                  </p> 
+                  <img src="PRODUCT/All/${v.pic}" alt="" class="productImage" data-id="${v.id}">
+                  <table>
+                    <tr>
+                      <td>
+                        <div class="product_name" ><b>${v.name}</b></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="width: 20%">
+                        <p class="product_price">${v.price}</p>
+                      </td>
+                    </tr>
+                  </table>
                 </div> 
               </div>`;
       });
@@ -234,7 +304,7 @@
       if ($(".cmprBtn").hasClass("active")) {
 
         /* this is to print the  features list statically*/
-        $(".contentPop").append('<div class="col-sm-3 compareItemParent relPos">' + '<ul class="product">' + '<li class="relPos compHeader"><p class="w3-display-middle">Features</p></li>' + '<li>Title</li>' + '<li>Size</li>' + '<li>Brand</li>' + '<li class="cpu">Good for</li>' + '<li>Price</li></ul>' + '</div>');
+        $(".contentPop").append('<div class="col-sm-3 compareItemParent relPos">' + '<ul class="product">' + '<li class="relPos compHeader"><p class="w3-display-middle">Features</p></li>' + '<li>Name</li>' + '<li>Net.</li>' + '<li>Brand</li>' + '<li class="des">Description</li>' + '<li>Price</li></ul>' + '</div>');
 
         for (var i = 0; i < list.length; i++) {
           /* this is to add the items to popup which are selected for comparision */
@@ -242,7 +312,7 @@
           var image = $('[data-id=' + list[i] + ']').find(".productImage").attr('src');
           var title = $('[data-id=' + list[i] + ']').attr('data-title');
           /*appending to div*/
-          $(".contentPop").append('<div class="col-sm-3 compareItemParent relPos">' + '<ul class="product">' + '<li class="compHeader"><img src="' + image + '" class="compareThumb"></li>' + '<li>' + title + '</li>' + '<li>' + $(product).data('size') + '</li>' + '<li>' + $(product).data('weight') + '<li class="cpu">' + $(product).data('processor') + '</li>' + '<li>' + $(product).data('battery') + '</ul>' + '</div>');
+          $(".contentPop").append('<div class="col-sm-3 compareItemParent relPos">' + '<ul class="product">' + '<li class="compHeader"><img src="' + image + '" class="compareThumb"></li>' + '<li>' + '<b>' + title + '</b>' + '</li>' + '<li>' + $(product).data('size') + '</li>' + '<li>' + $(product).data('brand') + '<li class="des">' + $(product).data('des') + '</li>' + '<li>' + $(product).data('price') + '</ul>' + '</div>');
         }
       }
       $(".modPos").show();
@@ -274,7 +344,35 @@
         $(".comparePan").empty();
         $(".comparePanle").hide();
       }
+      
     }
+
+
+    
+     //Modal
+function showModal(e)
+{
+    let s = `
+    <div class="row">
+        <div class="col-md-6">
+            <div><img src="PRODUCT/All/${e.pic}" style="width: 100%;"  alt=""></div>
+        </div>
+        <div class="col-md-6">
+            <h3><b>${e.name}</b></h3>
+            <h4><b>Price:</b> ${e.price}</h4>
+            <h4><b>ID:</b> ${e.id}</h4>
+            <h4><b>Catogery:</b> ${e.type}</h4>
+            <h4><b>Brand:</b> ${e.brand}</h4>
+            <h4><b>Net:</b> ${e.size}</h4>
+            <h4><b>Description:</b> ${e.des}</h4>
+        </div>
+    </div>           
+    `;
+    
+    $('.modal-body').html(s);
+
+}   
+
   </script>
 </body>
 
