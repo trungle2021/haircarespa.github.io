@@ -3,56 +3,61 @@
         "id"  : "p1", 
         "pic" : "Shampoos Be Gentle, Be Kind 1.jpg",
         "type": "Shampoo",
-        "name": "banana + coconut nourishing superfood shampoo",
+        "name": "banana + coconut shampoo",
         "line_product": "Be Gentle, Be Kind",
         "brand": "Briogeo",
         "hairtype": "",
         "price": "$28.00", 
-        "size": "369ml"
+        "size": "369ml",
+        "des": "A juice cleanse for your hair, this nourishing shampoo gently cleanses hair without stripping away natural oils, giving your hair it's much needed vitamins."
     },
     {
         "id"  : "p2",
         "pic" : "Shampoos Be Gentle, Be Kind 5.jpg",
         "type": "Shampoo",
-        "name": "matcha + apple replenishing superfood shampoo",
+        "name": "matcha + apple shampoo",
         "line_product": "Be Gentle, Be Kind",
         "brand": "Briogeo",
         "hairtype": "",
         "price": "$28.00", 
-        "size": "369ml"
+        "size": "369ml",
+        "des": "A nutrient rich, green juice inspired shampoo that hydrates dry hair and replenishes dull, lifeless strands with daily nourishment for healthy-looking hair."
     },
     {
         "id"  : "p3", 
         "pic" : "Conditioner Be Gentle, Be Kind 1.jpg",
         "type": "Conditioner",
-        "name": "banana + coconut nourishing superfood conditioner",
+        "name": "banana + coconut conditioner",
         "line_product": "Be Gentle, Be Kind",
         "brand": "Briogeo",
         "hairtype": "",
         "price": "$28.00", 
-        "size": "369ml"
+        "size": "369ml",
+        "des": "A smoothie-textured hair detox. This nutrient-rich conditioner brings life back into your strands with potent antioxidants and hair essential oils."
     },
     {
         "id"  : "p4", 
         "pic" : "Conditioner Be Gentle, Be Kind 2.jpg",
         "type": "Conditioner",
-        "name": "kale + apple replenishing superfood conditioner",
+        "name": "kale + apple conditioner",
         "line_product": "Be Gentle, Be Kind",
         "brand": "Briogeo",
         "hairtype": "",
         "price": "$28.00", 
-        "size": "369ml"
+        "size": "369ml",
+        "des": "A nutrient rich, green smoothie inspired conditioner that hydrates dry hair and revitalizes dull, lifeless strands with daily nourishment."
     },
     {
         "id"  : "p5", 
         "pic" : "Shampoos Be Gentle, Be Kind 12.jpg",
         "type": "Set",
-        "name": "superfoods banana + coconut hair pack",
+        "name": "banana + coconut hair pack",
         "line_product": "Be Gentle, Be Kind",
         "brand": "Briogeo",
         "hairtype": "",
         "price": "$49.00", 
-        "size": "369ml"
+        "size": "369ml",
+        "des": "A nutrient-rich shampoo and conditioner that will bring life back into your strands with potent antioxidants and hair essential oils."
     },
     {
         "id"  : "p6", 
@@ -63,62 +68,68 @@
         "brand": "Briogeo",
         "hairtype": "",
         "price": "$49.00", 
-        "size": "369ml"
+        "size": "369ml",
+        "des": "A nutrient rich, green juice inspired shampoo and conditioner duo that will quench parched strands, add shine and luster"
     },
     {
         "id"  : "p7", 
         "pic" : "Shampoos Blossom & Bloom 1.jpg",
         "type": "Shampoo",
-        "name": "ginseng + biotin volumizing shampoo",
+        "name": "ginseng + biotin shampoo",
         "line_product": "Blossom & Bloom",
         "brand": "Briogeo",
         "hairtype": "",
         "price": "$24.00", 
-        "size": "236ml"
+        "size": "236ml",
+        "des": "A volumizing shampoo fortified with follicle supporting ginger, ginseng, and biotin to provide immediate visible fullness and long-term hair health benefits."
     },
     {
         "id"  : "p8", 
         "pic" : "Shampoos Curl Charisma 1.jpg",
         "type": "Shampoo",
-        "name": "rice amino + avocado hydrating shampoo",
+        "name": "rice amino + avocado shampoo",
         "line_product": "Curl Charisma",
         "brand": "Briogeo",
         "hairtype": "",
         "price": "$24.00", 
-        "size": "236ml"
+        "size": "236ml",
+        "des": "A moisturizing, sulfate-free shampoo that nourishes and defines curly, coily, and wavy hair without stripping curls of much-needed natural oils."
     },
     {
         "id"  : "p9", 
         "pic" : "Shampoos Be Gentle, Be Kind 19.jpg",
         "type": "Shampoo",
-        "name": "aloe + oat milk fragrance-free hypoallergenic shampoo",
+        "name": "aloe + oat milk shampoo",
         "line_product": "Be Gentle, Be Kind",
         "brand": "Briogeo",
         "hairtype": "",
         "price": "$26.00", 
-        "size": "236ml"
+        "size": "236ml",
+        "des": "A hypoallergenic, dermatologist-approved, vegan, cruelty-free, 99% naturally-derived shampoo that comes in an eco-friendly."
     },
     {
         "id"  : "p10", 
         "pic" : "Shampoos Don’t Despair, Repair! 2.jpg",
         "type": "Shampoo",
-        "name": "super moisture shampoo back bar 33.8oz",
+        "name": "super moisture shampoo",
         "line_product": "Don't Despair, Repair!",
         "brand": "Briogeo",
         "hairtype": "",
         "price": "$58.00", 
-        "size": "1000ml"
+        "size": "1000ml",
+        "des": "If a shampoo and a hair mask had a baby, this would be it. This innovative formula merges the intense cleansing action of a shampoo."
     },
     {
         "id"  : "p11", 
         "pic" : "Shampoos Scalp Revival 1.jpg",
         "type": "Shampoo",
-        "name": "charcoal + coconut oil micro-exfoliating shampoo 1oz",
+        "name": "charcoal exfoliating shampoo",
         "line_product": "Scalp Revival",
         "brand": "Briogeo",
         "hairtype": "",
         "price": "$42.00", 
-        "size": "236ml"
+        "size": "236ml",
+        "des": "This unique shampoo infuses Binchotan charcoal to draw impurities from the scalp and hair follicle to provide the foundation for optimal scalp health."
     },
     {
         "id"  : "p12", 
@@ -129,172 +140,188 @@
         "brand": "Briogeo",
         "hairtype": "",
         "price": "$36.00", 
-        "size": "236ml"
+        "size": "236ml",
+        "des": "An intensive weekly treatment to repair, restore essential hydration and enhance hair's resilience to protect against future damage."
     },
     {
         "id"  : "p13", 
         "pic" : "Treatment Masks + Oils Curl Charisma 1.jpg",
         "type": "Mask",
-        "name": "rice amino + avocado hydrating & defining mask",
+        "name": "rice amino + avocado mask",
         "line_product": "Curl Charisma",
         "brand": "Briogeo",
         "hairtype": "",
         "price": "$36.00", 
-        "size": "236ml"
+        "size": "236ml",
+        "des": "Curl Charisma™ Rice Amino + Avocado Hydrating & Defining Mask is infused with fatty acid-rich avocado, castor, chia, and flax seed oils."
     },
     {
         "id"  : "p14", 
         "pic" : "Treatment Masks + Oils Be Gentle, Be Kind 1.jpg",
         "type": "Mask",
-        "name": "avocado + kiwi mega moisture superfood mask",
+        "name": "avocado + kiwi mask",
         "line_product": "Be Gentle, Be Kind",
         "brand": "Briogeo",
         "hairtype": "",
         "price": "$36.00", 
-        "size": "236ml"
+        "size": "236ml",
+        "des": "A protein-free, nourishing hair mask formulated with highly emollient ingredients to boost moisture for softer."
     },
     {
         "id"  : "p15", 
         "pic" : "Styling + Finishing Farewell Frizz 5.jpg",
         "type": "Mask",
-        "name": "rosarco milk leave-in conditioning spray",
+        "name": "rosarco milk conditioning spray",
         "line_product": "Farewell Frizz",
         "brand": "Briogeo",
         "hairtype": "",
         "price": "$24.00", 
-        "size": "147ml"
+        "size": "147ml",
+        "des": "An ultra lightweight leave-in conditioning spray fortified with a unique blend of nourishing rosehip, argan and coconut oils."
     },
     {
         "id"  : "p16", 
         "pic" : "Styling + Finishing Be Gentle, Be Kind 1.jpg",
         "type": "Spray",
-        "name": "aloe + oat milk fragrance-free hypoallergenic detangling spray",
+        "name": "aloe + oat milk spray",
         "line_product": "Be Gentle, Be Kind",
         "brand": "Briogeo",
         "hairtype": "",
         "price": "$24.00", 
-        "size": "177ml"
+        "size": "177ml",
+        "des": "A dermatologist-approved, vegan, cruelty-free, 99% naturally-derived detangler that comes in an eco-friendly."
     },
     {
         "id"  : "p17", 
-        "pic" : "Styling + Finishing Farewell Frizz 5.jpg",
+        "pic" : "Styling + Finishing Blossom & Bloom 5.jpg",
         "type": "Spray",
-        "name": "rosarco milk leave-in conditioning spray",
-        "line_product": "Farewell Frizz",
+        "name": "ginseng + biotin root powder",
+        "line_product": "Blossom & Bloom",
         "brand": "Briogeo",
         "hairtype": "",
-        "price": "$20.00", 
-        "size": "147ml"
+        "price": "$24.00", 
+        "size": "35g",
+        "des": "A volumizing powder that is applied to the roots for instant lift and volume."
     },
     {
         "id"  : "p18", 
         "pic" : "Treatment Masks + Oils B. Well 6.jpg",
         "type": "Oil",
-        "name": "organic + australian 100% tea tree oil",
+        "name": "organic 100% tea tree oil",
         "line_product": "B. Well",
         "brand": "Briogeo",
         "hairtype": "",
         "price": "$32.00", 
-        "size": "30ml"
+        "size": "30ml",
+        "des": "B. Well Organic + Australian 100% Tea Tree Oil is a steam-distilled, non-GMO."
     },
     {
         "id"  : "p19", 
         "pic" : "Treatment Masks + Oils B. Well 1.jpg",
         "type": "Oil",
-        "name": "organic + australian 100% tea tree oil",
+        "name": "organic 100% castor oil",
         "line_product": "B. Well",
         "brand": "Briogeo",
         "hairtype": "",
         "price": "$26.00", 
-        "size": "45ml"
+        "size": "45ml",
+        "des": "This organic and fair trade certified castor oil from India is naturally cold-pressed."
     },
     {
         "id"  : "p20", 
         "pic" : "Treatment Masks + Oils Farewell Frizz 1.jpg",
         "type": "Oil",
-        "name": "rosehip, argan & coconut oil blend",
+        "name": "rosehip, argan & coconut oil",
         "line_product": "Farewell Frizz",
         "brand": "Briogeo",
         "hairtype": "",
         "price": "$32.00", 
-        "size": "30ml"
+        "size": "30ml",
+        "des": "A nutrient-rich oil treatment to seal split ends and restore dry, brittle hair to a healthy, vibrant state."
     },
     {
         "id"  : "p21", 
         "pic" : "Treatment Masks + Oils Scalp Revival 8.jpg",
         "type": "Set",
-        "name": "soothe + detoxify hair care minis",
+        "name": "soothe + detoxify minis",
         "line_product": "Scalp Revival",
         "brand": "Briogeo",
         "hairtype": "",
         "price": "$35.00", 
-        "size": "mini size"
+        "size": "mini size",
+        "des": "This kit of deluxe minis includes the Scalp Revival™ essentials that help nourish, soothe, and hydrate an itchy."
     },
     {
         "id"  : "p22", 
         "pic" : "Treatment Masks + Oils Scalp Revival 15.jpg",
         "type": "Set",
-        "name": "scalp care essentials value kit",
+        "name": "scalp care value kit",
         "line_product": "Scalp Revival",
         "brand": "Briogeo",
         "hairtype": "",
         "price": "$84.00", 
-        "size": ""
+        "size": "full size",
+        "des": "Healthy hair is rooted in scalp care! The award-winning Scalp Revival™ Charcoal + Coconut Oil Micro-Exfoliating Scalp Scrub Shampoo."
     },
     {
         "id"  : "p23", 
         "pic" : "Treatment Masks + Oils Scalp Revival 11.jpg",
         "type": "Set",
-        "name": "complete scalp care essentials value set",
+        "name": "scalp care value set",
         "line_product": "Scalp Revival",
         "brand": "Briogeo",
         "hairtype": "",
         "price": "$110.00", 
-        "size": ""
+        "size": "full size",
+        "des": "Healthy hair is rooted in scalp care! The award-winning Scalp Revival™ Charcoal + Coconut Oil Micro-Exfoliating Scalp Scrub Shampoo."
     },
     {
         "id"  : "p24", 
         "pic" : "Accessories Brush 1.jpg",
         "type": "Accessories",
-        "name": "vegan boar bristle brush",
+        "name": "vegan boar brush",
         "line_product": "",
         "brand": "Briogeo",
         "hairtype": "",
         "price": "$28.00", 
-        "size": ""
+        "size": "none",
+        "des": "A vegan boar bristle paddle brush you can feel good about without sacrificing performance!"
     },
     {
         "id"  : "p25", 
         "pic" : "Accessories Massager 1.jpg",
         "type": "Accessories",
-        "name": "stimulating therapy massager",
+        "name": "stimulating massager",
         "line_product": "Scalp Revival",
         "brand": "Briogeo",
         "hairtype": "",
         "price": "$16.00", 
-        "size": ""
+        "size": "none",
+        "des": "The Scalp Revival Stimulating Therapy Massager is a hand-held massager that helps increase scalp circulation and stimulation, supporting healthy scalp care."
     },
     {
         "id"  : "p26", 
-        "pic" : "Accessories Comb.jpeg",
+        "pic" : "Accessories Comb.jpg",
         "type": "Accessories",
-        "name": "rose quartz crystal energy comb",
+        "name": "rose quartz comb",
         "line_product": "",
         "brand": "Briogeo",
         "hairtype": "",
         "price": "$112.00", 
-        "size": ""
+        "size": "none",
+        "des": "A handcrafted 100% natural rose quartz comb that helps smooth strands and stimulate the scalp for healthy hair. Due to the natural formation of rose quartz."
     },
     {
         "id"  : "p27", 
         "pic" : "Accessories Comb 4.jpg",
         "type": "Accessories",
-        "name": "wide tooth detangling comb",
+        "name": "wide tooth comb",
         "line_product": "",
         "brand": "Briogeo",
         "hairtype": "",
         "price": "$14.00", 
-        "size": ""
+        "size": "none",
+        "des": "A wide tooth comb designed to detangle hair while minimizing snagging; features a durable body and hook for easy in-shower storage."
     },
     {
         "id"  : "p28", 
@@ -305,7 +332,177 @@
         "brand": "Briogeo",
         "hairtype": "",
         "price": "$16.00", 
-        "size": ""
+        "size": "none",
+        "des": "A pocket-sized pin tin set that that keeps loose bobby pins handy for easy styling while on the go. Each pin tin contains 40 black bobby pins."
+    },
+    {
+        "id"  : "p29", 
+        "pic" : "Straightners InStyler Cerasilk 1.jpg",
+        "type": "Straightener",
+        "name": "CERASILK STYLING IRON",
+        "line_product": "",
+        "brand": "CERASILK",
+        "hairtype": "",
+        "price": "$115.00", 
+        "size": "none",
+        "des": "This styling iron includes beveled edges so you can straighten and curl with no creases. Clip on the removable comb attachment to mimic the stylist comb method."
+    },
+    {
+        "id"  : "p30", 
+        "pic" : "Straightners Remington 1.jpg",
+        "type": "Straightener",
+        "name": "Anti-Static Flat Iron",
+        "line_product": "",
+        "brand": "REMINGTON",
+        "hairtype": "",
+        "price": "$24.99", 
+        "size": "none",
+        "des": "The long 1' floating plates are perfect for straightening or curling your hair. With 6 individual heat settings up to 410°F high heat and digital controls."
+    },
+    {
+        "id"  : "p31", 
+        "pic" : "Straightners Revlon 1.jpg",
+        "type": "Straightener",
+        "name": "Copper + Ceramic Flat Iron",
+        "line_product": "",
+        "brand": "Revlon",
+        "hairtype": "",
+        "price": "$34.99", 
+        "size": "none",
+        "des": "Featuring an optional slide-on smoothing attachment with snag-free bristles, hair is distributed evenly across the plate for better control, glide and one-pass styling. "
+    },
+    {
+        "id"  : "p32", 
+        "pic" : "Spa cap Wondersmit 1.jpg",
+        "type": "Spa Cap",
+        "name": "Wondersmit Thermal Spa Cap",
+        "line_product": "",
+        "brand": "Wondersmit",
+        "hairtype": "",
+        "price": "$22.00", 
+        "size": "none",
+        "des": "Removes Water and Oil instantly From Hair .This hair care spa cap is safe and convenient to use, it is an indispensable tool for nursing your hair at home."
+    },
+    {
+        "id"  : "p33", 
+        "pic" : "Spa cap SPTHTHHPY 1.jpg",
+        "type": "Spa Cap",
+        "name": "Hair Steamer Heating Cap",
+        "line_product": "",
+        "brand": "SPTHTHHPY",
+        "hairtype": "",
+        "price": "$21.99", 
+        "size": "none",
+        "des": "Hair Steamer Heat Cap is a unique deep conditioning heat cap. It offers easy and stylish way to achieve the results of a salon quality treatment at home."
+    },
+    {
+        "id"  : "p34", 
+        "pic" : "Spa cap CHILIKI 110V 2.jpg",
+        "type": "Spa Cap",
+        "name": "CHILIKI 110V Hair Care Hat",
+        "line_product": "",
+        "brand": "CHILIKI",
+        "hairtype": "",
+        "price": "$24.00", 
+        "size": "none",
+        "des": "It can effectively reduce hair damage, solve the problem of hair curling and hair tip falling off, and deeply nourish hair."
+    },
+    {
+        "id"  : "p35", 
+        "pic" : "Dryer VS SASSOON 1.jpg",
+        "type": "Hair Dryer",
+        "name": "Turbo Ionic Ceramic Dryer",
+        "line_product": "",
+        "brand": "VS Sassoon",
+        "hairtype": "",
+        "price": "$49.00", 
+        "size": "none",
+        "des": "Achieve salon-worthy results right at home with the VS Sassoon Expert Turbo Ionic Ceramic Dryer."
+    },
+    {
+        "id"  : "p36", 
+        "pic" : "Dryer ....jpg",
+        "type": "Hair Dryer",
+        "name": "TOURMALINE IONIC DRYER",
+        "line_product": "",
+        "brand": "Midnight Air",
+        "hairtype": "",
+        "price": "$89.00", 
+        "size": "none",
+        "des": "Black tourmaline and ceramic technology create negative ions that give hair a smoother, healthier finish."
+    },
+    {
+        "id"  : "p37", 
+        "pic" : "Dryer T3 PROI 2.jpg",
+        "type": "Hair Dryer",
+        "name": "T3 PROI",
+        "line_product": "",
+        "brand": "T3",
+        "hairtype": "",
+        "price": "$85.00", 
+        "size": "none",
+        "des": "A state-of-the-art professional dryer that combines exceptional power, performance and salon-perfect results."
+
+    },
+    {
+        "id"  : "p38", 
+        "pic" : "Dryer Tourmaline 2.jpg",
+        "type": "Hair Dryer",
+        "name": "Low Noise Hair Dryer",
+        "line_product": "",
+        "brand": "Tourmaline",
+        "hairtype": "",
+        "price": "$39.00", 
+        "size": "none",
+        "des": "Professional DC motor,1875w ultra strong wind let your hair dry within a few minutes,less noise light weight hair dryers."
+    },
+    {
+        "id"  : "p39", 
+        "pic" : "Steamer 3.jpg",
+        "type": "Spa Steamer",
+        "name": "Head Spa Steamer",
+        "line_product": "",
+        "brand": "Beauty Parlor",
+        "hairtype": "",
+        "price": "$521.00", 
+        "size": "none",
+        "des": "Head Spa Steamer With the assistance of our deft team of professionals, we are able to introduce a broad array of Pro-100 Professional Head Steamer."
+    },
+    {
+        "id"  : "p40", 
+        "pic" : "Steamer 4.jpeg",
+        "type": "Spa Steamer",
+        "name": "Chaoba Head Steamer",
+        "line_product": "",
+        "brand": "Beauty Centre",
+        "hairtype": "none",
+        "price": "$445.00", 
+        "size": "",
+        "des": "This product range is highly required for their features like fine finishing, durability, efficiency, strong construction and low maintenance."
+    },
+    {
+        "id"  : "p41", 
+        "pic" : "Steamer 2.jpg",
+        "type": "Spa Steamer",
+        "name": "Facial and Hair Steamer",
+        "line_product": "",
+        "brand": "Sweetpea",
+        "hairtype": "none",
+        "price": "$236.00", 
+        "size": "",
+        "des": "Head Spa Steamer With the assistance of our deft team of professionals, we are able to introduce a broad array of Pro-100 Professional Head Steamer."
+    },
+    {
+        "id"  : "p42", 
+        "pic" : "Steamer 1.jpg",
+        "type": "Spa Steamer",
+        "name": "Shadab'z Store spa steamer",
+        "line_product": "",
+        "brand": "Shadab'z Store",
+        "hairtype": "",
+        "price": "$394.00", 
+        "size": "none",
+        "des": "This steamer is the best professional steamer for its value. Excellent for priming, conditioning, and dyeing hair. It is equipped with a thermostat."
     }
 ]
 
