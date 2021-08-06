@@ -9,10 +9,11 @@
   <!-- CSS Bootstrap -->
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="style.css">
 
 
   <!-- Jquery -->
@@ -30,131 +31,183 @@
 <body>
 
   <header>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12">
-                <!-- navbar -->
-                <!-- <a class="logo" href="../eproject/homepage1.html"><img src="../eproject/images/homepage/Logo.png" alt="" ></a> -->
-                <nav class="navbar navbar-default my-nav " role="navigation">
+    <div class="container-fluid nopadding">
+      <div class="row nopadding">
+        <div class="col-md-12 nopadding">
+          <!-- navbar -->
+          <!-- <a class="logo" href="../eproject/homepage1.html"><img src="../eproject/images/homepage/Logo.png" alt="" ></a> -->
+          <nav class="navbar navbar-default my-nav " role="navigation">
 
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse"
-                            data-target=".navbar-ex1-collapse">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <!-- <a class="logo" href="../eproject/homepage1.html"><img src="../eproject/images/homepage/Logo.png" alt="" ></a> -->
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <!-- <a class="logo" href="../eproject/homepage1.html"><img src="../eproject/images/homepage/Logo.png" alt="" ></a> -->
 
-                        <a class="navbar-brand" href="#">HAIR CARE SPA</a>
-
-                    </div>
-
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse navbar-ex1-collapse ">
-                        <ul class="nav navbar-nav">
-
-                            <li><a href="index.html">Home</a></li>
-
-                            <li><a href="product.html">Product</a></li>
-
-                           
-                            <li><a href="hair-problems.html">Hair-Problems</a></li>
-                            
-
-                            <li><a href="about-us.html">About Us</a></li>
-
-                            <li><a href="blog.html">Blog</a></li>
-
-
-                            <li><a href="contact-us">Contact Us</a></li>
-                            <li><a href="#" data-target="#login" data-toggle="modal">Login</a></li>
-                        </ul>
-                    </div>
-                </nav>
-                <!-- end navbar -->
-
-                <!-- picture slide show -->
-                <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#myCarousel" data-slide-to="1"></li>
-
-                    </ol>
-
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner" role="listbox">
-                        <div class="item active">
-                            <img src="images/HairProblems/reviews_carousel_1.b6dda8ee.jpg" alt="New York"
-                                width="900" height="700">
-                            
-                        </div>
-
-                        <div class="item">
-                            <img src="images/HairProblems/reviews_carousel_4.53b780f0.jpg" alt="Chicago"
-                                width="1200" height="700">
-
-                        </div>
-
-                    </div>
-
-                    <!-- Left and right controls -->
-                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-
-
-
-
-                 <!-- LOGIN -->
-                 <div class="modal fade" id="login">
-                  <div class="modal-dialog">
-                      <div class="modal-content">
-                         
-                          <div class="modal-body">
-                              
-                              <span data-dismiss="modal" class="close" title="Close Modal">&times;</span>
-                                <br><br>
-                                  <div class="form-group">
-                                      <label for="">Username</label>
-                                      <input type="text" class="form-control" id="username" placeholder="Enter Username" required>
-                                  </div>
-
-                                  <div class="form-group">
-                                      <label for="">Password</label>
-                                      <input type="password" class="form-control" id="password" placeholder="Enter Password" required>
-                                  </div>
-                              
-                                  
-                              
-                                  <button id="loginbtn" type="submit" class="btn btn-primary" onclick="alertSuccess()">Login</button>
-                              </form>
-                              
-                          </div>
-                          <div class="modal-footer">
-                              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                              
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <!-- END LOGIN -->
-
-
+              <a class="navbar-brand" href="#">HAIR CARE SPA</a>
 
             </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse ">
+              <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="hair-problems.html">Hair-Problems</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+                <li><a href="#" data-target="#loginModal" data-toggle="modal">Login</a></li>
+              </ul>
+            </div>
+          </nav>
+          <!-- end navbar -->
+
+          <!-- picture slide show -->
+          <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+
+              <div class="item active">
+                <img src="images/HairProblems/reviews_carousel_4.53b780f0.jpg" alt="" width="1200" height="700">
+              </div>
+
+              <div class="item ">
+                <img src="images/HairProblems/reviews_carousel_1.b6dda8ee.jpg" alt="" width="900" height="700">
+              </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+
+
+
+
+          <!-- LOGIN -->
+          <div class="modal fade" id="loginModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+
+                <div class="modal-body">
+                  <span data-dismiss="modal" class="close" title="Close Modal">&times;</span>
+                  <br><br>
+                  <form id="formLogin" method="POST">
+                    <div class="form-group">
+                      <label for="">Username</label>
+                      <input type="text" class="form-control" id="username" placeholder="Enter Username" required>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="">Password</label>
+                      <input type="password" class="form-control" id="password" placeholder="Enter Password" required>
+                    </div>
+
+
+
+                    <button id="loginbtn" type="submit" class="btn btn-primary btn-lg btn-block">Login</button>
+                  </form>
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-success" style="float: left;" data-target="#register"
+                    data-toggle="modal" id="registerBtn">Create New
+                    Account</button>
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END LOGIN -->
+
+
+          <!-- REGISTER -->
+          <div class="modal fade" id="registerModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+
+                <div class="modal-body">
+                  <span data-dismiss="modal" class="close" title="Close Modal">&times;</span>
+                  <br><br>
+                  <form id="formRegister" method="POST">
+                    <div class="form-group">
+                      <label for="">Username</label>
+                      <input type="text" class="form-control" id="username1" placeholder="Enter Username" required>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="">Password</label>
+                      <input type="password" class="form-control" id="password1" placeholder="Enter Password" required>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="">Confirm Password</label>
+                      <input type="password" class="form-control" id="password2" placeholder="Confirm Your Password"
+                        required>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="">Email</label>
+                      <input type="email" class="form-control" id="email1" placeholder="Enter Your Email" required>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="">Gender &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                      <div class="radio-inline">
+                        <label>
+                          <input type="radio" name="gender" id="gender" value="Male" checked="checked">
+                          Male
+                        </label>
+
+                      </div>
+                      <div class="radio-inline">
+                        <label>
+                          <input type="radio" name="gender" id="gender" value="Female">
+                          Female
+                        </label>
+
+                      </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-success btn-lg btn-block">Register</button>
+                    <hr>
+                    <a id="alreadyacc"
+                      style="left: 0;top:8px; position: relative; cursor: pointer;display: inline-block;">Already
+                      have an account? Sign in</a>
+                    <button type="button" class="btn btn-danger pull-right" data-dismiss="modal">Close</button>
+                    <button type="reset" class="btn btn-primary pull-right" style=" margin-right:10px;"
+                      title="Reset Information">Reset</button>
+                  </form><br>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- END REGISTER -->
+
+
+
         </div>
+      </div>
     </div>
-</header>
+  </header>
   <!-- END HEADER -->
 
   <div class="container-fluid">
@@ -185,28 +238,29 @@
       </div>
     </div>
   </div>
-
-
-
   <article>
     <div class="container text-center">
 
       <div class="row">
         <div class="col-md-6 nopadding  ">
-          <img src="images/HairProblems/growth-related.jpg" class="img-responsive" style="width:100%"
-            alt="Image">
+          <img src="images/HairProblems/growth-related.jpg" class="img-responsive" style="width:100%" alt="Image">
         </div>
         <div class="col-md-6 nopadding">
           <div class="text1st col-xs-12  ">
             <h3>What Are the Four Stages of Hair Growth?</h3>
-            <p>The growth and loss of hair may seem like a simple process, but the hair growth cycle is actually composed of four distinct phases. These stages of hair growth have been studied in great depth to better understand how hair grows and what might be done to prevent or treat premature hair loss.
+            <p>The growth and loss of hair may seem like a simple process, but the hair growth cycle is actually
+              composed of four distinct phases. These stages of hair growth have been studied in great depth to better
+              understand how hair grows and what might be done to prevent or treat premature hair loss.
 
-              </p>
+            </p>
 
-            <p>Each phase has its own timeline, which can be affected by age, nutrition, and overall health. That means there are steps you can take along the way to help ensure that your hair follows a healthy growth cycle. Read on to learn more.</p> <br>
-              <div>
-                <a href="https://www.healthline.com/health/stages-of-hair-growth" class="seemore">READ MORE</a>
-              </div>
+            <p>Each phase has its own timeline, which can be affected by age, nutrition, and overall health. That means
+              there are steps you can take along the way to help ensure that your hair follows a healthy growth cycle.
+              Read on to learn more.</p> <br>
+            <div>
+              <a href="https://www.healthline.com/health/stages-of-hair-growth" class="seemore">READ MORE</a>
+              <a onclick="hairGrowth()" class="seemore" title="Click To Scroll Down">TREATMENT</a>
+            </div>
           </div>
         </div>
       </div>
@@ -224,16 +278,21 @@
             <h3>Why Hair Turns Gray?</h3>
 
 
-            <p>It is normal for hair color to change, as people age. But white hair can appear at almost any time in life. Even teenagers and people in their 20s may notice strands of white hair.
+            <p>It is normal for hair color to change, as people age. But white hair can appear at almost any time in
+              life. Even teenagers and people in their 20s may notice strands of white hair.
 
-              The human body has millions of hair follicles or small sacs lining the skin. The follicles generate hair and color or pigment cells that contain melanin. Over time, hair follicles lose pigment cells, resulting in white hair color.
-              
-              </p>
-            <p>In this article, we look at some common causes of prematurely white hair, along with ways to slow the graying process down or prevent it, in some instances.</p>
+              The human body has millions of hair follicles or small sacs lining the skin. The follicles generate hair
+              and color or pigment cells that contain melanin. Over time, hair follicles lose pigment cells, resulting
+              in white hair color.
 
-              <div>
-                <a href="https://www.webmd.com/beauty/features/abcs-premature-graying#1" class="seemore">READ MORE</a>
-              </div>
+            </p>
+            <p>In this article, we look at some common causes of prematurely white hair, along with ways to slow the
+              graying process down or prevent it, in some instances.</p>
+
+            <div>
+              <a href="https://www.webmd.com/beauty/features/abcs-premature-graying#1" class="seemore">READ MORE</a>
+              <a onclick="hairGray()" class="seemore" title="Click To Scroll Down">TREATMENT</a>
+            </div>
           </div>
         </div>
 
@@ -243,20 +302,23 @@
 
       <div class="row">
         <div class="col-md-6 nopadding  ">
-          <img src="images/HairProblems/baldness.jpg" class="img-responsive" style="width:100%"
-            alt="Image">
+          <img src="images/HairProblems/baldness.jpg" class="img-responsive" style="width:100%" alt="Image">
         </div>
         <div class="col-md-6 nopadding">
           <div class="text1st col-xs-12  ">
             <h3>Going Bald Too Young?</h3>
-            <p>It’s normal to lose about 100 strands of hair from your head a day. But losing more could mean that your hair is beginning to thin, and it's time to consult a dermatologist.
+            <p>It’s normal to lose about 100 strands of hair from your head a day. But losing more could mean that your
+              hair is beginning to thin, and it's time to consult a dermatologist.
 
-              Typically, we think of balding as a condition that plagues older men, but there are many types and causes of hair loss that can happen to anyone, regardless of your age or gender, anytime.</p>
-             
-              <p>Just how close are we to finding a magic bullet for baldness? Hair Care Spa take a look at the evidence.</p>
-              <div>
-                <a href="https://wexnermedical.osu.edu/blog/premature-baldness" class="seemore">READ MORE</a>
-              </div>
+              Typically, we think of balding as a condition that plagues older men, but there are many types and causes
+              of hair loss that can happen to anyone, regardless of your age or gender, anytime.</p>
+
+            <p>Just how close are we to finding a magic bullet for baldness? Hair Care Spa take a look at the evidence.
+            </p>
+            <div>
+              <a href="https://wexnermedical.osu.edu/blog/premature-baldness" class="seemore">READ MORE</a>
+              <a onclick="hairBald()" class="seemore" title="Click To Scroll Down">TREATMENT</a>
+            </div>
           </div>
         </div>
       </div>
@@ -275,103 +337,499 @@
             <h3>Hair Loss: The Science of Hair</h3>
 
 
-            <p>Hair loss (alopecia) can affect just your scalp or your entire body, and it can be temporary or permanent. It can be the result of heredity, hormonal changes, medical conditions or a normal part of aging. Anyone can lose hair on their head, but it's more common in men.</p>
-            <p>Hair loss can appear in many different ways, depending on what's causing it. It can come on suddenly or gradually and affect just your scalp or your whole body.
+            <p>Hair loss (alopecia) can affect just your scalp or your entire body, and it can be temporary or
+              permanent. It can be the result of heredity, hormonal changes, medical conditions or a normal part of
+              aging. Anyone can lose hair on their head, but it's more common in men.</p>
+            <p>Hair loss can appear in many different ways, depending on what's causing it. It can come on suddenly or
+              gradually and affect just your scalp or your whole body.
 
-              Signs and symptoms of hair loss may include:.....</p>
-         
+              Signs and symptoms of hair loss may include.....</p>
 
-              <div>
-                <a href="https://www.healthline.com/health/hair-loss#TOC_TITLE_HDR_1" class="seemore">READ MORE</a>
-              </div>
+
+            <div>
+              <a href="https://www.healthline.com/health/hair-loss#TOC_TITLE_HDR_1" class="seemore">READ MORE</a>
+              <a onclick="hairLoss()" class="seemore" title="Click To Scroll Down">TREATMENT</a>
+            </div>
           </div>
         </div>
-
-
-
       </div>
-    </div><br>
-  </article>
-  <button onclick="topFunction()" id="myBtn" title="Go to top">&#8673;</button>
-
-  <br><br><br>
-  <footer>
-    <div class="container-fluid text-center">
-        
-        <div class="row footer-area">
-            <div class="col-md-3">
-                <div class="footer-left">
-                    <p><a href="product.html">Product</a></p>
-                    <p><a href="hair-problems.html">Hair Problems</a></p>
-                    <p><a href="aboutus.html">About Us</a></p>
-                </div>
-            </div>
-            <div class="col-md-3" >
-                <div class="footer-center">
-                    <p><a href="blog.html">Blog</a></p>
-                    <p><a href="tips.html">Tips</a></p>
-                    <p><a href="lastest-development.html">Latest Development</a></p>
-                </div>
-            </div>
-            <div class="col-md-3" style="border-right: rgb(211, 211, 211) solid 1px;">
-                <div class="footer-right">
-                    <p><span class="glyphicon glyphicon-map-marker"></span> Ho Chi Minh, Vietnam</p>
-                <p><span class="glyphicon glyphicon-phone"></span> Phone: +84 37340 5298</p>
-                <p><span class="glyphicon glyphicon-envelope"></span> Email: leanhtrung97@mail.com</p>
-                </div>
-            </div>
-            <div class="col-md-3" >
-            
-               <div class="footer-logo">
-                   <br>
-                <p> HAIR CARE SPA </p>
-               </div>
-            </div>
-        </div>
     </div>
-</footer>
+  </article>
+  <!-- TREATMENT AT HOME -->
+  <div class="container-fluid nopadding">
+    <div class="row nopadding ">
+      <div class="col-md-12 col-xs-12 col-sm-12 nopadding">
+        <div class="headerTreatment text-center">
+          <h3>TREATMENT AT HOME</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container headerTreatment1">
+    <div class="row nopadding ">
+      <div class="col-md-12 col-xs-12 col-sm-12 nopadding  text-center " id="hairGrowth">
+        <h3>I.Make Your Hair Growth Faster</h3>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4-offset-3">
+        <p class=" article1 text-center">
+        <p>There are a lot of factors that contribute to hair growth (or lack thereof), but one of the most overlooked
+          is physical stimulation—as in massaging the heck out of your scalp. &nbsp; Turns out giving yourself a scalp
+          massage using some key natural ingredients can help your hair grow faster and, in turn, make your strands look
+          more Blake Lively–esque.</p>
+
+        <p>There’s also the whole egg-yolk-mask thing, and let’s not forget the sworn-by hot castor oil treatment.
+          With plenty of natural treatment options, achieving the hair of your dreams doesn’t have to feel so
+          far-fetched. Just remember, there isn’t an ingredient or method that can actually make your hair grow faster
+          from the root. Instead, you’ll want to follow the tips below to grow healthier, stronger hair that will reduce
+          breakage at the ends and, in turn, promote length.</p>
+        <p> To help us figure out how to make hair grow faster, we hit up the pros. Keep scrolling for some simple and
+          natural ways to encourage faster hair growth.</p>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <img src="images/HairProblems/growhair1.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="row">
+      <h4>01. Do a Scalp Massage</h4>
+      <div class="col-md-5">
+
+        <img style="width:100%;" src="images/HairProblems/scalpmassage.jpg" alt="">
+      </div>
+      <div class="col-md-7">
+        <div style="width:70%;">
+          <p>We spend so much time and money piling on hair products that it’s easy to forget where hair growth starts:
+            namely, your scalp. "Just like good-quality soil is essential to grow healthy plants and flowers, a healthy
+            scalp is the foundation for healthy hair growth," says Bauman. "Research supports the idea that a scalp
+            massage has beneficial effects on stress hormones, blood pressure, and heart rate."</p>
+          <p>A simple way to stimulate hair growth at home is to give yourself a scalp massage. This will increase blood
+            flow to your scalp, enhance the strength of your roots, and help nutrients get to your follicle faster. You
+            can give yourself a scalp massage with dry hair, but adding a nutrient-rich oil to the mix will only double
+            the benefits. (Just keep it to once a week if you have oily roots).</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <h4>02. Try an Egg Yolk Mask</h4>
+      <div class="col-md-5">
+
+        <img style="width: 100%;height:100%;" src="images/HairProblems/growhair3.jpg" alt="">
+      </div>
+      <div class="col-md-7">
+        <div style="width:70%;">
+          <p> Try an Egg Yolk Mask egg mask STOCKSY Bauman notes that, on average, hair grows approximately a quarter to
+            a half an inch per month, and while we can’t speed up this process, we can affect the quality of the hair
+            shafts each follicle can produce (think: thicker, stronger, shinier locks). </p>
+
+          <p>There are things we can do to "stimulate a higher percentage of hair follicles in the scalp, which will
+            keep more hair in the growing phase and make your head of hair thicker, healthier and fuller."
+            Unsurprisingly, this makes how you treat your hair crucial to natural hair growth. If your hair breaks
+            before it gets past your shoulders, an egg yolk mask will be your savior.</p>
+
+          <p>To make the mask, mix 2 eggs with 2 tablespoons of olive oil. Add 1/2 a cup of water to dilute the mixture
+            (and make it less sticky). Apply the mask directly to dry, brushed hair, and leave it on for up to 30
+            minutes. Then, shampoo and condition as usual.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <h4>03. Sleep on a Silk Pillowcase</h4>
+      <div class="col-md-5">
+
+        <img style="width: 100%;height:100%;" src="images/HairProblems/growhair2.jpg" alt="">
+      </div>
+      <div class="col-md-7">
+        <div style="width:70%;">
+          <p> A silk or satin hair cover or pillowcase is better for the health of your hair than cotton, which will
+            absorb all the moisture from your strands and lead to tangles and breakage. While this won’t necessarily
+            speed up the hair growth process, sleeping on a silk pillowcase generates less friction and gives hair a
+            softer surface to rest on.</p>
+          <p>Celebrities use them. Instagrammers love them. Hair stylists recommend them. Silk pillowcases are not new,
+            but over the past couple of years, they seem to have exploded in popularity, embraced by the beauty and
+            wellness industries and credited with delivering smooth, shiny hair and wrinkle-free, supple skin.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  
+    <div class="container headerTreatment1">
+      <div class="row nopadding ">
+        <div class="col-md-12 col-xs-12 col-sm-12 nopadding  text-center " id="hairGray">
+          <h3>II.Natural Remedies To Reduce White (Gray) Hair</h3>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4-offset-3">
+          <div class=" article1 ">
+            <p>Whether or not hair graying can be reversed to help white hair turn black largely depends on the cause of
+              graying. If genetics are responsible, there is not much one can do to reverse the change.</p>
+            <p>If the cause is an underlying health problem, consulting a doctor to see what can be done is the best
+              course of action. Once the problem is treated, it may help restore pigment to your hair. However, this
+              cannot be guaranteed.</p>
+            <p>Re-pigmentation is sometimes possible after hormone therapy treatment. Another way to promote
+              pigmentation is by taking shots or pills of vitamin B12. You can also try the natural remedies mentioned
+              below and know how to reduce white hair.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <img src="images/HairProblems/hairgray.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="row">
+        <h4>01. Indian Gooseberry (Amla)</h4>
+        <div class="col-md-5">
+
+          <img style="width:100%;" src="images/HairProblems/hairgray1.jpg" alt="">
+        </div>
+        <div class="col-md-7">
+          <div style="width:70%;">
+            <p>Rich in Vitamin C, Amla is an Ayurveda-certified remedy for various hair-related problems.</p>
+            <p>To darken hair, add 6-7 pieces of Amla seeds to three tablespoons of any oil (coconut/olive/almond) of
+              your choice, and boil for a few minutes. Add one tablespoon of methi powder. Cool, strain, and apply all
+              over the scalp at night.</p>
+            <p>Use a mild shampoo to wash off in the morning.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <h4>02. Black Tea</h4>
+        <div class="col-md-5">
+
+          <img style="width: 100%;height:100%;" src="images/HairProblems/hairgray2.jpg" alt="">
+        </div>
+        <div class="col-md-7">
+          <div style="width:70%;">
+            <p>Black tea is rich in antioxidants. These antioxidants can help prevent free radical damage to hair, and
+              thus, premature graying. It also helps darken hair color while adding shine. Black tea is also known to
+              help relieve stress. As discussed, stress is a contributing factor to premature graying of hair.
+            </p>
+            <p><strong>You will need:</strong></p>
+            <ul style="margin-left:30px">
+              <li>2 tablespoons of black tea</li>
+              <li>1 cup of water</li>
+            </ul>
+            <p><strong>How often?</strong></p>
+            <p>2-3 times a week.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <h4>03. Almond Oil - Lemon Juice</h4>
+        <div class="col-md-5">
+
+          <img style="width: 100%;height:100%;" src="images/HairProblems/hairgray3.jpg" alt="">
+        </div>
+        <div class="col-md-7">
+          <div style="width:70%;">
+            <p>Almond oil contains Vitamin E, which can help nourish hair roots, and prevent early greying of hair.</p>
+            <p>On the other hand, lemon juice may help accelerate hair growth and add gloss and volume to them.</p>
+            <p>To get rid of grey hair, mix some almond oil and lemon juice in 2:3 ratio. Apply over your scalp and
+              massage well. Wash off after 20-30 minutes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container headerTreatment1">
+      <div class="row nopadding ">
+        <div class="col-md-12 col-xs-12 col-sm-12 nopadding  text-center " id="hairBald">
+          <h3>III. 3 Home Remedies To Regrow Hair On Bald Patches</h3>
+        </div>
+      </div>
+  
+      <div class="row">
+        <div class="col-md-4-offset-3">
+          <p class=" article1 text-center">
+          <p>Baldness refers to excessive hair loss from the scalp. Disturbances in the hair growth cycle can lead to baldness. Earlier, baldness was associated with old age, but today, even young people are affected by it. Bad lifestyle choices, including a lack of proper nutrition and stress, has made baldness all-pervasive.</p>
+  
+          <p>While it is common in males, a small population of women too deals with this hair issue. We have compiled a few simple home remedies that have been scientifically proven to promote hair growth. However, if these remedies do not bring any changes, consult your healthcare provider to determine the cause of your hair loss and discuss the treatment options.</p>
+          <p>Read on to find out more about the home remedies for baldness in men and women. </p>
+          </p>
+        </div>
+      </div>
+  
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <img style="width:80%" src="images/HairProblems/male-baldness-top-4.jpg" alt="">
+        </div>
+      </div>
+  
+      <div class="row">
+        <h4>01. Coconut Oil</h4>
+        <div class="col-md-5">
+  
+          <img style="width:100%;" src="images/HairProblems/bald1.jpg" alt="">
+        </div>
+        <div class="col-md-7">
+          <div style="width:75%;">
+            <p>Coconut oil contains nourishing fats and alpha-tocopherol that keep the scalp rejuvenated and hydrated. This, in turn, helps to strengthen the hair follicles and stimulate hair growth. Coconut oil is also rich in antioxidants that protect the scalp and the hair fibers from damage.</p>
+            <p><strong>You will need</strong></p>
+            <p style="margin-left:20px;">2-3 tablespoons of virgin coconut oil.</p>
+            <p>
+              <strong>What You Have To Do</strong>
+            </p>
+            <ol style="margin-left:30px;">
+              <li>Warm up the oil for a couple of seconds and massage the scalp with it.</li>
+              <li>Rinse off the oil after 4-5 hours. You can also keep it on overnight.</li>
+            </ol>
+
+            <p><strong>How Often You Should Do This?</strong></p>
+            <p>Do this 2-3 times a week.</p>
+
+          </div>
+        </div>
+      </div>
+  
+      <div class="row">
+        <h4>02. Jojoba Oil</h4>
+        <div class="col-md-5">
+  
+          <img style="width: 100%;height:100%;" src="images/HairProblems/bald2.jpg" alt="">
+        </div>
+        <div class="col-md-7">
+          <div style="width:75%;">
+            <p> Jojoba oil closely resembles the naturally produced oil by the skin and is easily absorbed. It has anti-inflammatory and moisturizing effects. These effects can help in nourishing your hair and promoting hair growth. </p>
+            <p><strong>You will need</strong></p>
+            <p style="margin-left:20px;">A few teaspoons of jojoba oil.</p>
+            <p>
+              <strong>What You Have To Do</strong>
+            </p>
+            <ol style="margin-left:30px;">
+              <li>Massage the oil directly onto the scalp for a few minutes.</li>
+              <li>Leave it on for 3-4 hours before rinsing it off.</li>
+            </ol>
+
+            <p><strong>How Often You Should Do This?</strong></p>
+            <p>Do this 2-3 times a week.</p>
+            
+          </div>
+        </div>
+      </div>
+  
+      <div class="row">
+        <h4>03. Onion Juice</h4>
+        <div class="col-md-5">
+  
+          <img style="width: 100%;;" src="images/HairProblems/bald3.jpg" alt="">
+        </div>
+        <div class="col-md-7">
+          <div style="width:80%;">
+            <p> Onion juice was found to be effective in treating patchy alopecia areata . Honey has antibacterial and antifungal properties that can help in reducing dandruff and associated hair loss . Do remember to wash this mixture off properly, or you will be left with an overpowering stench of onions!</p>
+            
+            <p><strong>You will need</strong></p>
+              <ul style="margin-left:30px">
+                <li>1 medium-sized onion</li>
+                <li>1 tablespoon of honey</li>
+                <li>Cotton ball</li>
+              </ul>
+            <p>
+              <strong>What You Have To Do</strong>
+            </p>
+            <ol style="margin-left:30px;">
+              <li>Grate the onion and squeeze out its juice. Add the honey to this and mix well.</li>
+              <li>Apply this mixture to the scalp with a cotton ball and let it sit for 20-30 minutes. Wash your scalp and hair with shampoo.</li>
+            </ol>
+
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  
+    <div class="container headerTreatment1">
+      <div class="row nopadding ">
+        <div class="col-md-12 col-xs-12 col-sm-12 nopadding  text-center " id="hairLoss">
+          <h3>IV.3 Natural Remedies To Stop Hair Fall</h3>
+        </div>
+      </div>
+  
+      <div class="row">
+        <div class="col-md-4-offset-3">
+          <p class=" article1 text-center">
+          <p>Referred to as ‘crowning glory’, tresses are a direct expression of an individual’s personality and style. Excessive hair loss can be a troublesome problem, often causing worry and affecting self-esteem, especially for women. However, if diagnosed right, you can control hair fall with certain home remedies that are natural and effective in saving your locks.</p>
+          </p>
+        </div>
+      </div>
+  
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <img style="width:70%;" src="images/HairProblems/hairloss.jpg" alt="">
+        </div>
+      </div>
+  
+      <div class="row">
+        <h4>01. Green Tea</h4>
+        <div class="col-md-5">
+  
+          <img style="width:100%;" src="images/HairProblems/hairloss1.jpg" alt="">
+        </div>
+        <div class="col-md-7">
+          <div style="width:70%;">
+            <p>This tea is rich in antioxidants, which help boost hair growth and prevent hair loss.</p>
+            <p><strong>You will need</strong></p>
+            <ol style="margin-left:30px">
+              <li>Soak two three teabags in one-two cups of hot water depending on the length of your hair.</li>
+              <li>When it cools, pour this over your scalp and hair, while gently massaging your head.</li>
+              <li>Rinse with cool water after an hour.</li>
+            </ol>
+            <p><strong>How Often You Should Do This?</strong></p>
+            <p>Do this 2-3 times a week.</p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="row">
+        <h4>02.Beetroot Juice</h4>
+        <div class="col-md-5">
+  
+          <img style="width: 100%;height:100%;" src="images/HairProblems/hairloss2.jpg" alt="">
+        </div>
+        <div class="col-md-7">
+          <div style="width:70%;">
+            <p>Beetroot is rich in vitamins C and B6, folate, manganese, betaine and potassium, all of which are essential for healthy hair growth. Besides, it acts as a detoxification agent by helping keep the scalp clean.</p>
+            <p><strong>You will need</strong></p>
+            <ol style="margin-left:30px">
+              <li>Boil 7-8 beetroot leaves and grind along with 5-6 henna leaves.</li>
+              <li>Apply this paste on your scalp and leave for 15-20 minutes before rinsing with warm water.</li>
+            </ol>
+            <p><strong>How Often You Should Do This?</strong></p>
+            <p>Do this 2-3 times a week.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <h4>03. Aloe Vera</h4>
+        <div class="col-md-5">
+  
+          <img style="width: 100%;height:100%;" src="images/HairProblems/hairloss3.jpg" alt="">
+        </div>
+        <div class="col-md-7">
+          <div style="width:70%;">
+            <p>
+              Aloe Vera is an effective home remedy for hair loss and to boost hair growth. It is also effective in reducing problems of the scalp like itching and flaking.</p>
+              <p><strong>You will need</strong></p>
+            <ol style="margin-left:30px">
+              <li>Take the stalk of Aloe Vera and extract the pulp.</li>
+              <li>Apply it to your hair and scalp and leave it for about 45 minutes.</li>
+              <li>Rinse with normal water. You can do this three to four times a week to see better results.</li>
+            </ol>
+            <p><strong>How Often You Should Do This?</strong></p>
+            <p>Do this 2-3 times a week.</p>
+          </div>
+        </div>
+      </div>
 
 
+    </div>
+    <br><br><br>
+    <footer>
+      <div id="contact" class="container">
+        <h3 class="text-center">Contact</h3>
+        <p class="text-center"><em>We love our customer!</em></p>
+    
+        <div class="row">
+          <div class="col-md-4">
+            <h2>STAY CONNECTED.</h2><br>
+            <p><span class="glyphicon glyphicon-map-marker"></span> Ho Chi Minh, Vietnam</p>
+            <p><span class="glyphicon glyphicon-phone"></span> Phone: +84 37340 5298</p>
+            <p><span class="glyphicon glyphicon-envelope"></span>  <a style="color: white;text-decoration: underline;" href="mailto:leanhtrung97@gmail.com" title="Send mail directly">leanhtrung97@gmail.com</a></p>
+          </div>
+          <div class="col-md-8">
+            <form method="POST" id="formContactFooter">
+              <div class="row">
+                  <div class="col-sm-6 form-group">
+                    <input class="form-control" id="usernameFooter" name="usernameFooter" placeholder="Name" type="text" required>
+                  </div>
+                  <div class="col-sm-6 form-group">
+                    <input class="form-control" id="emailFooter" name="emailFooter" placeholder="Email" type="email" required>
+                  </div>
+              </div>
+              <textarea class="form-control" id="commentsFooter" name="commentsFooter" placeholder="Comment" rows="5" required></textarea>
+              <br>
+              <div class="row">
+                <div class="col-md-12 form-group">
+                  <button class="btn pull-right btn-primary" type="submit">Send</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+    </footer>
+
+
+
+    
+
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">&#8673;</button>
 </body>
 <script>
-//Get the button
+  //Get the button
   var mybutton = document.getElementById("myBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function () { scrollFunction() };
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function () { scrollFunction() };
 
-function scrollFunction() {
+  function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        mybutton.style.display = "block";
+      mybutton.style.display = "block";
     } else {
-        mybutton.style.display = "none";
+      mybutton.style.display = "none";
     }
-}
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
+  }
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
+  }
+
+  // Get the modal
+  var modal = document.getElementById('login');
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+
+function hairGrowth(){
+let elmnt = document.getElementById("hairGrowth");
+  elmnt.scrollIntoView();
 }
 
+function hairGray(){
+let elmnt = document.getElementById("hairGray");
+  elmnt.scrollIntoView();
+}
+function hairBald(){
+let elmnt = document.getElementById("hairBald");
+  elmnt.scrollIntoView();
+}
+function hairLoss(){
+let elmnt = document.getElementById("hairLoss");
+  elmnt.scrollIntoView();
+}
 
-// LOGIN
-
- // Get the modal
- var modal = document.getElementById('login');
-
-// When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-            if (event.target == modal) {
-                     modal.style.display = "none";
-             }
-    }
-
-
-    function alertSuccess(){
-        var username = document.getElementById("username");
-        var password = document.getElementById("password");
-
-        
-    }
 </script>
+
 </html>

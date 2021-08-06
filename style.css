@@ -4,8 +4,12 @@
   scroll-behavior: smooth;
 }
 @font-face {
-  src: url(fonts//FreightSans-Pro-Medium.otf);
-  font-family: FreightSans-Pro;
+  font-family: SaolMedium;
+  src: url(fonts/saol-text-medium.woff2);
+}
+@font-face {
+  font-family: SaolRegular;
+  src: url(fonts/saol-text-regular.woff2);
 }
 
 /* MENU NAVBAR*/
@@ -38,8 +42,23 @@
 }
 .my-nav .navbar-nav > li > a{
   color: rgb(221, 218, 218);
-  font-size: 15px;
+  font-size: 16px;
+ padding: 10px;
+ margin-top: 10px;
+ -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease;
 }
+
+.my-nav .navbar-nav > li > a:visited{
+  color: rgb(221, 218, 218);
+  }
+.my-nav .navbar-nav > li > a:hover{
+background-color: rgb(255, 255, 255);
+color: black;
+border-radius: 7px;
+}
+
 
 
 
@@ -288,7 +307,13 @@
 }
 
 .modal-body-content img{
-  width: 30%;
+  width: 100%;
+  
+  
+}
+.modal-body-content p{
+ 
+ 
 }
 
 /* END BEST-SELLER */
@@ -305,14 +330,76 @@
  /* END ARTICLE */
 
  /* HAIRCARE BY NUMBER */
- .text1st .head-number{
+ .text2st .head-number{
    font-size: 48px;
    font-family: 'Times New Roman', Times, serif;
    margin-bottom: 0px;
  }
- .text1st .content-number{
+ .text2st .content-number{
    margin-top: 0px;
  }
+ .text2st{
+
+  text-align: center;
+  margin: 50px auto 50px auto
+}
+
+.text2st h3{
+  font-size: 36px;
+  font-family: Saol, Times, "Times New Roman", serif;
+  font-weight: 400;
+  line-height: 1.3em;
+  letter-spacing: 0.5px;
+  text-align: center;
+  margin: 0px auto 
+}
+.text2st p{
+  font-size: 14px;
+  font-family: "Simplon Norm", "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 1.5em;
+  letter-spacing: 1px;
+  text-align: center;
+}
+ /* INGREDIENT */
+
+
+.ingredient-carousel .argan p{
+  margin-top: 15px;
+  font-size: 25px;
+
+}
+ .ingredient-carousel .avocado p{
+   margin-top: 15px;
+   font-size: 25px;
+
+}
+ .ingredient-carousel .charcoal p{
+   margin-top: 15px;
+   font-size: 25px;
+
+}
+ .ingredient-carousel .coconut p{
+   margin-top: 15px;
+   font-size: 25px;
+
+}
+ .ingredient-carousel .ginger p{
+   margin-top: 15px;
+   font-size: 25px;
+
+}
+ .ingredient-carousel .roschehip p{
+   margin-top: 15px;
+   font-size: 25px;
+
+}
+ .ingredient-carousel .vera p{
+   margin-top: 15px;
+   font-size: 25px;
+
+}
+
 /* Team Member */
 .person {
   border: 10px solid transparent;
@@ -328,26 +415,26 @@
 .text1st{
 
   text-align: center;
-  margin: 50px auto 50px auto
+  margin: 70px auto 50px auto
 }
 
 .text1st h3{
-  font-size: 36px;
+  font-size: 40px;
   font-family: Saol, Times, "Times New Roman", serif;
   font-weight: 400;
   line-height: 1.3em;
   letter-spacing: 0.5px;
   text-align: center;
-  margin: 0px auto 
+  margin: 0px auto; 
 }
 .text1st p{
-  font-size: 14px;
+  font-size: 16px;
   font-family: "Simplon Norm", "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 400;
   line-height: 1.5em;
   letter-spacing: 1px;
   text-align: center;
-  margin: 30px auto
+  margin: 30px auto;
 }
 
 .text1st .seemore{
@@ -509,3 +596,74 @@
     transition-duration: 300ms;
     color:white;
   }
+
+  #menu-scroll {
+    overflow: hidden;
+    background-color: transparent;
+    position: fixed;
+    top: 2%;
+    left: -60px;
+    width: 10%;
+    z-index: 999;
+  }
+  
+  #menu-scroll ul li button{
+    
+    
+    color: white;
+    text-align: right;
+    padding: 2px 16px;
+    margin: 2px;
+    text-decoration: none;
+    font-size: 17px;
+    background-color: rgb(77,122,183);
+    width: 150px;
+    border: thin;
+    border-radius: 10px;
+    font-family:sans-serif
+    
+    
+  }
+
+  
+  #menu-scroll button:hover {
+    background: rgb(68, 68, 67);
+    color: white;
+    transition-duration: 300ms;
+  }
+
+
+  /* HAIR-PROBLEMS */
+
+          /* TREATMENT AT HOME */
+           .headerTreatment{
+             background-color: burlywood;
+
+           }
+           .headerTreatment h3{
+             padding: 50px ;
+             font-size: 40px;
+             letter-spacing: 1px;
+             margin: 0;
+             font-family: Saol;
+           }
+
+           .headerTreatment1 img{
+             width: 40%;
+            
+
+          }
+          .headerTreatment h3{
+            padding: 50px ;
+            font-size: 40px;
+            letter-spacing: 1px;
+            margin: 0;
+          }
+          .article1{
+            width: 100%;
+            padding: 10px 30px 10px 30px;
+            text-align: justify;
+          }
+          
+          
+          

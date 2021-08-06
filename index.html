@@ -7,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>index</title>
     <!-- CSS Bootstrap -->
-    <link rel="stylesheet" href="/fonts/Whitman-RomanLF.woff">
-    <link rel="stylesheet" href="/fonts/Whitman-ItalicLF.woff">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
@@ -32,11 +31,11 @@
 <body>
 
     <header>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12">
+        <div class="container-fluid nopadding">
+            <div class="row nopadding">
+                <div class="col-md-12 nopadding ">
                     <!-- navbar -->
-                    <!-- <a class="logo" href="../eproject/homepage1.html"><img src="../eproject/images/homepage/Logo.png" alt="" ></a> -->
+
                     <nav class="navbar navbar-default my-nav " role="navigation">
 
                         <!-- Brand and toggle get grouped for better mobile display -->
@@ -48,46 +47,46 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <!-- <a class="logo" href="../eproject/homepage1.html"><img src="../eproject/images/homepage/Logo.png" alt="" ></a> -->
+
 
                             <a class="navbar-brand" href="#">HAIR CARE SPA</a>
 
                         </div>
 
                         <!-- Collect the nav links, forms, and other content for toggling -->
-                        <div class="collapse navbar-collapse navbar-ex1-collapse">
+                        <div class="collapse navbar-collapse navbar-ex1-collapse" style="padding-right: 0 !important;">
                             <ul class="nav navbar-nav">
 
                                 <li><a href="index.html">Home</a></li>
 
                                 <li><a href="product.html">Product</a></li>
 
-                               
+
                                 <li><a href="hair-problems.html">Hair-Problems</a></li>
-                                
+
 
                                 <li><a href="about-us.html">About Us</a></li>
 
                                 <li><a href="blog.html">Blog</a></li>
 
 
-                                <li><a href="contact-us">Contact Us</a></li>
-                                <li><a href="#" data-target="#login" data-toggle="modal" onclick="document.getElementById('id01').style.display='block'">Login</a></li>
+                                <li><a href="contact-us.html">Contact Us</a></li>
+                                <li><a href="#" data-target="#loginModal" data-toggle="modal">Login</a></li>
                             </ul>
                         </div>
                     </nav>
                     <!-- end navbar -->
 
-                    <!-- picture slide show -->
-                    <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
-                        <!-- Indicators -->
+
+                    <div id="myCarousel" class="carousel slide carousel-fade " data-ride="carousel">
+
                         <ol class="carousel-indicators">
                             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                             <li data-target="#myCarousel" data-slide-to="1"></li>
 
                         </ol>
 
-                        <!-- Wrapper for slides -->
+
                         <div class="carousel-inner" role="listbox">
                             <div class="item active">
                                 <img src="images/homepage/HeaderSlideShow/Header_slide_img1.jpg" alt="New York"
@@ -101,8 +100,6 @@
                             </div>
 
                         </div>
-
-                        <!-- Left and right controls -->
                         <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
                             <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                             <span class="sr-only">Previous</span>
@@ -115,39 +112,115 @@
 
 
 
-                    
+
                     <!-- LOGIN -->
-                    <div class="modal fade" id="login">
+                    <div class="modal fade" id="loginModal">
                         <div class="modal-dialog">
                             <div class="modal-content">
-            
+
                                 <div class="modal-body">
                                     <span data-dismiss="modal" class="close" title="Close Modal">&times;</span>
-                                      <br><br>
+                                    <br><br>
+                                    <form id="formLogin" method="POST">
                                         <div class="form-group">
                                             <label for="">Username</label>
-                                            <input type="text" class="form-control" id="username" placeholder="Enter Username" required>
+                                            <input type="text" class="form-control" id="username"
+                                                placeholder="Enter Username" required>
                                         </div>
 
                                         <div class="form-group">
                                             <label for="">Password</label>
-                                            <input type="password" class="form-control" id="password" placeholder="Enter Password" required>
+                                            <input type="password" class="form-control" id="password"
+                                                placeholder="Enter Password" required>
                                         </div>
-                                    
-                                        
-                                        
-                                        <button id="loginbtn" type="submit" class="btn btn-primary btn-lg btn-block" onsubmit="alertSuccess()">Login</button>
+
+
+
+                                        <button id="loginbtn" type="submit"
+                                            class="btn btn-primary btn-lg btn-block">Login</button>
                                     </form>
-                                    
+
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-success" style="float: left;">Create New Account</button>
+                                    <button type="button" class="btn btn-success" style="float: left;"
+                                        data-target="#register" data-toggle="modal" id="registerBtn">Create New
+                                        Account</button>
                                     <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- END LOGIN -->
+
+
+                    <!-- REGISTER -->
+                    <div class="modal fade" id="registerModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <div class="modal-body">
+                                    <span data-dismiss="modal" class="close" title="Close Modal">&times;</span>
+                                    <br><br>
+                                    <form id="formRegister" method="POST">
+                                        <div class="form-group">
+                                            <label for="">Username</label>
+                                            <input type="text" class="form-control" id="username1"
+                                                placeholder="Enter Username" required>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="">Password</label>
+                                            <input type="password" class="form-control" id="password1"
+                                                placeholder="Enter Password" required>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="">Confirm Password</label>
+                                            <input type="password" class="form-control" id="password2"
+                                                placeholder="Confirm Your Password" required>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="">Email</label>
+                                            <input type="email" class="form-control" id="email1"
+                                                placeholder="Enter Your Email" required>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="">Gender &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                            <div class="radio-inline">
+                                                <label>
+                                                    <input type="radio" name="gender" id="gender" value="Male"
+                                                        checked="checked">
+                                                    Male
+                                                </label>
+
+                                            </div>
+                                            <div class="radio-inline">
+                                                <label>
+                                                    <input type="radio" name="gender" id="gender" value="Female">
+                                                    Female
+                                                </label>
+
+                                            </div>
+                                        </div>
+
+                                        <button type="submit" class="btn btn-success btn-lg btn-block">Register</button>
+                                        <hr>
+                                        <a id="alreadyacc"
+                                            style="left: 0;top:8px; position: relative; cursor: pointer;display: inline-block;">Already
+                                            have an account? Sign in</a>
+                                        <button type="button" class="btn btn-danger pull-right"
+                                            data-dismiss="modal">Close</button>
+                                        <button type="reset" class="btn btn-primary pull-right"
+                                            style=" margin-right:10px;" title="Reset Information">Reset</button>
+                                    </form><br>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END REGISTER -->
                 </div>
             </div>
         </div>
@@ -157,8 +230,8 @@
     <!-- TEST SLIDE TEXt -->
     <div class="container-fluid text-center">
         <div class="row">
-            <div class="col-md-12 col-xs-12">
-                <div class="text1-carousel owl-carousel owl-theme owl-nav">
+            <div class="col-md-12 col-xs-12 nopadding">
+                <div class="text1-carousel owl-carousel owl-theme owl-nav ">
                     <p>PARABEN FREE-SULFATE FREE-PHTHALATE FREE</p>
 
                     <p>PARABEN FREE-SULFATE FREE-PHTHALATE FREE</p>
@@ -167,60 +240,66 @@
         </div>
     </div>
     <!-- BEST SELLER -->
-    
+
     <section style="background-color: rgb(253, 253, 253);">
-        <h2 style="margin: 10px 0px; background-color: rgb(88, 125, 134); text-align: center; padding: 40px; color: white; letter-spacing: .5cm; font-size: 30px;">BEST SELLER</h2>
+        <h2
+            style="margin: 10px 0px; background-color: rgb(88, 125, 134); text-align: center; padding: 40px; color: white; letter-spacing: .5cm; font-size: 30px;">
+            BEST SELLER</h2>
         <div class="container text-center">
             <div class="row">
                 <div class="col-sm-12">
                     <div class="divBestSeller">
                         <div class="best-seller owl-carousel owl-theme owl-nav">
                             <div class="info-items-best-seller">
-                                <img src="images/homepage/Shampoos Be Gentle, Be Kind 2.jpg" alt="">
+                                <img src="images/homepage/BestSeller/Shampoos Be Gentle, Be Kind 2.jpg" alt="" data-target="#best-seller-modal1"
+                                data-toggle="modal">
+                                <p>Banana + Coconut Shampoo</p>
+                                <p>Price: 28$</p>
+
+
+                            </div>
+                            <div class="info-items-best-seller">
+                                <img src="images/homepage/BestSeller/Shampoos Be Gentle, Be Kind 22.jpg" alt="" data-target="#best-seller-modal2"
+                                data-toggle="modal">
+                                <p>Aloe + Oat Milk Shampoo</p>
+                                <p>Price: 26$</p>
+                                
+                            </div>
+                            <div class="info-items-best-seller">
+                                <img src="images/homepage/BestSeller/Shampoos Be Gentle, Be Kind 6.jpg" alt=""data-target="#best-seller-modal3"
+                                data-toggle="modal">
+                                <p>Matcha + Apple Shampoo</p>
+                                <p>Price: 28$</p>
+                              
+                            </div>
+                            <div class="info-items-best-seller">
+                                <img src="images/homepage/BestSeller/Shampoos Briogeo Superfoods 2.jpg" alt=""data-target="#best-seller-modal4"
+                                data-toggle="modal">
                                 <p>DEFLECT FAST-DRY HEAT</p>
                                 <p>Price: 28$</p>
                                 
-                                <button type="button" class="btn btn-primary" data-target="#best-seller-modal" data-toggle="modal">See more</button>
-                                
                             </div>
                             <div class="info-items-best-seller">
-                                <img src="images/homepage/Shampoos Be Gentle, Be Kind 22.jpg" alt="">
-                                <p>COCO NUT-MILK CONDITIONING</p>
-                                <p>Price: 28$</p>
-                                <button type="button" class="btn btn-primary" data-target="#best-seller-modal" data-toggle="modal">See more</button>
+                                <img src="images/homepage/BestSeller/Treatment Masks + Oils B. Well 5.jpg" alt=""data-target="#best-seller-modal5"
+                                data-toggle="modal">
+                                <p>Organic 100% Tea Tree Oil + Castor Oil</p>
+                                <p>Price: 56$</p>
+                               
                             </div>
                             <div class="info-items-best-seller">
-                                <img src="images/homepage/Shampoos Be Gentle, Be Kind 6.jpg" alt="">
-                                <p>SPRAY BODY SOFT_HOLD</p>
-                                <p>Price: 28$</p>
-                                <button type="button" class="btn btn-primary" data-target="#best-seller-modal" data-toggle="modal">See more</button>
-                            </div>
-                            <div class="info-items-best-seller">
-                                <img src="images/homepage/Shampoos Briogeo Superfoods 2.jpg" alt="">
-                                <p>DEFLECT FAST-DRY HEAT</p>
-                                <p>Price: 28$</p>
-                                <button type="button" class="btn btn-primary" data-target="#best-seller-modal" data-toggle="modal">See more</button>
-                            </div>
-                            <div class="info-items-best-seller">
-                                <img src="images/homepage/Treatment Masks + Oils B. Well 5.jpg" alt="">
-                                <p>REMEDY APPLE CIDER MIST</p>
-                                <p>Price: 28$</p>
-                                <button type="button" class="btn btn-primary" data-target="#best-seller-modal" data-toggle="modal">See more</button>
-                            </div>
-                            <div class="info-items-best-seller">
-                                <img src="images/homepage/Treatment Masks + Oils Don’t Despair, Repair! 8.jpg" alt="">
+                                <img src="images/homepage/BestSeller/Treatment Masks + Oils Don’t Despair, Repair! 8.jpg"
+                                    alt=""data-target="#best-seller-modal6"
+                                data-toggle="modal">
                                 <p>SEASPRAY BEACHY WAVE</p>
                                 <p>Price: 28$</p>
-                                <button type="button" class="btn btn-primary" data-target="#best-seller-modal" data-toggle="modal">See more</button>
+                                
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        
-        
-        <div class="modal fade" id="best-seller-modal">
+        <div class="modal fade" id="best-seller-modal1">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -228,21 +307,173 @@
                         <h4 class="modal-title">Info Product</h4>
                     </div>
                     <div class="modal-body modal-body-content">
-                        <img src="images/homepage/Shampoos Be Gentle, Be Kind 22.jpg" alt="">
-                        <H1>Hello</H1>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="images/homepage/BestSeller/Shampoos Be Gentle, Be Kind 2.jpg" alt="">
+                            </div>
+
+                            <div class="col-md-6">
+                                <p><strong>Name:</strong> DEFLECT FAST-DRY HEAT </p>
+                                <p><strong>Price:</strong> 28$</p>
+
+                            </div>
+                        </div>
+
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary"><a style="color: white;text-decoration: none;" href="product.html">Go To Shop</a></button>
+                        <button type="button" class="btn btn-primary"><a style="color: white;text-decoration: none;"
+                                href="product.html">Go To Shop</a></button>
                     </div>
                 </div>
             </div>
         </div>
-        
 
+        <div class="modal fade" id="best-seller-modal2">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Info Product</h4>
+                    </div>
+                    <div class="modal-body modal-body-content">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="images/homepage/BestSeller/Shampoos Be Gentle, Be Kind 22.jpg" alt="">
+                            </div>
 
+                            <div class="col-md-6">
+                                <p><strong>Name:</strong> DEFLECT FAST-DRY HEAT </p>
+                                <p><strong>Price:</strong> 28$</p>
 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary"><a style="color: white;text-decoration: none;"
+                                href="product.html">Go To Shop</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <div class="modal fade" id="best-seller-modal3">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Info Product</h4>
+                    </div>
+                    <div class="modal-body modal-body-content">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="images/homepage/BestSeller/Shampoos Be Gentle, Be Kind 6.jpg" alt="">
+                            </div>
+
+                            <div class="col-md-6">
+                                <p><strong>Name:</strong> DEFLECT FAST-DRY HEAT </p>
+                                <p><strong>Price:</strong> 28$</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary"><a style="color: white;text-decoration: none;"
+                                href="product.html">Go To Shop</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="best-seller-modal4">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Info Product</h4>
+                    </div>
+                    <div class="modal-body modal-body-content">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="images/homepage/BestSeller/Shampoos Briogeo Superfoods 2.jpg" alt="">
+                            </div>
+
+                            <div class="col-md-6">
+                                <p><strong>Name:</strong> DEFLECT FAST-DRY HEAT </p>
+                                <p><strong>Price:</strong> 28$</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary"><a style="color: white;text-decoration: none;"
+                                href="product.html">Go To Shop</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="best-seller-modal5">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Info Product</h4>
+                    </div>
+                    <div class="modal-body modal-body-content">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="images/homepage/BestSeller/Treatment Masks + Oils B. Well 5.jpg" alt="">
+                            </div>
+
+                            <div class="col-md-6">
+                                <p><strong>Name:</strong> DEFLECT FAST-DRY HEAT </p>
+                                <p><strong>Price:</strong> 28$</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary"><a style="color: white;text-decoration: none;"
+                                href="product.html">Go To Shop</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="best-seller-modal6">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Info Product</h4>
+                    </div>
+                    <div class="modal-body modal-body-content">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="images/homepage/BestSeller/Treatment Masks + Oils Don’t Despair, Repair! 8.jpg"
+                                    alt="">
+                            </div>
+
+                            <div class="col-md-6">
+                                <p><strong>Name:</strong> DEFLECT FAST-DRY HEAT </p>
+                                <p><strong>Price:</strong> 28$</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary"><a style="color: white;text-decoration: none;"
+                                href="product.html">Go To Shop</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="container-fluid">
             <div class="row">
@@ -323,7 +554,7 @@
                                 are the first and only carbon-neutral custom beauty brand</p> <br>
 
                             <div>
-                                <a href="#" class="seemore">GO TO SHOP </a>
+                                <a href="product.html" class="seemore">GO TO SHOP </a>
                             </div>
                         </div>
 
@@ -332,14 +563,14 @@
 
 
                 </div>
-            </div><br>
+            </div>
         </article>
-        <br><br><br>
+
 
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12 col-xs-12 nopadding" style="background-color: rgb(251,246,242);">
-                    <div class="text1st col-xs-12">
+                    <div class="text2st col-xs-12">
                         <h3>HAIR CARE SPA BY NUMBER</h3><br>
                         <div class="col-md-4">
 
@@ -380,67 +611,90 @@
                 </div>
             </div>
         </div>
-        <br><br><br>
-        <div class="container text-center">
-            <h2>INGREDIENT</h2>
-            <br><br>
+        <br><br>
+        <div class="container-fluid text-center">
+            <h1 style="text-transform:uppercase; color:rgb(63, 60, 60);letter-spacing:5px;">Potent + Natural Ingredients
+            </h1>
+            <br><br><br>
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12 nopadding">
                     <div class="ingredient-carousel owl-carousel owl-theme owl-nav">
-                        <div><img src="images/homepage/Ingredient/arganoil.png" alt=""></div>
-                        <div><img src="images/homepage/Ingredient/avocado.png" alt=""></div>
-                        <div><img src="images/homepage/Ingredient/charcoal.png" alt=""></div>
-                        <div><img src="images/homepage/Ingredient/coconut.png" alt=""></div>
-                        <div><img src="images/homepage/Ingredient/ginger.png" alt=""></div>
-                        <div><img src="images/homepage/Ingredient/roschehip.png" alt=""></div>
-                        <div><img src="images/homepage/Ingredient/vera.png" alt=""></div>
+                        <div class="argan">
+                            <img src="images/homepage/Ingredient/arganoil.png" alt="">
+                            <p>Argan Oil</p>
+                            
+                            
+                        </div>
+                        <div class="avocado">
+                            <img src="images/homepage/Ingredient/avocado.png" alt="">
+                            <p>Avocado Oil</p>
+                        </div>
+                        <div class="charcoal">
+                            <img src="images/homepage/Ingredient/charcoal.png" alt="">
+                            <p>Binchotan Charcoal</p>
+                        </div>
+                        <div class="coconut">
+                            <img src="images/homepage/Ingredient/coconut.png" alt="">
+                            <p>Coconut Oil</p>
+                        </div>
+                        <div class="ginger">
+                            <img src="images/homepage/Ingredient/ginger.png" alt="">
+                            <p>Ginger</p>
+                        </div>
+                        <div class="roschehip">
+                            <img src="images/homepage/Ingredient/roschehip.png" alt="">
+                            <p>Rosehip Oil</p>
+                        </div>
+                        <div class="vera">
+                            <img src="images/homepage/Ingredient/vera.png" alt="">
+                            <p>Aloe Vera</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <br><br><br>
-        
         <footer>
-            <div class="container-fluid text-center">
-
-                <div class="row footer-area">
-                    <div class="col-md-3 col-xs-12">
-                        <div class="footer-left">
-                            <p><a href="product.html">Product</a></p>
-                            <p><a href="hair-problems.html">Hair Problems</a></p>
-                            <p><a href="aboutus.html">About Us</a></p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-xs-12">
-                        <div class="footer-center">
-                            <p><a href="blog.html">Blog</a></p>
-                            <p><a href="tips.html">Tips</a></p>
-                            <p><a href="lastest-development.html">Latest Development</a></p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-xs-12" style="border-right: rgb(211, 211, 211) solid 1px;">
-                        <div class="footer-right">
-                            <p><span class="glyphicon glyphicon-map-marker"></span> Ho Chi Minh, Vietnam</p>
-                            <p><span class="glyphicon glyphicon-phone"></span> Phone: +84 37340 5298</p>
-                            <p><span class="glyphicon glyphicon-envelope"></span> Email: leanhtrung97@mail.com</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-xs-12">
-
-                        <div class="footer-logo">
-                            <br>
-                            <p> HAIR CARE SPA </p>
-                        </div>
-                    </div>
+            <div id="contact" class="container">
+              <h3 class="text-center">Contact</h3>
+              <p class="text-center"><em>We love our customer!</em></p>
+          
+              <div class="row">
+                <div class="col-md-4">
+                  <h2>STAY CONNECTED.</h2><br>
+                  <p><span class="glyphicon glyphicon-map-marker"></span> Ho Chi Minh, Vietnam</p>
+                  <p><span class="glyphicon glyphicon-phone"></span> Phone: +84 37340 5298</p>
+                  <p><span class="glyphicon glyphicon-envelope"></span> <a style="color: white;text-decoration: underline;" href="mailto:leanhtrung97@gmail.com" title="Send mail directly">leanhtrung97@gmail.com</a></p>
                 </div>
-            </div>
-        </footer>
+                <div class="col-md-8">
+                  <form method="POST" id="formContactFooter">
+                    <div class="row">
+                        <div class="col-sm-6 form-group">
+                          <input class="form-control" id="usernameFooter" name="usernameFooter" placeholder="Name" type="text" required>
+                        </div>
+                        <div class="col-sm-6 form-group">
+                          <input class="form-control" id="emailFooter" name="emailFooter" placeholder="Email" type="email" required>
+                        </div>
+                    </div>
+                    <textarea class="form-control" id="commentsFooter" name="commentsFooter" placeholder="Comment" rows="5" required></textarea>
+                    <br>
+                    <div class="row">
+                      <div class="col-md-12 form-group">
+                        <button class="btn pull-right btn-primary" type="submit">Send</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+          </footer>
+        
+
         <button onclick="topFunction()" id="myBtn" title="Go to top">&#8673;</button>
 
 </body>
 
+
 <script>
-    
     var mybutton = document.getElementById("myBtn");
     window.onscroll = function () { scrollFunction() };
     function scrollFunction() {
@@ -455,26 +709,16 @@
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
     }
-    
+
     // Get the modal
-        var modal = document.getElementById('login');
+    var modalLogin = document.getElementById('login');
 
     // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-                if (event.target == modal) {
-                         modal.style.display = "none";
-                 }
+    window.onclick = function (event) {
+        if (event.target == modalLogin) {
+            modalLogin.style.display = "none";
         }
-
-
-
-
-        function alertSuccess(){
-                alert("LOGIN SUCCESS!");
-                //close modal after login success
-                window.location.reload();
-                
-        }
+    }
 </script>
 
 </html>

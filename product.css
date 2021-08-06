@@ -66,10 +66,6 @@ a{background-color:transparent}
 a:active,a:hover{outline:0; text-decoration:none;}
     
 
-/* .imgFill{
-    width: 50%;
-} */
-
 .comparePanle{
     position: fixed;
     bottom: 10px;
@@ -175,8 +171,9 @@ a:active,a:hover{outline:0; text-decoration:none;}
     transform : rotate(45deg); 
 }
 
-.selected{
-    border-style:solid !important;
-    border-color:#d9d9d9 !important;
-    border-width:thin !important; 
+#xButton{
+    position: absolute;
+    right: 10px;
+    color: red;
+    top: 0px;
 }

@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>index</title>
+  <title>Blog</title>
   <!-- CSS Bootstrap -->
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -64,16 +64,16 @@
       }
     }
 
-    
+   
   </style>
 </head>
 
 <body>
 
   <header>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-12">
+    <div class="container-fluid nopadding">
+      <div class="row nopadding">
+        <div class="col-md-12 nopadding">
           <!-- navbar -->
           <!-- <a class="logo" href="../eproject/homepage1.html"><img src="../eproject/images/homepage/Logo.png" alt="" ></a> -->
           <nav class="navbar navbar-default my-nav " role="navigation">
@@ -109,9 +109,8 @@
                 <li><a href="blog.html">Blog</a></li>
 
 
-                <li><a href="contact-us">Contact Us</a></li>
-                <li><a href="#" data-target="#login" data-toggle="modal"
-                    onclick="document.getElementById('id01').style.display='block'">Login</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+                <li><a href="#" data-target="#loginModal" data-toggle="modal">Login</a></li>
               </ul>
             </div>
           </nav>
@@ -154,375 +153,430 @@
 
 
           <!-- LOGIN -->
-          <div class="modal fade" id="login">
+          <div class="modal fade" id="loginModal">
             <div class="modal-dialog">
-              <div class="modal-content">
+                <div class="modal-content">
 
-                <div class="modal-body">
-                  <span data-dismiss="modal" class="close" title="Close Modal">&times;</span>
-                  <br><br>
+                    <div class="modal-body">
+                        <span data-dismiss="modal" class="close" title="Close Modal">&times;</span>
+                        <br><br>
+                        <form id="formLogin" method="POST">
+                            <div class="form-group">
+                                <label for="">Username</label>
+                                <input type="text" class="form-control" id="username"
+                                    placeholder="Enter Username" required>
+                            </div>
 
-                  <form action="#" method="GET" role="form" id="formlogin">
-                    <legend>Form title</legend>
+                            <div class="form-group">
+                                <label for="">Password</label>
+                                <input type="password" class="form-control" id="password"
+                                    placeholder="Enter Password" required>
+                            </div>
 
-                    <div class="form-group">
-                      <label for="">Username</label>
-                      <input type="text" class="form-control" id="username" placeholder="Enter Username" required>
+
+
+                            <button id="loginbtn" type="submit"
+                                class="btn btn-primary btn-lg btn-block">Login</button>
+                        </form>
+
                     </div>
-
-                    <div class="form-group">
-                      <label for="">Password</label>
-                      <input type="password" class="form-control" id="password" placeholder="Enter Password" required>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success" style="float: left;"
+                            data-target="#register" data-toggle="modal" id="registerBtn">Create New
+                            Account</button>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                     </div>
-
-
-
-                    <button id="loginbtn" type="submit" class="btn btn-primary btn-lg btn-block"
-                      onsubmit="alertSuccess()">Login</button>
-                  </form>
-
-
-
-
-                  </form>
-
                 </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-success" style="float: left;">Create New Account</button>
-                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-
-                </div>
-              </div>
             </div>
-          </div>
-          <!-- END LOGIN -->
+        </div>
+        <!-- END LOGIN -->
+
+
+        <!-- REGISTER -->
+        <div class="modal fade" id="registerModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <div class="modal-body">
+                        <span data-dismiss="modal" class="close" title="Close Modal">&times;</span>
+                        <br><br>
+                        <form id="formRegister" method="POST">
+                            <div class="form-group">
+                                <label for="">Username</label>
+                                <input type="text" class="form-control" id="username1"
+                                    placeholder="Enter Username" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="">Password</label>
+                                <input type="password" class="form-control" id="password1"
+                                    placeholder="Enter Password" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="">Confirm Password</label>
+                                <input type="password" class="form-control" id="password2"
+                                    placeholder="Confirm Your Password" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="">Email</label>
+                                <input type="email" class="form-control" id="email1"
+                                    placeholder="Enter Your Email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="">Gender &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                <div class="radio-inline">
+                                    <label>
+                                        <input type="radio" name="gender" id="gender" value="Male"
+                                            checked="checked">
+                                        Male
+                                    </label>
+
+                                </div>
+                                <div class="radio-inline">
+                                    <label>
+                                        <input type="radio" name="gender" id="gender" value="Female">
+                                        Female
+                                    </label>
+
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-success btn-lg btn-block">Register</button>
+                            <hr>
+                            <a id="alreadyacc"
+                                style="left: 0;top:8px; position: relative; cursor: pointer;display: inline-block;">Already
+                                have an account? Sign in</a>
+                            <button type="button" class="btn btn-danger pull-right"
+                                data-dismiss="modal">Close</button>
+                            <button type="reset" class="btn btn-primary pull-right"
+                                style=" margin-right:10px;" title="Reset Information">Reset</button>
+                        </form><br>
+                    </div>
+
+                </div>
+            </div>
+        </div>
         </div>
       </div>
     </div>
     <br><br>
     <section>
-
-      <div class="container">
-        <h1 class="text-center" style="margin-bottom: 30px;background-color: cadetblue;">TIPS</h1>
-        <div class="row tips">
-          <div class="col-md-5 content-tips">
-            <a href="https://www.luxyhair.com/blogs/hair-blog/what-are-halo-hair-extensions"><img
-                src="images/BLOG/tips1.jpg" alt=""></a>
-          </div>
-
-          <div class=" col-md-7 information-tips ">
-            <span>
-              <a href="https://www.luxyhair.com/blogs/hair-blog/what-are-halo-hair-extensions">What are Halo® Hair
-                Extensions? All your questions answered.</a>
-            </span>
-            <p>
-              Luxy Hair Halo® hair extensions are a simple, one-step method to achieve longer, fuller hair. They’re
-              perfect for first-time users and simple enough to apply for everyday wear in just a few minutes. Instead
-              of clipping or sewing in wefts, Halo hair extensions sit gently on top of your head, secured with a
-              thin, invisible wire...
-            </p>
-          </div>
-
-          <div class="text-center">
-            <a href="https://www.luxyhair.com/blogs/hair-blog/what-are-halo-hair-extensions" class="seemore-tips ">READ
-              MORE</a>
-          </div>
-
-        </div>
-
-        <div class="row tips">
-          <div class="col-md-5 content-tips ">
-            <a href="https://www.luxyhair.com/blogs/hair-blog/balayage-hair"><img src="images/BLOG/tips2.jpg"
-                alt=""></a>
-          </div>
-
-          <div class=" col-md-7 information-tips ">
-            <span>
-              <a href="https://www.luxyhair.com/blogs/hair-blog/balayage-hair">Balayage Hair: Everything You Need To
-                Know</a>
-            </span>
-            <p>
-              Balayage has become one of the most coveted requests in hair salons worldwide. While balayage may have
-              exploded in popularity in the past few years, the dyeing technique has been around for quite some time,
-              only recently sneaking its way into modern hair salons...
-            </p>
-          </div>
-          <div class="text-center">
-            <a href="https://www.luxyhair.com/blogs/hair-blog/balayage-hair" class="seemore-tips ">READ MORE</a>
-          </div>
-
-        </div>
-
-        <div class="row tips">
-          <div class="col-md-5 content-tips">
-            <a href="https://www.luxyhair.com/blogs/hair-blog/heatless-hair-tools"><img src="images/BLOG/tips3.jpg"
-                alt=""></a>
-          </div>
-
-          <div class=" col-md-7 information-tips">
-            <span>
-              <a href="https://www.luxyhair.com/blogs/hair-blog/heatless-hair-tools">Best Heatless Hair Tools for
-                Volume</a>
-            </span>
-            <p>
-              Your blow dryer might be your best friend when it comes to creating salon-worthy hairstyles, but did you
-              know that it can also cause some serious damage? Many of us rely on our heat styling tools in the morning,
-              whether it’s for a volume boost or adding curl. However, heat can dry out the hair cuticle and harm the
-              structure of hair proteins over time...
-            </p>
-          </div>
-
-          <div class="text-center">
-            <a href="https://www.luxyhair.com/blogs/hair-blog/heatless-hair-tools" class="seemore-tips ">READ MORE</a>
-          </div>
-
-        </div>
-
-        <div class="row tips">
-          <div class="col-md-5 content-tips">
-            <a href="https://www.luxyhair.com/blogs/hair-blog/hair-rollers-guide"><img src="images/BLOG/tips4.jpg"
-                alt=""></a>
-          </div>
-
-          <div class=" col-md-7 information-tips">
-            <span>
-              <a href="https://www.luxyhair.com/blogs/hair-blog/hair-rollers-guide">Hair Rollers 101: The Ultimate Guide
-                to Hair Rollers</a>
-            </span>
-            <p>
-              When it comes to curls, waves, and volume, hair rollers can take the heat off your regular hair care
-              tools.
-              Hair rollers come in a variety of sizes and materials that can help create tight spirals, to beachy waves
-              and red-carpet voluminous curls, all without having to use your curling wand or blow dryer...
-            </p>
-
-
-
-          </div>
-
-          <div class="text-center">
-            <a href="https://www.luxyhair.com/blogs/hair-blog/hair-rollers-guide" class="seemore-tips ">READ MORE</a>
-          </div>
-        </div>
-
-        <div class="row tips">
-          <div class="col-md-5 content-tips">
-            <a href="https://www.luxyhair.com/blogs/hair-blog/black-to-blonde-hair"><img src="images/BLOG/tips5.jpg"
-                alt=""></a>
-          </div>
-
-          <div class=" col-md-7 information-tips">
-            <span>
-              <a href="https://www.luxyhair.com/blogs/hair-blog/black-to-blonde-hair">How Do I Go From Black to Blonde
-                Hair?</a>
-            </span>
-            <p>
-              Feeling inspired by Billie Eilish’s new blonde bombshell transformation? — Us too.
-              . If you’re anything like us, you’ve experimented with hair colors, box
-              dyes and at-home haircuts in the last year — which can add another layer of difficulty to the overall
-              transformation. Not to worry, if there’s a will, there’s a way! And we’ve got you covered (with lots of
-              bleach and conditioner) to get there!..
-            </p>
-          </div>
-
-          <div class="text-center">
-            <a href="https://www.luxyhair.com/blogs/hair-blog/black-to-blonde-hair" class="seemore-tips ">READ MORE</a>
-          </div>
-        </div>
+      <div id="menu-scroll" >
+           
+              
+               <ul>
+                 <li><button onclick="tips()" title="Srcoll to Tips">Tips</button></li>
+                 <li><button onclick="trends()"title="Srcoll to Trends">Trends</button></li>
+                 <li> <button onclick="lastestDevelopment()"title="Srcoll to Latest Development">&nbsp; Develop</button></li>
+               </ul>
+              
+                
+              
+       
       </div>
-<br>
-      <div class="container-fluid">
-
-        <div class="row trends text-center">
-          <h1>TRENDS</h1>
-          <div class="container text-center">
-            <div class="row">
-              <div class="col-sm-12">
-
-                <div class="trends12 owl-carousel owl-theme owl-nav">
-                  <div class="info-items"><img src="images/BLOG/DuaLipa'sExposedRoots.jpg" alt="">
-                    <p>Dua Lipa's Exposed Roots</p>
+      
+      <div id="myDIV">
+        <div class="container">
+          <h1 class="text-center" style="margin-bottom: 30px;background-color: cadetblue;" id="tips">TIPS</h1>
+          <div class="row tips">
+            <div class="col-md-5 content-tips">
+              <a href="https://www.luxyhair.com/blogs/hair-blog/what-are-halo-hair-extensions"><img
+                  src="images/BLOG/tips1.jpg" alt=""></a>
+            </div>
+  
+            <div class=" col-md-7 information-tips ">
+              <span>
+                <a href="https://www.luxyhair.com/blogs/hair-blog/what-are-halo-hair-extensions">What are Halo® Hair
+                  Extensions? All your questions answered.</a>
+              </span>
+              <p>
+                Luxy Hair Halo® hair extensions are a simple, one-step method to achieve longer, fuller hair. They’re
+                perfect for first-time users and simple enough to apply for everyday wear in just a few minutes. Instead
+                of clipping or sewing in wefts, Halo hair extensions sit gently on top of your head, secured with a
+                thin, invisible wire...
+              </p>
+            </div>
+  
+            <div class="text-center">
+              <a href="https://www.luxyhair.com/blogs/hair-blog/what-are-halo-hair-extensions" class="seemore-tips ">READ
+                MORE</a>
+            </div>
+  
+          </div>
+  
+          <div class="row tips">
+            <div class="col-md-5 content-tips ">
+              <a href="https://www.luxyhair.com/blogs/hair-blog/balayage-hair"><img src="images/BLOG/tips2.jpg"
+                  alt=""></a>
+            </div>
+  
+            <div class=" col-md-7 information-tips ">
+              <span>
+                <a href="https://www.luxyhair.com/blogs/hair-blog/balayage-hair">Balayage Hair: Everything You Need To
+                  Know</a>
+              </span>
+              <p>
+                Balayage has become one of the most coveted requests in hair salons worldwide. While balayage may have
+                exploded in popularity in the past few years, the dyeing technique has been around for quite some time,
+                only recently sneaking its way into modern hair salons...
+              </p>
+            </div>
+            <div class="text-center">
+              <a href="https://www.luxyhair.com/blogs/hair-blog/balayage-hair" class="seemore-tips ">READ MORE</a>
+            </div>
+  
+          </div>
+  
+          <div class="row tips">
+            <div class="col-md-5 content-tips">
+              <a href="https://www.luxyhair.com/blogs/hair-blog/heatless-hair-tools"><img src="images/BLOG/tips3.jpg"
+                  alt=""></a>
+            </div>
+  
+            <div class=" col-md-7 information-tips">
+              <span>
+                <a href="https://www.luxyhair.com/blogs/hair-blog/heatless-hair-tools">Best Heatless Hair Tools for
+                  Volume</a>
+              </span>
+              <p>
+                Your blow dryer might be your best friend when it comes to creating salon-worthy hairstyles, but did you
+                know that it can also cause some serious damage? Many of us rely on our heat styling tools in the morning,
+                whether it’s for a volume boost or adding curl. However, heat can dry out the hair cuticle and harm the
+                structure of hair proteins over time...
+              </p>
+            </div>
+  
+            <div class="text-center">
+              <a href="https://www.luxyhair.com/blogs/hair-blog/heatless-hair-tools" class="seemore-tips ">READ MORE</a>
+            </div>
+  
+          </div>
+  
+          <div class="row tips">
+            <div class="col-md-5 content-tips">
+              <a href="https://www.luxyhair.com/blogs/hair-blog/hair-rollers-guide"><img src="images/BLOG/tips4.jpg"
+                  alt=""></a>
+            </div>
+  
+            <div class=" col-md-7 information-tips">
+              <span>
+                <a href="https://www.luxyhair.com/blogs/hair-blog/hair-rollers-guide">Hair Rollers 101: The Ultimate Guide
+                  to Hair Rollers</a>
+              </span>
+              <p>
+                When it comes to curls, waves, and volume, hair rollers can take the heat off your regular hair care
+                tools.
+                Hair rollers come in a variety of sizes and materials that can help create tight spirals, to beachy waves
+                and red-carpet voluminous curls, all without having to use your curling wand or blow dryer...
+              </p>
+  
+  
+  
+            </div>
+  
+            <div class="text-center">
+              <a href="https://www.luxyhair.com/blogs/hair-blog/hair-rollers-guide" class="seemore-tips ">READ MORE</a>
+            </div>
+          </div>
+  
+          <div class="row tips">
+            <div class="col-md-5 content-tips">
+              <a href="https://www.luxyhair.com/blogs/hair-blog/black-to-blonde-hair"><img src="images/BLOG/tips5.jpg"
+                  alt=""></a>
+            </div>
+  
+            <div class=" col-md-7 information-tips">
+              <span>
+                <a href="https://www.luxyhair.com/blogs/hair-blog/black-to-blonde-hair">How Do I Go From Black to Blonde
+                  Hair?</a>
+              </span>
+              <p>
+                Feeling inspired by Billie Eilish’s new blonde bombshell transformation? — Us too.
+                . If you’re anything like us, you’ve experimented with hair colors, box
+                dyes and at-home haircuts in the last year — which can add another layer of difficulty to the overall
+                transformation. Not to worry, if there’s a will, there’s a way! And we’ve got you covered (with lots of
+                bleach and conditioner) to get there!..
+              </p>
+            </div>
+  
+            <div class="text-center">
+              <a href="https://www.luxyhair.com/blogs/hair-blog/black-to-blonde-hair" class="seemore-tips ">READ MORE</a>
+            </div>
+          </div>
+        </div>
+  <br>
+        <div class="container-fluid">
+  
+          <div class="row trends text-center">
+            <h1 id="trends">TRENDS</h1>
+            <div class="container text-center">
+              <div class="row">
+                <div class="col-sm-12">
+  
+                  <div class="trends12 owl-carousel owl-theme owl-nav">
+                    <div class="info-items"><img src="images/BLOG/DuaLipa'sExposedRoots.jpg" alt="">
+                      <p>Dua Lipa's Exposed Roots</p>
+                    </div>
+  
+                    <div class="info-items"><img src="images/BLOG/RainbowHighlightonShortHair.jpg" alt="">
+                      <p>Rainbow Highlights on Short Hair</p>
+                    </div>
+  
+                    <div class="info-items"><img src="images/BLOG/ShortWavyBobwithHighlights.jpg" alt="">
+                      <p>Short Wavy Bob with Highlights</p>
+                    </div>
+  
+                    <div class="info-items"><img src="images/BLOG/TheseGoldenHightlight.jpg" alt="">
+                      <p>Golden Hightlights</p>
+                    </div>
+  
+                    <div class="info-items"><img src="images/BLOG/ThisLavenderHairColorforWinter.jpg" alt="">
+                      <p>Lavender Hair Color for Winter</p>
+                    </div>
+  
+                    <div class="info-items"><img src="images/BLOG/VeryShortHairwithHighlights.jpg" alt="">
+                      <p>Very Short Hair with Highlights</p>
+                    </div>
+  
+                    <div class="info-items"><img src="images/BLOG/WarmBrownHairColorforWinter.jpg" alt="">
+                      <p>Warm Brown Hair Color for Winter</p>
+                    </div>
+  
+                    <div class="info-items"><img src="images/BLOG/90sHighlight.jpg" alt="">
+                      <p>90's Highlights</p>
+                    </div>
+  
+                    <div class="info-items"><img src="images/BLOG/BlueHairColorforWinter.jpg" alt="">
+                      <p>Blue Hair Color for Winter</p>
+                    </div>
+  
+                    <div class="info-items"><img src="images/BLOG/ContrastingBlondeHighlightsforShortHair.jpg" alt="">
+                      <p>Contrasting Blonde Highlights</p>
+                    </div>
+  
                   </div>
-
-                  <div class="info-items"><img src="images/BLOG/RainbowHighlightonShortHair.jpg" alt="">
-                    <p>Rainbow Highlights on Short Hair</p>
-                  </div>
-
-                  <div class="info-items"><img src="images/BLOG/ShortWavyBobwithHighlights.jpg" alt="">
-                    <p>Short Wavy Bob with Highlights</p>
-                  </div>
-
-                  <div class="info-items"><img src="images/BLOG/TheseGoldenHightlight.jpg" alt="">
-                    <p>Golden Hightlights</p>
-                  </div>
-
-                  <div class="info-items"><img src="images/BLOG/ThisLavenderHairColorforWinter.jpg" alt="">
-                    <p>Lavender Hair Color for Winter</p>
-                  </div>
-
-                  <div class="info-items"><img src="images/BLOG/VeryShortHairwithHighlights.jpg" alt="">
-                    <p>Very Short Hair with Highlights</p>
-                  </div>
-
-                  <div class="info-items"><img src="images/BLOG/WarmBrownHairColorforWinter.jpg" alt="">
-                    <p>Warm Brown Hair Color for Winter</p>
-                  </div>
-
-                  <div class="info-items"><img src="images/BLOG/90sHighlight.jpg" alt="">
-                    <p>90's Highlights</p>
-                  </div>
-
-                  <div class="info-items"><img src="images/BLOG/BlueHairColorforWinter.jpg" alt="">
-                    <p>Blue Hair Color for Winter</p>
-                  </div>
-
-                  <div class="info-items"><img src="images/BLOG/ContrastingBlondeHighlightsforShortHair.jpg" alt="">
-                    <p>Contrasting Blonde Highlights</p>
-                  </div>
-
                 </div>
               </div>
             </div>
+  
           </div>
-
         </div>
-      </div>
-      <br>
-      <div class="container">
-        <h1 style="text-align: center;padding-bottom: 30px; text-transform: uppercase;">Latest Development</h1>
-        <div class="row divLatestDev">
-          <div class="col-md-4 ">
-            <div class="divItem">
-              <a href="https://briogeohair.com/blogs/b-spoke/3-castor-oil-uses-and-benefits-for-hair-skin-and-eyebrows"><img src="images/BLOG/new-castor-article-blog-pic_456x.png" alt=""></a>
-              <a class="link-post" href="https://briogeohair.com/blogs/b-spoke/3-castor-oil-uses-and-benefits-for-hair-skin-and-eyebrows">3
-                Castor Oil Uses and Benefits for Hair</a>
-              <p>
-                When you think about the most effective skin and hair moisturizers, castor oil might not be the first
-                thing that comes to mind — but it should. This oil does some very heavy lifting in the world of hair,
-                nails and all things beauty.
-              </p>
-              <a class="seemore-dev" href="">Read more</a>
+        <br>
+        <div class="container">
+          <h1 style="text-align: center;padding-bottom: 30px; text-transform: uppercase;" id="latest-development">Latest Development</h1>
+          <div class="row divLatestDev">
+            <div class="col-md-4 ">
+              <div class="divItem">
+                <a href="https://briogeohair.com/blogs/b-spoke/3-castor-oil-uses-and-benefits-for-hair-skin-and-eyebrows"><img src="images/BLOG/new-castor-article-blog-pic_456x.png" alt=""></a>
+                <a class="link-post" href="https://briogeohair.com/blogs/b-spoke/3-castor-oil-uses-and-benefits-for-hair-skin-and-eyebrows">3
+                  Castor Oil Uses and Benefits for Hair</a>
+                <p>
+                  When you think about the most effective skin and hair moisturizers, castor oil might not be the first
+                  thing that comes to mind — but it should. This oil does some very heavy lifting in the world of hair,
+                  nails and all things beauty.
+                </p>
+                <a class="seemore-dev" href="https://briogeohair.com/blogs/b-spoke/3-castor-oil-uses-and-benefits-for-hair-skin-and-eyebrows">Read more</a>
+              </div>
             </div>
-          </div>
-
-          <div class="col-md-4 ">
-            <div class="divItem">
-              <a href="https://briogeohair.com/blogs/b-spoke/our-new-curl-charisma-hair-mask"><img src="images/BLOG/cc_mask_1200x1200_1_1200x2.jpg" alt=""></a>
-              <a class="link-post" href="https://briogeohair.com/blogs/b-spoke/our-new-curl-charisma-hair-mask">Everything you need to know about our NEW Curl Charisma Hair Mask!</a>
-              <p>
-                Have you met our newest curl cult fave that’s making waves (curls and coils)? Say hello to our NEW Curl Charisma™ Rice Amino + Avocado Hydrating & Defining Mask—a lightweight...
-              </p>
-              <a class="seemore-dev" href="">Read more</a>
+  
+            <div class="col-md-4 ">
+              <div class="divItem">
+                <a href="https://briogeohair.com/blogs/b-spoke/our-new-curl-charisma-hair-mask"><img src="images/BLOG/cc_mask_1200x1200_1_1200x2.jpg" alt=""></a>
+                <a class="link-post" href="https://briogeohair.com/blogs/b-spoke/our-new-curl-charisma-hair-mask">Everything you need to know about our NEW Curl Charisma Hair Mask!</a>
+                <p>
+                  Have you met our newest curl cult fave that’s making waves (curls and coils)? Say hello to our NEW Curl Charisma™ Rice Amino + Avocado Hydrating & Defining Mask—a lightweight...
+                </p>
+                <a class="seemore-dev" href="https://briogeohair.com/blogs/b-spoke/our-new-curl-charisma-hair-mask">Read more</a>
+              </div>
             </div>
-          </div>
-
-          <div class="col-md-4 ">
-            <div class="divItem">
-              <a href="https://briogeohair.com/blogs/b-spoke/tea-tree-oil-benefits-for-your-scalp-skin"><img src="images/BLOG/tea-tree-blog-cover-pic_456x.png" alt=""></a>
-              <a class="link-post" href="https://briogeohair.com/blogs/b-spoke/tea-tree-oil-benefits-for-your-scalp-skin">Tea Tree Oil Clinically Proven to Benefit Your Scalp & Skin</a>
-              <p>
-                If you only grab for your bottle of tea tree oil when you have a minor cut or abrasion, then it’s time to rethink this multi-use beauty essential product ASAP...
-              </p>
-              <a class="seemore-dev" href="">Read more</a>
+  
+            <div class="col-md-4 ">
+              <div class="divItem">
+                <a href="https://briogeohair.com/blogs/b-spoke/tea-tree-oil-benefits-for-your-scalp-skin"><img src="images/BLOG/tea-tree-blog-cover-pic_456x.png" alt=""></a>
+                <a class="link-post" href="https://briogeohair.com/blogs/b-spoke/tea-tree-oil-benefits-for-your-scalp-skin">Tea Tree Oil Clinically Proven to Benefit Your Scalp & Skin</a>
+                <p>
+                  If you only grab for your bottle of tea tree oil when you have a minor cut or abrasion, then it’s time to rethink this multi-use beauty essential product ASAP...
+                </p>
+                <a class="seemore-dev" href="https://briogeohair.com/blogs/b-spoke/tea-tree-oil-benefits-for-your-scalp-skin">Read more</a>
+              </div>
             </div>
+  
           </div>
-
-        </div>
-
-        <div class="row divLatestDev">
-          <div class="col-md-4 ">
-            <div class="divItem">
-              <a href="https://briogeohair.com/blogs/b-spoke/5-natural-ingredients-that-will-instantly-soothe-a-dry-flaky-irritated-scalp"><img src="images/BLOG/SR-ingredient-article-pic_1200x.png" alt=""></a>
-              <a class="link-post" href="https://briogeohair.com/blogs/b-spoke/5-natural-ingredients-that-will-instantly-soothe-a-dry-flaky-irritated-scalp">5 Natural Ingredients That Will Instantly Soothe a Dry, Flaky, Irritated Scalp</a>
-              <p>
-                Itchy. Flaky. Dry. Irritated. Nobody wants these words to describe their scalp, yet it’s an incredibly common (and frustrating!) condition...
-              </p>
-              <a class="seemore-dev" href="">Read more</a>
+  
+          <div class="row divLatestDev">
+            <div class="col-md-4 ">
+              <div class="divItem">
+                <a href="https://briogeohair.com/blogs/b-spoke/5-natural-ingredients-that-will-instantly-soothe-a-dry-flaky-irritated-scalp"><img src="images/BLOG/SR-ingredient-article-pic_1200x.png" alt=""></a>
+                <a class="link-post" href="https://briogeohair.com/blogs/b-spoke/5-natural-ingredients-that-will-instantly-soothe-a-dry-flaky-irritated-scalp">5 Natural Ingredients That Will Instantly Soothe a Dry, Flaky, Irritated Scalp</a>
+                <p>
+                  Itchy. Flaky. Dry. Irritated. Nobody wants these words to describe their scalp, yet it’s an incredibly common (and frustrating!) condition...
+                </p>
+                <a class="seemore-dev" href="https://briogeohair.com/blogs/b-spoke/5-natural-ingredients-that-will-instantly-soothe-a-dry-flaky-irritated-scalp">Read more</a>
+              </div>
             </div>
-          </div>
-
-          <div class="col-md-4 ">
-            <div class="divItem">
-              <a href="https://briogeohair.com/blogs/b-spoke/the-best-naturally-derived-dry-shampoo-how-to-use"><img src="images/BLOG/dry-shampoo-cover_1200x2.png" alt=""></a>
-              <a class="link-post" href="https://briogeohair.com/blogs/b-spoke/the-best-naturally-derived-dry-shampoo-how-to-use">The Best Naturally-Derived Dry Shampoo + How To Use</a>
-              <p>
-                Not all heroes wear capes, and in this case, the real-life hero is dry shampoo. Without this magical specimen, who knows how many bad hair days would come to haunt us...
-              </p>
-              <a class="seemore-dev" href="">Read more</a>
+  
+            <div class="col-md-4 ">
+              <div class="divItem">
+                <a href="https://briogeohair.com/blogs/b-spoke/the-best-naturally-derived-dry-shampoo-how-to-use"><img src="images/BLOG/dry-shampoo-cover_1200x2.png" alt=""></a>
+                <a class="link-post" href="https://briogeohair.com/blogs/b-spoke/the-best-naturally-derived-dry-shampoo-how-to-use">The Best Naturally-Derived Dry Shampoo + How To Use</a>
+                <p>
+                  Not all heroes wear capes, and in this case, the real-life hero is dry shampoo. Without this magical specimen, who knows how many bad hair days would come to haunt us...
+                </p>
+                <a class="seemore-dev" href="https://briogeohair.com/blogs/b-spoke/the-best-naturally-derived-dry-shampoo-how-to-use">Read more</a>
+              </div>
             </div>
-          </div>
-
-          <div class="col-md-4 ">
-            <div class="divItem">
-              <a href="https://briogeohair.com/blogs/b-spoke/clean-deo-without-the-b-o"><img src="images/BLOG/deo_1200x.png" alt=""></a>
-              <a class="link-post" href="https://briogeohair.com/blogs/b-spoke/clean-deo-without-the-b-o">Clean DEO Without the B.O.</a>
-              <p>
-                Have you been searching long and far for the perfect natural deodorant? Let us be the first to say - your search has ENDED. Our new B. Well Tea Tree + Eucalyptus Clean Deodorant is your new go-to clean deo without the B. O. 
-              </p>
-              <a class="seemore-dev" href="">Read more</a>
+  
+            <div class="col-md-4 ">
+              <div class="divItem">
+                <a href="https://briogeohair.com/blogs/b-spoke/clean-deo-without-the-b-o"><img src="images/BLOG/deo_1200x.png" alt=""></a>
+                <a class="link-post" href="https://briogeohair.com/blogs/b-spoke/clean-deo-without-the-b-o">Clean DEO Without the B.O.</a>
+                <p>
+                  Have you been searching long and far for the perfect natural deodorant? Let us be the first to say - your search has ENDED. Our new B. Well Tea Tree + Eucalyptus Clean Deodorant is your new go-to clean deo without the B. O. 
+                </p>
+                <a class="seemore-dev" href="https://briogeohair.com/blogs/b-spoke/clean-deo-without-the-b-o">Read more</a>
+              </div>
             </div>
+  
           </div>
-
         </div>
       </div>
     </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <footer>
-      <div class="container-fluid text-center">
-
-        <div class="row footer-area">
-          <div class="col-md-3 col-xs-12">
-            <div class="footer-left">
-              <p><a href="product.html">Product</a></p>
-              <p><a href="hair-problems.html">Hair Problems</a></p>
-              <p><a href="aboutus.html">About Us</a></p>
-            </div>
+      <div id="contact" class="container">
+        <h3 class="text-center">Contact</h3>
+        <p class="text-center"><em>We love our customer!</em></p>
+    
+        <div class="row">
+          <div class="col-md-4">
+            <h2>STAY CONNECTED.</h2><br>
+            <p><span class="glyphicon glyphicon-map-marker"></span> Ho Chi Minh, Vietnam</p>
+            <p><span class="glyphicon glyphicon-phone"></span> Phone: +84 37340 5298</p>
+            <p><span class="glyphicon glyphicon-envelope"></span>  <a style="color: white;text-decoration: underline;" href="mailto:leanhtrung97@gmail.com" title="Send mail directly">leanhtrung97@gmail.com</a></p>
           </div>
-          <div class="col-md-3 col-xs-12">
-            <div class="footer-center">
-              <p><a href="blog.html">Blog</a></p>
-              <p><a href="tips.html">Tips</a></p>
-              <p><a href="lastest-development.html">Latest Development</a></p>
-            </div>
-          </div>
-          <div class="col-md-3 col-xs-12" style="border-right: rgb(211, 211, 211) solid 1px;">
-            <div class="footer-right">
-              <p><span class="glyphicon glyphicon-map-marker"></span> Ho Chi Minh, Vietnam</p>
-              <p><span class="glyphicon glyphicon-phone"></span> Phone: +84 37340 5298</p>
-              <p><span class="glyphicon glyphicon-envelope"></span> Email: leanhtrung97@mail.com</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-xs-12">
-
-            <div class="footer-logo">
+          <div class="col-md-8">
+            <form method="POST" id="formContactFooter">
+              <div class="row">
+                  <div class="col-sm-6 form-group">
+                    <input class="form-control" id="usernameFooter" name="usernameFooter" placeholder="Name" type="text" required>
+                  </div>
+                  <div class="col-sm-6 form-group">
+                    <input class="form-control" id="emailFooter" name="emailFooter" placeholder="Email" type="email" required>
+                  </div>
+              </div>
+              <textarea class="form-control" id="commentsFooter" name="commentsFooter" placeholder="Comment" rows="5" required></textarea>
               <br>
-              <p> HAIR CARE SPA </p>
-            </div>
+              <div class="row">
+                <div class="col-md-12 form-group">
+                  <button class="btn pull-right btn-primary" type="submit">Send</button>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
-      </div>
     </footer>
     <button onclick="topFunction()" id="myBtn" title="Go to top">&#8673;</button>
 
@@ -556,15 +610,19 @@
     }
   }
 
+function tips() {
+  let elmnt = document.getElementById("tips");
+  elmnt.scrollIntoView();
+}
+function trends() {
+  let elmnt = document.getElementById("trends");
+  elmnt.scrollIntoView();
+}
+function lastestDevelopment() {
+  let elmnt = document.getElementById("latest-development");
+  elmnt.scrollIntoView();
+}
 
-
-  document.getElementById('formlogin')
-  function alertSuccess() {
-    alert("LOGIN SUCCESS!");
-    //close modal after login success
-    window.location.reload();
-
-  }
 </script>
 
 </html>
