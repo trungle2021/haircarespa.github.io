@@ -218,7 +218,7 @@ $(document).ready(function(){
                 let username = $("#username1").val();
                 let email = $("#email1").val().trim();
                 let password = $("#password1").val();
-                let gender = $("#gender:checked").val();
+                let gender = $("form:radio:checked").val();
                 
                 
 
