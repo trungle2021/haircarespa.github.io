@@ -101,13 +101,13 @@ border-radius: 7px;
 
 .carousel-caption{
   position: absolute !important;
-  top: 150px;
-  left: 950px !important;
+  top: 200px;
+  left: 1200px !important;
   text-align: left;
   color:black;
   font-family: SaolRegular;
   text-shadow: none;
-  width: 35%;
+  width: 30%;
  
 }
 .carousel-caption .seemore{
@@ -128,11 +128,11 @@ border-radius: 7px;
 
 .carousel-caption h1{
   font-size: 4rem;
-  line-height: 3rem;
+  line-height: 3.5rem;
   
 }
 .carousel-caption p{
-  margin-top:25px;
+  margin-top:20px;
   font-size: 18px;
   width: 100%;
 }
