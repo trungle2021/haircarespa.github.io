@@ -157,7 +157,7 @@ $(document).ready(function(){
                     $("#email1").focus();
                     return false;
                 }
-      
+            
       
                 let password = $("#password1").val().trim();
                 re = /^[-\w\.\$@\*\!]{1,30}$/ig;
@@ -182,28 +182,13 @@ $(document).ready(function(){
                 let s = `Username: ${username} \n Email: ${email} \n Gender: ${gender}`;
                 alert("Register Success \n Your Information: \n " + s);
                 $("#registerModal").removeClass("fade").modal("hide");
+                $("#loginModal").addClass("fade").modal("show");
                 store();
       
-            })
+            });
       
       
-            function store() {
-                let username = $("#username1").val();
-                let email = $("#email1").val().trim();
-                let password = $("#password1").val();
-                let gender = $("#gender:checked").val();
-      
-                const user = {
-                    username: username,
-                    email: email,
-                    password: password,
-                    gender: gender,
-                }
-      
-                localStorage.setItem("user", JSON.stringify(user));
-                localStorage.getItem("user");
-                var myobj = JSON.parse(localStorage.getItem("user"));
-            }
+            
       
             function Check() { //retrieves items in the localStorage
       
@@ -211,6 +196,11 @@ $(document).ready(function(){
                 var password = $("#password").val(); //gets password from user
                 var myobj = JSON.parse(localStorage.getItem("user"));
       
+                if(myobj == null){
+                    alert("This account doesn't exist! Please try again!");
+                    $("#registerBtn").focus();
+                    return false;
+                }
                 if (username == myobj.username && password == myobj.password) {
                     alert("You are Logged in");
                     $("#loginModal").removeClass("fade").modal("hide");
@@ -219,9 +209,32 @@ $(document).ready(function(){
                     alert("Wrong username or password! Please try again!");
                     $("#username").focus();
                     return false;
-      
+                   
                 }
             }
+        
+            function store() {
+                
+                let username = $("#username1").val();
+                let email = $("#email1").val().trim();
+                let password = $("#password1").val();
+                let gender = $("#gender:checked").val();
+                
+                
+
+                const user = {
+                    username: username,
+                    email: email,
+                    password: password,
+                    gender: gender,
+                };
+               
+      
+                localStorage.setItem("user", JSON.stringify(user));
+                localStorage.getItem("user");
+                myobj = JSON.parse(localStorage.getItem("user"));
+
+            };
         
             $("#formContactFooter").submit(function (e) {
                 e.preventDefault();
@@ -233,7 +246,7 @@ $(document).ready(function(){
                     $("#email1").focus();
                     return false;
                 }
-    
+                
                 alert("Your message has been sent to us! Thank you for your contact!");
       
             })

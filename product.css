@@ -139,28 +139,13 @@ a:active,a:hover{outline:0; text-decoration:none;}
     height: 150px;
 }
 
-@media only screen and (max-width:600px){
-    li{
-        font-size: 8px;
-    }
-    .comparePanle h4{
-        font-size: 15px;
-    }
-    .compareThumb{
-        height: 100px;
-        
-    }
-    .compHeader{
-    min-height: 150px;
-}
-}
 
 .relPos{
     position: relative;
 }
 
 .des{
-    min-height: 121px ;
+    min-height: 150px ;
 }
 
 .rotateBtn{

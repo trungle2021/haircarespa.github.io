@@ -3,7 +3,7 @@
         "id"  : "p1", 
         "pic" : "Shampoos Be Gentle, Be Kind 1.jpg",
         "type": "Shampoo",
-        "name": "Banana + Coconut Shampoo",
+        "name": "Banana + Coconut Champoo",
         "line_product": "Be Gentle, Be Kind",
         "brand": "Briogeo",
         "hairtype": "",
@@ -51,7 +51,7 @@
         "id"  : "p5", 
         "pic" : "Shampoos Be Gentle, Be Kind 12.jpg",
         "type": "Set",
-        "name": "Banana + Coconut Hair pack",
+        "name": "Banana + Coconut Hair Pack",
         "line_product": "Be Gentle, Be Kind",
         "brand": "Briogeo",
         "hairtype": "",
@@ -111,7 +111,7 @@
         "id"  : "p10", 
         "pic" : "Shampoos Don’t Despair, Repair! 2.jpg",
         "type": "Shampoo",
-        "name": "Super Moisture Shampoo",
+        "name": "Super Moisture Mhampoo",
         "line_product": "Don't Despair, Repair!",
         "brand": "Briogeo",
         "hairtype": "",
@@ -327,7 +327,7 @@
         "id"  : "p28", 
         "pic" : "Accessories Pin tin 1.jpg",
         "type": "Accessories",
-        "name": "Pin Tin (Black)",
+        "name": "Pin Tin (black)",
         "line_product": "",
         "brand": "Briogeo",
         "hairtype": "",
@@ -339,12 +339,13 @@
         "id"  : "p29", 
         "pic" : "Straightners InStyler Cerasilk 1.jpg",
         "type": "Straightener",
-        "name": "Cerasilk Stying Iron",
+        "name": "Cerasilk Styling Iron",
         "line_product": "",
         "brand": "CERASILK",
         "hairtype": "",
         "price": "$115.00", 
         "size": "none",
+        "use": "Run the flat iron all the way down this section of your hair to straighten it. You should use a smooth and fluid motion to ensure the hair is being straightened evenly. Remember, don’t hold the flat iron in one place for too long.",
         "des": "This styling iron includes beveled edges so you can straighten and curl with no creases. Clip on the removable comb attachment to mimic the stylist comb method."
     },
     {
@@ -357,6 +358,7 @@
         "hairtype": "",
         "price": "$24.99", 
         "size": "none",
+        "use": "Turn your flat iron on and wait for it to heat up. If you have a lot of thick hair, put your flat iron on a higher heat setting. If your hair is dry and brittle, have it on the lowest heat setting to prevent any further damage.",
         "des": "The long 1' floating plates are perfect for straightening or curling your hair. With 6 individual heat settings up to 410°F high heat and digital controls."
     },
     {
@@ -369,6 +371,7 @@
         "hairtype": "",
         "price": "$34.99", 
         "size": "none",
+        "use": "When you begin to straighten your hair, place the flat iron as close to the roots as possible. For an even result, place the flat iron an inch from your scalp.",
         "des": "Featuring an optional slide-on smoothing attachment with snag-free bristles, hair is distributed evenly across the plate for better control, glide and one-pass styling. "
     },
     {
@@ -393,18 +396,20 @@
         "hairtype": "",
         "price": "$21.99", 
         "size": "none",
+        "use": "Using Hair Steamer Heat Cap is as simple as switching on the button and the inside of the cap will heat up in one minute and keep at 45-65℃. Then you may just apply hair treatment on your hair and don a plastic cap or shower cap (optional) prior to putting on the hair steamer cap. You may also adjust the heat cap to fit your head perfectly with a head strap at the back.",
         "des": "Hair Steamer Heat Cap is a unique deep conditioning heat cap. It offers easy and stylish way to achieve the results of a salon quality treatment at home."
     },
     {
         "id"  : "p34", 
         "pic" : "Spa cap CHILIKI 110V 2.jpg",
         "type": "Spa Cap",
-        "name": "Chiliko 110V Hair Care Hat",
+        "name": "Chiliki 110V Hair Care Hat",
         "line_product": "",
         "brand": "CHILIKI",
         "hairtype": "",
         "price": "$24.00", 
         "size": "none",
+        "use": "Hair Steamer Heat Cap is wide and deep, ensuring you easily cover the back, front and edges of your head. Moreover, even if you have limited space at home, there will always be a place for this portable and handy hair steamer heat cap. The compact size also makes it easily portable to carry it any places while traveling.",
         "des": "It can effectively reduce hair damage, solve the problem of hair curling and hair tip falling off, and deeply nourish hair."
     },
     {
@@ -417,6 +422,7 @@
         "hairtype": "",
         "price": "$49.00", 
         "size": "none",
+        "use": "Smooth out your hair and then leave it until it is at least 60 percent dry, you can use a leave-in conditioner. Before understanding how to use a blow dryer, you should also know about applying a heat protectant.",
         "des": "Achieve salon-worthy results right at home with the VS Sassoon Expert Turbo Ionic Ceramic Dryer."
     },
     {
@@ -429,18 +435,20 @@
         "hairtype": "",
         "price": "$89.00", 
         "size": "none",
+        "use": "Many of us don't know how to use a hairdryer correctly for hair styling. We just set it to the maximum temperature, and we use a round brush to run it all over our heads. That does not serve any purpose, as the hair is exposed to high heat and is not properly styled. Gently dry your hair and maintain the correct distance. Start close to the base of the neck and function in tiny parts. You may use clips, if you want, to divide your hair.",
         "des": "Black tourmaline and ceramic technology create negative ions that give hair a smoother, healthier finish."
     },
     {
         "id"  : "p37", 
         "pic" : "Dryer T3 PROI 2.jpg",
         "type": "Hair Dryer",
-        "name": "T3 Proi",
+        "name": "T3 Proi Hair Dryer",
         "line_product": "",
         "brand": "T3",
         "hairtype": "",
         "price": "$85.00", 
         "size": "none",
+        "use": "Hold the hair dryer at least 6 inches from your hair. This keeps you from burning (or over-drying) the hair cuticle and also gives you the space to direct your hair the way you want it to go.",
         "des": "A state-of-the-art professional dryer that combines exceptional power, performance and salon-perfect results."
 
     },
@@ -454,6 +462,7 @@
         "hairtype": "",
         "price": "$39.00", 
         "size": "none",
+        "use": "Smooth out your hair and then leave it until it is at least 60 percent dry, you can use a leave-in conditioner. Before understanding how to use a blow dryer, you should also know about applying a heat protectant.",
         "des": "Professional DC motor,1875w ultra strong wind let your hair dry within a few minutes,less noise light weight hair dryers."
     },
     {
@@ -466,6 +475,7 @@
         "hairtype": "",
         "price": "$521.00", 
         "size": "none",
+        "use": "The first tip is that you should always use distilled water with your hair steamer. Next up you should always make sure that the water tank or jar is full before use.  Most tabletop steamers will give you around 20 minutes of use before they run out, and standalone steamers will give you between 40-60 minutes of usage on a full tank",
         "des": "Head Spa Steamer With the assistance of our deft team of professionals, we are able to introduce a broad array of Pro-100 Professional Head Steamer."
     },
     {
@@ -478,6 +488,7 @@
         "hairtype": "none",
         "price": "$445.00", 
         "size": "none",
+        "use": "Use distilled water when filling up your hair steamer. Unfiltered water contains particles, chlorine and other damaging elements that can shorten the life of your hair steamer. Simply using water that has run through a Brita filter will do the trick.Switch on the Sprayer and the buttons, steam will come out in 3-5mins",
         "des": "This product range is highly required for their features like fine finishing, durability, efficiency, strong construction and low maintenance."
     },
     {
@@ -490,21 +501,21 @@
         "hairtype": "none",
         "price": "$236.00", 
         "size": "none",
+        "use": "Steamer Machine are easy to use and the only regular maintenance they require is the water tank to be filled. They are lightweight and portable with adjustable steam levels, a low-water indicator light and an adjustable angled hood. They look very much like a regular hood dryer, except with a water tank and a fancier control pad on the back.",
         "des": "Head Spa Steamer With the assistance of our deft team of professionals, we are able to introduce a broad array of Pro-100 Professional Head Steamer."
     },
     {
         "id"  : "p42", 
         "pic" : "Steamer 1.jpg",
         "type": "Spa Steamer",
-        "name": "Shadab'z Store Spa Steamer",
+        "name": "Shadab'z Store spa steamer",
         "line_product": "",
         "brand": "Shadab'z Store",
         "hairtype": "",
         "price": "$394.00", 
         "size": "none",
+        "use": "Use distilled water when filling up your hair steamer. Unfiltered water contains particles, chlorine and other damaging elements that can shorten the life of your hair steamer. Simply using water that has run through a Brita filter will do the trick.",
         "des": "This steamer is the best professional steamer for its value. Excellent for priming, conditioning, and dyeing hair. It is equipped with a thermostat."
     }
-    
-
 ]
 
