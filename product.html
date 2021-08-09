@@ -9,24 +9,21 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
   <link rel="stylesheet" href="style_product.css">
   <link rel="stylesheet" href="product.css">
-  
+
   <!-- Jquery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
   <!-- JS -->
-
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <script src="haircare.js"></script>
-
   <title>Product</title>
 </head>
-
 <style>
-  *{
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -34,198 +31,156 @@
 </style>
 
 <body>
-
   <header>
     <div class="container-fluid nopadding">
-        <div class="row nopadding">
-            <div class="col-md-12 nopadding">
-                <!-- navbar -->
-
-                <nav class="navbar navbar-default my-nav " role="navigation" >
-
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse"
-                            data-target=".navbar-ex1-collapse">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-
-                        <a class="navbar-brand" href="index.html">HAIR CARE </a>
-                    </div>
-
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse navbar-ex1-collapse">
-                        <ul class="nav navbar-nav">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="product.html">Product</a></li>
-                            <li><a href="hair-problems.html">Hair-Problems</a></li>
-                            <li><a href="about-us.html">About Us</a></li>
-                            <li><a href="blog.html">Blog</a></li>
-                            <li><a href="contact-us.html">Contact Us</a></li>
-                            <li><a href="#" data-target="#loginModal" data-toggle="modal">Login</a></li>
-                        </ul>
-                    </div>
-                </nav>
-               
-                <!-- end navbar -->
-                
-
-                <div id="myCarousel" class="carousel slide carousel-fade " data-ride="carousel">
-
-                    <div class="carousel-inner" role="listbox">
-                        <div class="item active">
-                            <img src="images/PRODUCT/carousel1.jpg" alt="New York"
-                                width="900" height="700">
-                                
-                                  <div class="carousel-caption">
-                                      <h1>Natural ingredients, backed by science</h1>
-                                      <p>Learn more about our unique library of ingredients. Each one was meticulously sourced and tested by our in-house chemists to ensure safety, quality and efficacy.</p>
-                                      <div class="row" id="rowShopNow">
-                                        
-                                        <a onclick="meetOur()" class="seemore text-center" title="Click To Scroll Down" style="margin-top: 40px ;"> SHOP NOW </a>
-                                      </div>
-                                    </div>
-                              </div>
-                        </div>
-
-                    </div>
-                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-
-
-
-
-                <!-- LOGIN -->
-                <div class="modal fade" id="loginModal">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-
-                            <div class="modal-body">
-                                <span data-dismiss="modal" class="close" title="Close Modal">&times;</span>
-                                <br><br>
-                                <form id="formLogin" method="POST">
-                                    <div class="form-group">
-                                        <label for="">Username</label>
-                                        <input type="text" class="form-control" id="username"
-                                            placeholder="Enter Username" required>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="">Password</label>
-                                        <input type="password" class="form-control" id="password"
-                                            placeholder="Enter Password" required>
-                                    </div>
-
-
-
-                                    <button id="loginbtn" type="submit"
-                                        class="btn btn-primary btn-lg btn-block">Login</button>
-                                </form>
-
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-success" style="float: left;"
-                                     data-toggle="modal" id="registerBtn">Create New
-                                    Account</button>
-                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- END LOGIN -->
-
-
-                <!-- REGISTER -->
-                <div class="modal fade" id="registerModal">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-
-                            <div class="modal-body">
-                                <span data-dismiss="modal" class="close" title="Close Modal">&times;</span>
-                                <br><br>
-                                <form id="formRegister" method="POST">
-                                    <div class="form-group">
-                                        <label for="">Username</label>
-                                        <input type="text" class="form-control" id="username1"
-                                            placeholder="Enter Username" required>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="">Password</label>
-                                        <input type="password" class="form-control" id="password1"
-                                            placeholder="Enter Password" required>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="">Confirm Password</label>
-                                        <input type="password" class="form-control" id="password2"
-                                            placeholder="Confirm Your Password" required>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="">Email</label>
-                                        <input type="email" class="form-control" id="email1"
-                                            placeholder="Enter Your Email" required>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="">Gender &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                                        <div class="radio-inline">
-                                            <label>
-                                                <input type="radio" name="gender" id="gender" value="Male"
-                                                    checked="checked">
-                                                Male
-                                            </label>
-
-                                        </div>
-                                        <div class="radio-inline">
-                                            <label>
-                                                <input type="radio" name="gender" id="gender" value="Female">
-                                                Female
-                                            </label>
-
-                                        </div>
-                                    </div>
-
-                                    <button type="submit" class="btn btn-success btn-lg btn-block">Register</button>
-                                    <hr>
-                                    <a id="alreadyacc"
-                                        style="left: 0;top:8px; position: relative; cursor: pointer;display: inline-block;">Already
-                                        have an account? Sign in</a>
-                                    <button type="button" class="btn btn-danger pull-right"
-                                        data-dismiss="modal">Close</button>
-                                    <button type="reset" class="btn btn-primary pull-right"
-                                        style=" margin-right:10px;" title="Reset Information">Reset</button>
-                                </form><br>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <!-- END REGISTER -->
+      <div class="row nopadding">
+        <div class="col-md-12 nopadding">
+          <!-- navbar -->
+          <nav class="navbar navbar-default my-nav " role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html">HAIR CARE </a>
             </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="hair-problems.html">Hair-Problems</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+                <li><a href="#" data-target="#loginModal" data-toggle="modal">Login</a></li>
+              </ul>
+            </div>
+          </nav>
+          <!-- end navbar -->
+          <div id="myCarousel" class="carousel slide carousel-fade " data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <img src="images/PRODUCT/carousel1.jpg" alt="New York" width="900" height="700">
+                <div class="carousel-caption">
+                  <h1>Natural ingredients, backed by science</h1>
+                  <p>Learn more about our unique library of ingredients. Each one was meticulously sourced and tested by
+                    our in-house chemists to ensure safety, quality and efficacy.</p>
+                  <div class="row" id="rowShopNow">
+                    <a onclick="meetOur()" class="seemore text-center" title="Click To Scroll Down"
+                      style="margin-top: 40px ;"> SHOP NOW </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
+        <!-- LOGIN -->
+        <div class="modal fade" id="loginModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+                <span data-dismiss="modal" class="close" title="Close Modal">&times;</span>
+                <br><br>
+                <form id="formLogin" method="POST">
+                  <div class="form-group">
+                    <label for="">Username</label>
+                    <input type="text" class="form-control" id="username" placeholder="Enter Username" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Enter Password" required>
+                  </div>
+                  <button id="loginbtn" type="submit" class="btn btn-primary btn-lg btn-block">Login</button>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-success" style="float: left;" data-toggle="modal"
+                  id="registerBtn">Create New
+                  Account</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END LOGIN -->
+        <!-- REGISTER -->
+        <div class="modal fade" id="registerModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+                <span data-dismiss="modal" class="close" title="Close Modal">&times;</span>
+                <br><br>
+                <form id="formRegister" method="POST">
+                  <div class="form-group">
+                    <label for="">Username</label>
+                    <input type="text" class="form-control" id="username1" placeholder="Enter Username" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="">Password</label>
+                    <input type="password" class="form-control" id="password1" placeholder="Enter Password" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="">Confirm Password</label>
+                    <input type="password" class="form-control" id="password2" placeholder="Confirm Your Password"
+                      required>
+                  </div>
+                  <div class="form-group">
+                    <label for="">Email</label>
+                    <input type="email" class="form-control" id="email1" placeholder="Enter Your Email" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="">Gender &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <div class="radio-inline">
+                      <label>
+                        <input type="radio" name="gender" id="gender" value="Male" checked="checked">
+                        Male
+                      </label>
+                    </div>
+                    <div class="radio-inline">
+                      <label>
+                        <input type="radio" name="gender" id="gender" value="Female">
+                        Female
+                      </label>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-success btn-lg btn-block">Register</button>
+                  <hr>
+                  <a id="alreadyacc"
+                    style="left: 0;top:8px; position: relative; cursor: pointer;display: inline-block;">Already
+                    have an account? Sign in</a>
+                  <button type="button" class="btn btn-danger pull-right" data-dismiss="modal">Close</button>
+                  <button type="reset" class="btn btn-primary pull-right" style=" margin-right:10px;"
+                    title="Reset Information">Reset</button>
+                </form><br>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END REGISTER -->
+      </div>
     </div>
-</header>
+    </div>
+  </header>
   <!-- END HEADER -->
-
   <div class="container-fluid  ">
     <h1 class="text-center" id="headerProduct">Meet our products</h1>
-    <p class="text-center" id="textBelowHeader">All of our custom hair care products are freshly made-to-order with a unique blend of ingredients, resulting in a formula that couldn’t exist without you.</p>
+    <p class="text-center" id="textBelowHeader">All of our custom hair care products are freshly made-to-order with a
+      unique blend of ingredients, resulting in a formula that couldn’t exist without you.</p>
     <hr>
     <div class="row">
       <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
-
         <h3 id="header-filter">Filter By</h3>
         <div class="table-responsive">
           <table class="table table-borderless table-hover table-sm " id="table_filter">
@@ -234,9 +189,7 @@
                 <th><label class=" control-label" for="">Hair Care Products</label></th>
               </tr>
             </thead>
-
             <tbody class="tbody-filter">
-
               <tr>
                 <td><input type="checkbox" id="check-product" name="" value="Shampoo"> <span>Shampoo</span></td>
               </tr>
@@ -258,7 +211,6 @@
               <tr>
                 <td><input type="checkbox" id="check-product" name="" value="Accessories"> <span>Accessories</span></td>
               </tr>
-              
               <thead class="thead-light">
                 <tr>
                   <th><label style="margin-top:10px" class="control-label" for="">Equipment</label></th>
@@ -269,7 +221,8 @@
                 <td><input type="checkbox" id="check-product" name="" value="Hair Dryer"> <span>Hair Dryer</span></td>
               </tr>
               <tr>
-                <td><input type="checkbox" id="check-product" name="" value="Straightener"> <span>Straightener</span></td>
+                <td><input type="checkbox" id="check-product" name="" value="Straightener"> <span>Straightener</span>
+                </td>
               </tr>
               <tr>
                 <td><input type="checkbox" id="check-product" name="" value="Spa Steamer"><span> Spa Steamer</span></td>
@@ -277,11 +230,9 @@
               <tr>
                 <td><input type="checkbox" id="check-product" name="" value="Spa Cap"><span> Spa Cap</span></td>
               </tr>
-
           </table>
         </div>
       </div>
-
       <form class="navbar-form navbar-right" id="formSearch" style="margin-right:30px">
         <div class="input-group">
           <input type="text" class="form-control" placeholder="Search" id="search" name="search">
@@ -292,21 +243,16 @@
           </div>
         </div>
       </form>
-
       <!-- display items -->
       <div class="col-xs-6 col-sm-10 col-md-10 col-lg-10  ">
         <div class="row" id="products">
-        
-        
         </div>
       </div>
-      
       <!-- end display items -->
       <!-- Modal -->
       <div class="col-md-12">
         <div class="modal fade" id="showModal" role="dialog">
           <div class="modal-dialog modal-dialogProduct">
-  
             <!-- Modal content-->
             <div class="modal-content">
               <div class="modal-header">
@@ -315,22 +261,17 @@
               <!-- div.modal-body include json data -->
               <div class="modal-body modalProduct">
                 <div class="row">
-  
-  
                 </div>
               </div>
               <div class="modal-footer">
                 <button type="button" class="filter btn btn-primary" data-dismiss="modal">Close</button>
               </div>
             </div>
-  
           </div>
         </div>
       </div>
       <!-- end modal -->
-
     </div>
-
     <!--preview panel-->
     <div class="panel-body  w3-center">
       <div class="row w3-card-4 w3-light-grey w3-round-large w3-border comparePanle w3-margin-top">
@@ -347,21 +288,16 @@
       </div>
     </div>
     <!--end of preview panel-->
-
-
     <!-- comparision popup-->
     <div id="id01" class="w3-animate-zoom w3-white w3-modal modPos" style="z-index: 9999;">
       <div class="container">
-        <a onclick="document.getElementById('id01').style.display='none'" class="w3-closebtn closeBtn" title="Click to Cancel" id="">X</a>
+        <a onclick="document.getElementById('id01').style.display='none'" class="w3-closebtn closeBtn"
+          title="Click to Cancel" id="">X</a>
       </div>
       <div class="row contentPop w3-margin-top">
       </div>
-      
     </div>
-    
     <!--end of comparision popup-->
-
-
     <!--  warning model  -->
     <div id="WarningModal" class="modal">
       <div class="modal-dialog">
@@ -372,7 +308,6 @@
           <div class="modal-body">
             <h3>Maximum of Three products are allowed for comparision</h3>
           </div>
-
           <div class="modal-footer">
             <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
           </div>
@@ -380,32 +315,33 @@
       </div>
     </div>
   </div>
-
-
   <button onclick="topFunction()" id="myBtn" title="Go to top">&#8673;</button>
   <footer>
     <div id="contact" class="container">
       <h3 class="text-center">Contact</h3>
       <p class="text-center"><em>We love our customer!</em></p>
-  
       <div class="row">
         <div class="col-md-4">
           <h2>STAY CONNECTED.</h2><br>
           <p><span class="glyphicon glyphicon-map-marker"></span> Ho Chi Minh, Vietnam</p>
           <p><span class="glyphicon glyphicon-phone"></span> Phone: +84 37340 5298</p>
-          <p><span class="glyphicon glyphicon-envelope"></span>  <a style="color: white;text-decoration: underline;" href="mailto:leanhtrung97@gmail.com" title="Send mail directly">leanhtrung97@gmail.com</a></p>
+          <p><span class="glyphicon glyphicon-envelope"></span> <a style="color: white;text-decoration: underline;"
+              href="mailto:leanhtrung97@gmail.com" title="Send mail directly">leanhtrung97@gmail.com</a></p>
         </div>
         <div class="col-md-8">
           <form method="POST" id="formContactFooter">
             <div class="row">
-                <div class="col-sm-6 form-group">
-                  <input class="form-control" id="usernameFooter" name="usernameFooter" placeholder="Name" type="text" required>
-                </div>
-                <div class="col-sm-6 form-group">
-                  <input class="form-control" id="emailFooter" name="emailFooter" placeholder="Email" type="email" required>
-                </div>
+              <div class="col-sm-6 form-group">
+                <input class="form-control" id="usernameFooter" name="usernameFooter" placeholder="Name" type="text"
+                  required>
+              </div>
+              <div class="col-sm-6 form-group">
+                <input class="form-control" id="emailFooter" name="emailFooter" placeholder="Email" type="email"
+                  required>
+              </div>
             </div>
-            <textarea class="form-control" id="commentsFooter" name="commentsFooter" placeholder="Comment" rows="5" required></textarea>
+            <textarea class="form-control" id="commentsFooter" name="commentsFooter" placeholder="Comment" rows="5"
+              required></textarea>
             <br>
             <div class="row">
               <div class="col-md-12 form-group">
@@ -416,7 +352,6 @@
         </div>
       </div>
   </footer>
-  
 </body>
 <!-- SCRIPT1 -->
 <script>
@@ -426,19 +361,14 @@
       data = items;
       displayImages(data);
     });
-
-
     //sự kiện search
     $("#formSearch").submit(function (e) {
       e.preventDefault();
-
       let search = $("#search").val();
       let re = new RegExp(search, "ig");
       let subdata = data.filter(item => item.name.search(re) >= 0);
       displayImages(subdata);
     });
-
-
     //sự kiện click chọn loại sản phẩm
     $("input[type=checkbox]").click(function () {
       let cats = $("#check-product:checked").map(function () { return $(this).val() }).toArray().toString();
@@ -448,14 +378,11 @@
     // modal click
     $(document).on("click", ".productImage", function () {
       let pid = $(this).data("id");
-
       let product = data.filter(ele => ele.id == pid);
-
       showModal(product[0]);
       $("#showModal").modal("show");
     });
   });
-
   function displayImages(items) {
     let s = ``;
     $.each(items, function (k, v) {
@@ -482,44 +409,32 @@
     });
     $("#products").html(s);
   };
-
   var list = []; //mảng chứa các sản phẩm cần được so sánh
-
   /* function to be executed when product is selected for comparision*/
   $(document).on('click', '.addToCompare', function () {
     $(".comparePanle").show();
     $(this).toggleClass("rotateBtn");
     $(this).parents(".selectProduct").toggleClass("selected");
     var productID = $(this).parents('.selectProduct').attr('data-id');
-
     var inArray = $.inArray(productID, list);
     if (inArray < 0) {
       if (list.length < 3) {
         list.push(productID);
-
         var displayTitle = $(this).parents('.selectProduct').attr('data-title');
-
         var image = $(this).siblings(".productImage").attr('src');
-
         $(".comparePan").append('<div id="' + productID + '" class="relPos titleMargin w3-margin-bottom  col-lg-3 col-md-4 col-sm-4"><div class="w3-white titleMargin"><a class="selectedItemCloseBtn w3-closebtn cursor" id="xButton">&times</a><img src="' + image + '" alt="image" style="height:100px;"/><p id="' + productID + '" class="titleMargin1">' + displayTitle + '</p></div></div>');
       }
       else {
-
         $("#WarningModal").modal();
-
         $(this).toggleClass("rotateBtn");
         $(this).parents(".selectProduct").toggleClass("selected");
         return;
       }
-
-
     } else {
       list.splice($.inArray(productID, list), 1);
       $('#' + productID).remove();
       hideComparePanel();
     }
-
-
     if (list.length > 1) {
       $(".cmprBtn").addClass("active");
       $(".cmprBtn").removeAttr('disabled');
@@ -527,17 +442,12 @@
       $(".cmprBtn").removeClass("active");
       $(".cmprBtn").attr('disabled', '');
     }
-
   });
-
-
   /*function to be executed when compare button is clicked*/
   $(document).on('click', '.cmprBtn', function () {
     if ($(".cmprBtn").hasClass("active")) {
-
       /* this is to print the  features list statically*/
       $(".contentPop").append('<div class="col-sm-3 compareItemParent relPos">' + '<ul class="product">' + '<li class="relPos compHeader"><p class="w3-display-middle">Features</p></li>' + '<li>Name</li>' + '<li>Net.</li>' + '<li>Brand</li>' + '<li class="des">Description</li>' + '<li>Price</li></ul>' + '</div>');
-
       for (var i = 0; i < list.length; i++) {
         /* this is to add the items to popup which are selected for comparision */
         product = $('.selectProduct[data-id="' + list[i] + '"]');
@@ -549,8 +459,6 @@
     }
     $(".modPos").show();
   });
-
-
   /* function to close the comparision popup */
   $(document).on('click', '.closeBtn', function () {
     $(".contentPop").empty();
@@ -562,25 +470,18 @@
     list.length = 0;
     $(".rotateBtn").toggleClass("rotateBtn");
   });
-
   /*function to remove item from preview panel*/
   $(document).on('click', '.selectedItemCloseBtn', function () {
-
     var test = $(this).siblings("p").attr('id');
     $('[data-id=' + test + ']').find(".addToCompare").click();
     hideComparePanel();
   });
-
   function hideComparePanel() {
     if (!list.length) {
       $(".comparePan").empty();
       $(".comparePanle").hide();
     }
-
   }
-
-
-
   //Modal
   function showModal(e) {
     let s = `
@@ -600,42 +501,28 @@
       </div>
   </div>           
   `;
-
     $('.modalProduct').html(s);
-
   }
-
 </script>
 <!-- SCRIPT2 -->
 <script>
   var mybutton = document.getElementById("myBtn");
-window.onscroll = function () { scrollFunction() };
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  window.onscroll = function () { scrollFunction() };
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
       mybutton.style.display = "block";
-  } else {
+    } else {
       mybutton.style.display = "none";
+    }
   }
-}
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-
-// Get the modal
-var modalLogin = document.getElementById('loginModal');
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
-  if (event.target == modalLogin) {
-      modalLogin.style.display = "none";
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
   }
-}
-function meetOur() {
-  let elmnt = document.getElementById("headerProduct");
-  elmnt.scrollIntoView();
-}
+  function meetOur() {
+    let elmnt = document.getElementById("headerProduct");
+    elmnt.scrollIntoView();
+  }
 </script>
-
 </html>
