@@ -23,7 +23,6 @@ $(document).ready(function(){
                 items:4,
                 nav:true,
                 loop:true
-                
             }
         }
     });
@@ -121,26 +120,18 @@ $(document).ready(function(){
                 $("#registerModal").removeClass("fade").modal("hide");
                 $("#loginModal").addClass("fade").modal("show");
             }
-            
-            
             $("#registerBtn").on("click", function() {
                 showDialog2();
             });
-            
             $("#alreadyacc").on("click",function(){
                 showLoginModal();
             })
-
             $("#formLogin").submit(function (e) {
                 e.preventDefault();
-      
                 Check();
             })
-      
-      
             $("#formRegister").submit(function (e) {
                 e.preventDefault();
-      
                 let username = $("#username1").val().trim();
                 let re = /^[a-z0-9_-]{3,16}$/ig;
                 if (re.test(username) == false) {
@@ -148,8 +139,6 @@ $(document).ready(function(){
                     $("#username1").focus();
                     return false;
                 }
-      
-      
                 let email = $("#email1").val().trim();
                 re = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/ig;
                 if (re.test(email) == false) {
@@ -157,8 +146,6 @@ $(document).ready(function(){
                     $("#email1").focus();
                     return false;
                 }
-            
-      
                 let password = $("#password1").val().trim();
                 re = /^[-\w\.\$@\*\!]{1,30}$/ig;
                 if (re.test(password) == false) {
@@ -166,36 +153,23 @@ $(document).ready(function(){
                     $("#password1").focus();
                     return false;
                 }
-      
-      
                 let passwordConfirm = $("#password2").val().trim();
                 if (passwordConfirm !== password) {
                     alert("Password and confirm password not match! Please try again!")
                     $("#password2").focus();
                     return false;
                 }
-      
                 let gender = $("#gender:checked").val();
-      
-      
-      
                 let s = `Username: ${username} \n Email: ${email} \n Gender: ${gender}`;
                 alert("Register Success \n Your Information: \n " + s);
                 $("#registerModal").removeClass("fade").modal("hide");
                 $("#loginModal").addClass("fade").modal("show");
                 store();
-      
             });
-      
-      
-            
-      
             function Check() { //retrieves items in the localStorage
-      
                 var username = $("#username").val() //gets key from user
                 var password = $("#password").val(); //gets password from user
                 var myobj = JSON.parse(localStorage.getItem("user"));
-      
                 if(myobj == null){
                     alert("This account doesn't exist! Please try again!");
                     $("#registerBtn").focus();
@@ -209,36 +183,25 @@ $(document).ready(function(){
                     alert("Wrong username or password! Please try again!");
                     $("#username").focus();
                     return false;
-                   
                 }
             }
-        
             function store() {
-                
                 let username = $("#username1").val();
                 let email = $("#email1").val().trim();
                 let password = $("#password1").val();
                 let gender = $("form:radio:checked").val();
-                
-                
-
                 const user = {
                     username: username,
                     email: email,
                     password: password,
                     gender: gender,
                 };
-               
-      
                 localStorage.setItem("user", JSON.stringify(user));
                 localStorage.getItem("user");
                 myobj = JSON.parse(localStorage.getItem("user"));
-
             };
-        
             $("#formContactFooter").submit(function (e) {
                 e.preventDefault();
-      
                 let email = $("#emailFooter").val().trim();
                 re = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/ig;
                 if (re.test(email) == false) {
@@ -246,9 +209,6 @@ $(document).ready(function(){
                     $("#email1").focus();
                     return false;
                 }
-                
                 alert("Your message has been sent to us! Thank you for your contact!");
-      
             })
-        
 });

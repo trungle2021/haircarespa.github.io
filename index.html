@@ -14,30 +14,20 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="style.css">
-
-
     <!-- Jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
     <!-- JS -->
-
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="haircare.js"></script>
-
-
 </head>
-
 <body>
-
     <header>
         <div class="container-fluid nopadding">
             <div class="row nopadding">
                 <div class="col-md-12 nopadding">
                     <!-- navbar -->
-
-                    <nav class="navbar navbar-default my-nav " role="navigation" >
-
+                    <nav class="navbar navbar-default my-nav " role="navigation">
                         <!-- Brand and toggle get grouped for better mobile display -->
                         <div class="navbar-header">
                             <button type="button" class="navbar-toggle" data-toggle="collapse"
@@ -47,10 +37,8 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-
                             <a class="navbar-brand" href="index.html">HAIR CARE </a>
                         </div>
-
                         <!-- Collect the nav links, forms, and other content for toggling -->
                         <div class="collapse navbar-collapse navbar-ex1-collapse">
                             <ul class="nav navbar-nav">
@@ -64,31 +52,22 @@
                             </ul>
                         </div>
                     </nav>
-                   
                     <!-- end navbar -->
-                    
-
                     <div id="myCarousel" class="carousel slide carousel-fade " data-ride="carousel">
-
                         <ol class="carousel-indicators">
                             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                             <li data-target="#myCarousel" data-slide-to="1"></li>
                             <li data-target="#myCarousel" data-slide-to="2"></li>
                         </ol>
-
                         <div class="carousel-inner" role="listbox">
                             <div class="item active">
-                                <img src="images/homepage/HeaderSlideShow/Header_slide_img1.jpg" 
-                                    width="900" height="700">
+                                <img src="images/homepage/HeaderSlideShow/Header_slide_img1.jpg" width="900"
+                                    height="700">
                             </div>
-
                             <div class="item">
-                                <img src="images/homepage/HeaderSlideShow/Header_slide_img2.jpg" 
-                                    width="1200" height="700">
+                                <img src="images/homepage/HeaderSlideShow/Header_slide_img2.jpg" width="1200"
+                                    height="700">
                             </div>
-
-                           
-
                         </div>
                         <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
                             <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -99,10 +78,6 @@
                             <span class="sr-only">Next</span>
                         </a>
                     </div>
-
-
-
-
                     <!-- LOGIN -->
                     <div class="modal fade" id="loginModal">
                         <div class="modal-dialog">
@@ -117,23 +92,18 @@
                                             <input type="text" class="form-control" id="username"
                                                 placeholder="Enter Username" required>
                                         </div>
-
                                         <div class="form-group">
                                             <label for="">Password</label>
                                             <input type="password" class="form-control" id="password"
                                                 placeholder="Enter Password" required>
                                         </div>
-
-
-
                                         <button id="loginbtn" type="submit"
                                             class="btn btn-primary btn-lg btn-block">Login</button>
                                     </form>
-
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-success" style="float: left;"
-                                         data-toggle="modal" id="registerBtn">Create New
+                                        data-toggle="modal" id="registerBtn">Create New
                                         Account</button>
                                     <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                                 </div>
@@ -141,13 +111,10 @@
                         </div>
                     </div>
                     <!-- END LOGIN -->
-
-
                     <!-- REGISTER -->
                     <div class="modal fade" id="registerModal">
                         <div class="modal-dialog">
                             <div class="modal-content">
-
                                 <div class="modal-body">
                                     <span data-dismiss="modal" class="close" title="Close Modal">&times;</span>
                                     <br><br>
@@ -157,25 +124,21 @@
                                             <input type="text" class="form-control" id="username1"
                                                 placeholder="Enter Username" required>
                                         </div>
-
                                         <div class="form-group">
                                             <label for="">Password</label>
                                             <input type="password" class="form-control" id="password1"
                                                 placeholder="Enter Password" required>
                                         </div>
-
                                         <div class="form-group">
                                             <label for="">Confirm Password</label>
                                             <input type="password" class="form-control" id="password2"
                                                 placeholder="Confirm Your Password" required>
                                         </div>
-
                                         <div class="form-group">
                                             <label for="">Email</label>
                                             <input type="email" class="form-control" id="email1"
                                                 placeholder="Enter Your Email" required>
                                         </div>
-
                                         <div class="form-group">
                                             <label for="">Gender &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
                                             <div class="radio-inline">
@@ -184,17 +147,14 @@
                                                         checked="checked">
                                                     Male
                                                 </label>
-
                                             </div>
                                             <div class="radio-inline">
                                                 <label>
                                                     <input type="radio" name="gender" id="gender" value="Female">
                                                     Female
                                                 </label>
-
                                             </div>
                                         </div>
-
                                         <button type="submit" class="btn btn-success btn-lg btn-block">Register</button>
                                         <hr>
                                         <a id="alreadyacc"
@@ -206,7 +166,6 @@
                                             style=" margin-right:10px;" title="Reset Information">Reset</button>
                                     </form><br>
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -223,14 +182,12 @@
             <div class="col-md-12 col-xs-12 nopadding">
                 <div class="text1-carousel owl-carousel owl-theme owl-nav ">
                     <p>PARABEN FREE-SULFATE FREE-PHTHALATE FREE</p>
-
                     <p>PARABEN FREE-SULFATE FREE-PHTHALATE FREE</p>
                 </div>
             </div>
         </div>
     </div>
     <!-- BEST SELLER -->
-
     <section style="background-color: rgb(253, 253, 253);">
         <h2
             style="margin: 10px 0px; background-color: rgb(88, 125, 134); text-align: center; padding: 40px; color: white; letter-spacing: .5cm; font-size: 30px;">
@@ -240,50 +197,42 @@
                 <div class="col-sm-12">
                     <div class="divBestSeller">
                         <div class="best-seller owl-carousel owl-theme owl-nav">
-                            <div class="info-items-best-seller" >
-                                <img src="images/homepage/BestSeller/Shampoos Be Gentle, Be Kind 2.jpg" alt="" data-target="#best-seller-modal1"
-                                data-toggle="modal">
+                            <div class="info-items-best-seller">
+                                <img src="images/homepage/BestSeller/Shampoos Be Gentle, Be Kind 2.jpg" alt=""
+                                    data-target="#best-seller-modal1" data-toggle="modal">
                                 <p class="productNameModal">Banana + Coconut Shampoo</p>
                                 <p>Price: $28.00</p>
-
-
                             </div>
                             <div class="info-items-best-seller">
-                                <img src="images/homepage/BestSeller/Shampoos Be Gentle, Be Kind 6.jpg"  alt="" data-target="#best-seller-modal2"
-                                data-toggle="modal">
+                                <img src="images/homepage/BestSeller/Shampoos Be Gentle, Be Kind 6.jpg" alt=""
+                                    data-target="#best-seller-modal2" data-toggle="modal">
                                 <p class="productNameModal">Matcha + Apple Shampoo</p>
                                 <p>Price: $28.00</p>
-                                
+
                             </div>
                             <div class="info-items-best-seller">
-                                <img src="images/homepage/BestSeller/Shampoos Be Gentle, Be Kind 22.jpg" alt=""data-target="#best-seller-modal3"
-                                data-toggle="modal">
-                                
+                                <img src="images/homepage/BestSeller/Shampoos Be Gentle, Be Kind 22.jpg" alt=""
+                                    data-target="#best-seller-modal3" data-toggle="modal">
                                 <p class="productNameModal">Aloe + Oat Milk Shampoo</p>
                                 <p>Price: $26.00</p>
-                              
                             </div>
                             <div class="info-items-best-seller">
-                                <img src="images/homepage/BestSeller/Shampoos Don’t Despair, Repair! 2.jpg" alt=""data-target="#best-seller-modal4"
-                                data-toggle="modal">
+                                <img src="images/homepage/BestSeller/Shampoos Don’t Despair, Repair! 2.jpg" alt=""
+                                    data-target="#best-seller-modal4" data-toggle="modal">
                                 <p class="productNameModal">Super Moisture Shampoo</p>
                                 <p>Price: $58.00</p>
-                                
                             </div>
                             <div class="info-items-best-seller">
-                                <img src="images/homepage/BestSeller/Styling + Finishing Blossom & Bloom 5.jpg" alt=""data-target="#best-seller-modal5"
-                                data-toggle="modal">
+                                <img src="images/homepage/BestSeller/Styling + Finishing Blossom & Bloom 5.jpg" alt=""
+                                    data-target="#best-seller-modal5" data-toggle="modal">
                                 <p class="productNameModal">Ginseng + Biotin Root Powder</p>
                                 <p>Price: $24.00</p>
-                               
                             </div>
                             <div class="info-items-best-seller">
-                                <img src="images/homepage/BestSeller/Treatment Masks + Oils Scalp Revival 8.jpg"
-                                    alt=""data-target="#best-seller-modal6"
-                                data-toggle="modal">
+                                <img src="images/homepage/BestSeller/Treatment Masks + Oils Scalp Revival 8.jpg" alt=""
+                                    data-target="#best-seller-modal6" data-toggle="modal">
                                 <p class="productNameModal">Soothe + Detoxify Minis</p>
                                 <p>Price: $28.00</p>
-                                
                             </div>
                         </div>
                     </div>
@@ -302,18 +251,17 @@
                             <div class="col-md-6">
                                 <img src="images/homepage/BestSeller/Shampoos Be Gentle, Be Kind 2.jpg" alt="">
                             </div>
-
                             <div class="col-md-6">
                                 <p><strong>Name:</strong> Banana + Coconut Shampoo </p>
                                 <p><strong>Price:</strong> $28.00</p>
                                 <p><strong>Category:</strong> Shampoo</p>
                                 <p><strong>Brand:</strong> Briogeo</p>
                                 <p><strong>Net:</strong> 369ml</p>
-                                <p><strong>Description:</strong> A juice cleanse for your hair, this nourishing shampoo gently cleanses hair without stripping away natural oils, giving your hair it's much needed vitamins.</p>
-
+                                <p><strong>Description:</strong> A juice cleanse for your hair, this nourishing shampoo
+                                    gently cleanses hair without stripping away natural oils, giving your hair it's much
+                                    needed vitamins.</p>
                             </div>
                         </div>
-
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -323,7 +271,6 @@
                 </div>
             </div>
         </div>
-
         <div class="modal fade" id="best-seller-modal2">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -336,15 +283,15 @@
                             <div class="col-md-6">
                                 <img src="images/homepage/BestSeller/Shampoos Be Gentle, Be Kind 6.jpg" alt="">
                             </div>
-
                             <div class="col-md-6">
                                 <p><strong>Name:</strong> Matcha + Apple Shampoo </p>
                                 <p><strong>Price:</strong> $28.00</p>
                                 <p><strong>Category:</strong> Shampoo</p>
                                 <p><strong>Brand:</strong> Briogeo</p>
                                 <p><strong>Net:</strong> 369ml</p>
-                                <p><strong>Description:</strong> A nutrient rich, green juice inspired shampoo that hydrates dry hair and replenishes dull, lifeless strands with daily nourishment for healthy-looking hair.</p>
-
+                                <p><strong>Description:</strong> A nutrient rich, green juice inspired shampoo that
+                                    hydrates dry hair and replenishes dull, lifeless strands with daily nourishment for
+                                    healthy-looking hair.</p>
                             </div>
                         </div>
                     </div>
@@ -356,7 +303,6 @@
                 </div>
             </div>
         </div>
-
         <div class="modal fade" id="best-seller-modal3">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -367,17 +313,16 @@
                     <div class="modal-body modal-body-content">
                         <div class="row">
                             <div class="col-md-6">
-                                <img src="images/homepage/BestSeller/Shampoos Be Gentle, Be Kind 22.jpg"  alt="">
+                                <img src="images/homepage/BestSeller/Shampoos Be Gentle, Be Kind 22.jpg" alt="">
                             </div>
-
                             <div class="col-md-6">
                                 <p><strong>Name:</strong> Aloe + Oat Milk Shampoo </p>
                                 <p><strong>Price:</strong> $26.00</p>
                                 <p><strong>Category:</strong> Shampoo</p>
                                 <p><strong>Brand:</strong> Briogeo</p>
                                 <p><strong>Net:</strong> 236ml</p>
-                                <p><strong>Description:</strong> A hypoallergenic, dermatologist-approved, vegan, cruelty-free, 99% naturally-derived shampoo that comes in an eco-friendly.</p>
-
+                                <p><strong>Description:</strong> A hypoallergenic, dermatologist-approved, vegan,
+                                    cruelty-free, 99% naturally-derived shampoo that comes in an eco-friendly.</p>
                             </div>
                         </div>
                     </div>
@@ -389,7 +334,6 @@
                 </div>
             </div>
         </div>
-
         <div class="modal fade" id="best-seller-modal4">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -402,16 +346,14 @@
                             <div class="col-md-6">
                                 <img src="images/homepage/BestSeller/Shampoos Don’t Despair, Repair! 2.jpg" alt="">
                             </div>
-
                             <div class="col-md-6">
                                 <p><strong>Name:</strong>Super Moisture Shampoo </p>
                                 <p><strong>Price:</strong> $58.00</p>
                                 <p><strong>Category:</strong> Shampoo</p>
                                 <p><strong>Brand:</strong> Briogeo</p>
                                 <p><strong>Net:</strong> 1000ml</p>
-                                <p><strong>Description:</strong> If a shampoo and a hair mask had a baby, this would be it. This innovative formula merges the intense cleansing action of a shampoo.</p>
-
-
+                                <p><strong>Description:</strong> If a shampoo and a hair mask had a baby, this would be
+                                    it. This innovative formula merges the intense cleansing action of a shampoo.</p>
                             </div>
                         </div>
                     </div>
@@ -423,7 +365,6 @@
                 </div>
             </div>
         </div>
-
         <div class="modal fade" id="best-seller-modal5">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -436,15 +377,14 @@
                             <div class="col-md-6">
                                 <img src="images/homepage/BestSeller/Styling + Finishing Blossom & Bloom 5.jpg" alt="">
                             </div>
-
                             <div class="col-md-6">
                                 <p><strong>Name:</strong> Ginseng + Biotin Root Powder</p>
                                 <p><strong>Price:</strong> $24.00</p>
                                 <p><strong>Category:</strong> Spray</p>
                                 <p><strong>Brand:</strong> Briogeo</p>
                                 <p><strong>Net:</strong> 35g</p>
-                                <p><strong>Description:</strong> A volumizing powder that is applied to the roots for instant lift and volume.</p>
-
+                                <p><strong>Description:</strong> A volumizing powder that is applied to the roots for
+                                    instant lift and volume.</p>
                             </div>
                         </div>
                     </div>
@@ -456,7 +396,6 @@
                 </div>
             </div>
         </div>
-
         <div class="modal fade" id="best-seller-modal6">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -467,18 +406,16 @@
                     <div class="modal-body modal-body-content">
                         <div class="row">
                             <div class="col-md-6">
-                                <img src="images/homepage/BestSeller/Treatment Masks + Oils Scalp Revival 8.jpg"
-                                    alt="">
+                                <img src="images/homepage/BestSeller/Treatment Masks + Oils Scalp Revival 8.jpg" alt="">
                             </div>
-
                             <div class="col-md-6">
                                 <p><strong>Name:</strong> Soothe + Detoxify Minis </p>
                                 <p><strong>Price:</strong> $35.00</p>
                                 <p><strong>Category:</strong> Set</p>
                                 <p><strong>Brand:</strong> Briogeo</p>
                                 <p><strong>Net:</strong> Minisize</p>
-                                <p><strong>Description:</strong> This kit of deluxe minis includes the Scalp Revival™ essentials that help nourish, soothe, and hydrate an itchy.</p>
-
+                                <p><strong>Description:</strong> This kit of deluxe minis includes the Scalp Revival™
+                                    essentials that help nourish, soothe, and hydrate an itchy.</p>
                             </div>
                         </div>
                     </div>
@@ -490,48 +427,37 @@
                 </div>
             </div>
         </div>
-
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12 col-xs-12 nopadding" style="background-color: rgb(251,246,242);">
                     <div class="text1st col-xs-12">
                         <h3>A new standard in beauty</h3><br>
-
                         <svg xmlns="http://www.w3.org/2000/svg" width="8" height="100" viewBox="0 0 8 100">
                             <path class="path" fill="none" fill-rule="evenodd" stroke="#000"
                                 d="M1 100c0-3.845 6-3.845 6-7.69s-6-3.845-6-7.691c0-3.845 6-3.845 6-7.69 0-3.847-6-3.847-6-7.693 0-3.843 6-3.843 6-7.687 0-3.845-6-3.845-6-7.691 0-3.845 6-3.845 6-7.69 0-3.846-6-3.846-6-7.69 0-3.847 6-3.847 6-7.694s-6-3.847-6-7.695c0-3.846 6-3.846 6-7.693 0-3.849-6-3.849-6-7.698S7 3.849 7 0">
                             </path>
                         </svg>
-
                         <p><strong>Mass haircare is designed for “the masses”</strong> with a few narrow products
                             intended for as many
                             people as possible. Your results may vary, but your options stay the same. </p>
-
                         <p><strong>Custom haircare is designed for the individual</strong> with products that are
                             literally made
                             different for everyone, continually improving and evolving with you over time. </p>
-
                         <p><strong>We believe everyone deserves extraordinary care</strong> and that making things
                             custom is the only
                             way to give everyone their best individual results. </p>
-
                         <div>
                             <a href="hair-problems.html" class="seemore">READ MORE</a>
                         </div>
-
-
                     </div>
                 </div>
             </div>
         </div>
-
-
         <article>
             <h2
                 style="margin: 0px 0px; background-color: rgb(88, 125, 134); text-align: center; padding: 40px; color: white; letter-spacing: .5cm; font-size: 30px;">
                 WHAT WE DO</h2>
             <div class="container text-center">
-
                 <div class="row">
                     <div class="col-md-6 nopadding  ">
                         <img src="images/homepage/article1.jpg" class="img-responsive" style="width:100%" alt="Image">
@@ -549,80 +475,55 @@
                     </div>
                 </div>
                 <div class="row">
-
                     <div class="col-md-6 col-md-push-6 nopadding">
                         <img src="images/homepage/article2.jpg" class="img-responsive" style="width:100%" alt="Image">
-
                     </div>
-
-
-
                     <div class="col-md-6 col-md-pull-6 nopadding">
                         <div class="text1st col-xs-12">
                             <h2>You Part Ways With Products For Good</h2>
-
-
                             <p>Once completed, your formula(s) are delivered right to your door along with extra
                                 good stuff (think: pumps, stickers, gifts, personalized regimen card). We hope you
                                 like compliments. We source the best ingredients gathered in the most ethical way.
                                 When we find better ways forward, we take them. ☺</p>
                             <p>As a B Corp-certified company, we keep our impact on your hair, not the planet. We
                                 are the first and only carbon-neutral custom beauty brand</p> <br>
-
                             <div>
                                 <a href="product.html" class="seemore">GO TO SHOP </a>
                             </div>
                         </div>
-
                     </div>
-
-
-
                 </div>
             </div>
         </article>
-
-
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12 col-xs-12 nopadding" style="background-color: rgb(251,246,242);">
                     <div class="text2st col-xs-12">
                         <h3>HAIR CARE SPA BY NUMBER</h3><br>
                         <div class="col-md-4">
-
                             <p class="head-number">85+</p>
                             <p class="content-number">Factors examined to create our custom formulas.</p>
-
                             <p class="head-number">2M+</p>
                             <p class="content-number">Unique customer profiles.</p>
-
                             <p class="head-number">225k</p>
                             <p class="content-number">5-star product reviews on Review & Refine.</p>
-
                         </div>
-
                         <div class="col-md-4">
                             <p class="head-number">84%</p>
                             <p class="content-number">Of our customers would recommend Hair Care Spa to a friend.</p>
-
                             <p class="head-number">34,057</p>
                             <p class="content-number">Different customer zip codes.</p>
-
                             <p class="head-number">24%</p>
                             <p class="content-number">Of our customers have Type 3 or 4 hair.</p>
                         </div>
-
                         <div class="col-md-4">
                             <p class="head-number">19%</p>
                             <p class="content-number">Of our customers are looking for brass reduction.</p>
-
                             <p class="head-number">16%</p>
                             <p class="content-number">Of our customers select our most loved spray, Corsica.</p>
-
                             <p class="head-number">55%</p>
                             <p class="content-number">Of our customers work out indoors.</p>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -637,7 +538,7 @@
                     <div class="ingredient-carousel owl-carousel owl-theme owl-nav">
                         <div class="argan">
                             <img src="images/homepage/Ingredient/arganoil.png" alt="">
-                            <p>Argan Oil</p>  
+                            <p>Argan Oil</p>
                         </div>
                         <div class="avocado">
                             <img src="images/homepage/Ingredient/avocado.png" alt="">
@@ -670,44 +571,43 @@
         <br><br><br>
         <footer>
             <div id="contact" class="container">
-              <h3 class="text-center">Contact</h3>
-              <p class="text-center"><em>We love our customer!</em></p>
-          
-              <div class="row">
-                <div class="col-md-4">
-                  <h2>STAY CONNECTED.</h2><br>
-                  <p><span class="glyphicon glyphicon-map-marker"></span> Ho Chi Minh, Vietnam</p>
-                  <p><span class="glyphicon glyphicon-phone"></span> Phone: +84 37340 5298</p>
-                  <p><span class="glyphicon glyphicon-envelope"></span> <a style="color: white;text-decoration: underline;" href="mailto:leanhtrung97@gmail.com" title="Send mail directly">leanhtrung97@gmail.com</a></p>
-                </div>
-                <div class="col-md-8">
-                  <form method="POST" id="formContactFooter">
-                    <div class="row">
-                        <div class="col-sm-6 form-group">
-                          <input class="form-control" id="usernameFooter" name="usernameFooter" placeholder="Name" type="text" required>
-                        </div>
-                        <div class="col-sm-6 form-group">
-                          <input class="form-control" id="emailFooter" name="emailFooter" placeholder="Email" type="email" required>
-                        </div>
+                <h3 class="text-center">Contact</h3>
+                <p class="text-center"><em>We love our customer!</em></p>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h2>STAY CONNECTED.</h2><br>
+                        <p><span class="glyphicon glyphicon-map-marker"></span> Ho Chi Minh, Vietnam</p>
+                        <p><span class="glyphicon glyphicon-phone"></span> Phone: +84 37340 5298</p>
+                        <p><span class="glyphicon glyphicon-envelope"></span> <a
+                                style="color: white;text-decoration: underline;" href="mailto:leanhtrung97@gmail.com"
+                                title="Send mail directly">leanhtrung97@gmail.com</a></p>
                     </div>
-                    <textarea class="form-control" id="commentsFooter" name="commentsFooter" placeholder="Comment" rows="5" required></textarea>
-                    <br>
-                    <div class="row">
-                      <div class="col-md-12 form-group">
-                        <button class="btn pull-right btn-primary" type="submit">Send</button>
-                      </div>
+                    <div class="col-md-8">
+                        <form method="POST" id="formContactFooter">
+                            <div class="row">
+                                <div class="col-sm-6 form-group">
+                                    <input class="form-control" id="usernameFooter" name="usernameFooter"
+                                        placeholder="Name" type="text" required>
+                                </div>
+                                <div class="col-sm-6 form-group">
+                                    <input class="form-control" id="emailFooter" name="emailFooter" placeholder="Email"
+                                        type="email" required>
+                                </div>
+                            </div>
+                            <textarea class="form-control" id="commentsFooter" name="commentsFooter"
+                                placeholder="Comment" rows="5" required></textarea>
+                            <br>
+                            <div class="row">
+                                <div class="col-md-12 form-group">
+                                    <button class="btn pull-right btn-primary" type="submit">Send</button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
-                  </form>
                 </div>
-              </div>
-          </footer>
-        
-
+        </footer>
         <button onclick="topFunction()" id="myBtn" title="Go to top">&#8673;</button>
-
 </body>
-
-
 <script>
     var mybutton = document.getElementById("myBtn");
     window.onscroll = function () { scrollFunction() };
@@ -722,16 +622,6 @@
     function topFunction() {
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
-    }
-
-    // Get the modal
-    var modalLogin = document.getElementById('login');
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function (event) {
-        if (event.target == modalLogin) {
-            modalLogin.style.display = "none";
-        }
     }
 </script>
 

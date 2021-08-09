@@ -32,133 +32,107 @@
 .w3-modal{z-index:3;display:none;padding-top:100px;position:fixed;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgb(0,0,0);background-color:rgba(0,0,0,0.4)}
 
 .w3-closebtn{
-    text-decoration:none;float:right;font-size:24px;font-weight:bold;
-    -webkit-transition:background-color .3s,color .15s,box-shadow .3s,opacity 0.3s;
-    transition:background-color .3s,color .15s,box-shadow .3s,opacity 0.3s;
+text-decoration:none;float:right;font-size:24px;font-weight:bold;
+-webkit-transition:background-color .3s,color .15s,box-shadow .3s,opacity 0.3s;
+transition:background-color .3s,color .15s,box-shadow .3s,opacity 0.3s;
 }
 
 .w3-closebtn:hover,.w3-closebtn:focus{color:#000;text-decoration:none;cursor:pointer}
 
 /* end of w3-css */
-
-
-
-
-
-
 /*style of style-css*/
 .addButtonCircular
 {
-	width: 30px;
-	height: 30px;
-	line-height: 30px;
-	position: absolute;
-	top: 20px;
-	right: 20px;
-	cursor: pointer;
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
+width: 30px;
+height: 30px;
+line-height: 30px;
+position: absolute;
+top: 20px;
+right: 20px;
+cursor: pointer;
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-o-transition: all 0.5s ease-in-out;
+transition: all 0.5s ease-in-out;
 }
-
 a{background-color:transparent}
 a:active,a:hover{outline:0; text-decoration:none;}
-    
-
 .comparePanle{
-    position: fixed;
-    bottom: 10px;
-    width:90%;
-    left:50%;
-    transform: translateX(-50%);
-    display: none;
-    z-index: 3;
-    overflow: hidden;
+position: fixed;
+bottom: 10px;
+width:90%;
+left:50%;
+transform: translateX(-50%);
+display: none;
+z-index: 3;
+overflow: hidden;
 }
-
 .titleMargin{
-    padding: 4px 0px 4px 4px;
+padding: 4px 0px 4px 4px;
 }
 .titleMargin1{
-    padding: 0px 0px 0px 4px;
-    margin-top: 0px !important;
-    margin-bottom: 0px !important;
+padding: 0px 0px 0px 4px;
+margin-top: 0px !important;
+margin-bottom: 0px !important;
 }
-
 .modPos{
-    padding-top: 25px !important;
+padding-top: 25px !important;
 }
-
 .contentPop{
-    width: 80%;
-    margin-left: 10%;
-    height: 80%;
+width: 80%;
+margin-left: 10%;
+height: 80%;
 }
-
 .cursor{
-    cursor: pointer;
+cursor: pointer;
 }
-
-
 .product {
-    list-style-type: none;
-    border: 1px solid #B5B4B7;
-    margin: 0;
-    padding: 0;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
+list-style-type: none;
+border: 1px solid #B5B4B7;
+margin: 0;
+padding: 0;
+-webkit-transition: 0.3s;
+transition: 0.3s;
 }
-
 .product:hover {
-    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
 }
-
 .product .header {
-    background-color: #111;
-    color: white;
-    font-size: 25px;
+background-color: #111;
+color: white;
+font-size: 25px;
 }
-
 .product li {
-    border-bottom: 1px solid #B5B4B7;
-    padding: 10px;
-    text-align: center;
+border-bottom: 1px solid #B5B4B7;
+padding: 10px;
+text-align: center;
 }
-
 .product .grey {
-    background-color: #eee;
-    font-size: 20px;
+background-color: #eee;
+font-size: 20px;
 }
-
 .compHeader{
-    min-height: 200px ;
+min-height: 200px ;
 }
-
 .compareThumb{
-    height: 150px;
+height: 150px;
 }
-
-
 .relPos{
-    position: relative;
+position: relative;
 }
-
 .des{
-    min-height: 150px ;
+min-height: 150px ;
 }
-
 .rotateBtn{
-    -webkit-transform : rotate(45deg); 
-    -moz-transform : rotate(45deg); 
-    -ms-transform : rotate(45deg); 
-    -o-transform : rotate(45deg); 
-    transform : rotate(45deg); 
+-webkit-transform : rotate(45deg); 
+-moz-transform : rotate(45deg); 
+-ms-transform : rotate(45deg); 
+-o-transform : rotate(45deg); 
+transform : rotate(45deg); 
 }
-
 #xButton{
-    position: absolute;
-    right: 10px;
-    color: red;
-    top: 0px;
+position: absolute;
+right: 10px;
+color: red;
+top: 0px;
 }
