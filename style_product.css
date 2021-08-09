@@ -261,6 +261,9 @@ box-shadow: 0 0 20px rgba(33,33,33,.2);
     margin-top: 40px;
      margin-left: 5px !important;
   }
+  .modal-header .close {
+    margin-top: -15px;
+}
 
 
   /* COMPARE */
