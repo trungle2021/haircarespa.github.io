@@ -144,6 +144,55 @@
 	}
 }
 
+@media (max-width: 1366px) {
+	.navbar-brand {
+		line-height: 50px;
+		color: white !important;
+		font-size: 25px;
+		font-family: logo;
+		margin-left: 40px;
+		padding: 0px 0px 0px 20px;
+	}
+	.my-nav {
+		background-color: rgb(40, 42, 53);
+		width: 100%;
+		z-index: 999;
+		border: none;
+		border-radius: 0px;
+		margin-bottom: 0px;
+	}
+	.my-nav .navbar-nav {
+		display: inline-block;
+		float: none;
+	}
+	.my-nav .navbar-collapse {
+		text-align: center;
+		line-height: 0px;
+	}
+	.my-nav .navbar-nav>li {
+		margin: 0px 30px;
+	}
+	.best-seller.owl-carousel .owl-nav .owl-next span,
+	.best-seller.owl-carousel .owl-nav .owl-prev span {
+		position: absolute;
+		color: rgb(204, 204, 204);
+		font-size: 80px;
+		top: 150px;
+	}
+	.best-seller.owl-carousel .owl-nav .owl-prev span {
+		left: -35px;
+	}
+	.best-seller.owl-carousel .owl-nav .owl-next span {
+		right: -35px;
+	}
+	.best-seller.owl-carousel .owl-nav .owl-prev span:hover,
+	.best-seller.owl-carousel .owl-nav .owl-next span:hover {
+		color: #FF7F00;
+		transition-duration: 0.2s;
+		transition-delay: 0.2s;
+	}
+}
+
 @media (max-width:1280px) {
 	.navbar-brand {
 		line-height: 50px;
