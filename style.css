@@ -404,6 +404,9 @@
 	.lineArticle {
 		height: 50px;
 	}
+	#menu-scroll{
+		display: none;
+	}
 }
 
 @media (max-width:425px) {
@@ -444,6 +447,9 @@
 	}
 	.lineArticle {
 		height: 50px;
+	}
+	#menu-scroll{
+		display: none;
 	}
 }
 

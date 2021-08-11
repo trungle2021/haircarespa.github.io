@@ -200,6 +200,7 @@ $(document).ready(function(){
                 localStorage.getItem("user");
                 myobj = JSON.parse(localStorage.getItem("user"));
             };
+
             $("#formContactFooter").submit(function (e) {
                 e.preventDefault();
                 let email = $("#emailFooter").val().trim();
