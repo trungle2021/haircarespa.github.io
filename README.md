@@ -1,6 +1,6 @@
 # eProject - Hair Care 
 # T1.2104.E0-eProject-Group_4
-Batch no.: T1.2102.E0
+Batch no.: T1.2104.E0
 
 CENTER NAME: ACE-HCMC-2-FPT
 
